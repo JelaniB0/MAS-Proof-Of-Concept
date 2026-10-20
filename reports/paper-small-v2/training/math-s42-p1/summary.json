@@ -1,0 +1,58 @@
+{
+  "source": "math-s42-p1.training.json",
+  "status": "completed",
+  "settings": {
+    "epochs": 1,
+    "batch_size": 2,
+    "learning_rate": 0.1,
+    "cost_weight": 20.0,
+    "latency_weight": 0.003,
+    "entropy_weight": 0.0,
+    "length_weight": 0.2,
+    "reward_units": "raw",
+    "seed": 42,
+    "topology": "adaptive",
+    "budget": 0.05,
+    "latency": 600.0
+  },
+  "attempts": [
+    {
+      "source": "math-s42-p1.failed-001.training.json",
+      "status": "provider_or_budget_failure",
+      "calls": 20,
+      "accounted_usd": 0.0
+    },
+    {
+      "source": "math-s42-p1.training.json",
+      "status": "completed",
+      "calls": 6,
+      "accounted_usd": 0.0
+    }
+  ],
+  "policy_steps": 3,
+  "difficulty_steps": 1,
+  "fixture": false,
+  "unique_training_questions": 4,
+  "successful_rollouts": 4,
+  "failed_graphs": 1,
+  "training_accuracy": 1.0,
+  "calls_all_attempts": 26,
+  "accounted_usd_all_attempts": 0.0,
+  "fixed_probe_snapshots": 0,
+  "observed_policy": {
+    "model_assignments": {
+      "strong": 15,
+      "cheap": 5
+    },
+    "distinct_observed_configurations": 4,
+    "mean_active_agents": 5,
+    "mean_connections": 10
+  },
+  "notes": [
+    "Training scores are not held-out evaluation scores.",
+    "Policy-gradient loss is not prediction error; a smaller loss alone does not establish better accuracy or efficiency.",
+    "Rollout decisions combine learning, different questions and random sampling.",
+    "Only fixed-probe snapshots compare the same questions after parameter updates; older runs have none.",
+    "Old update boundaries are left unknown rather than reconstructed from batch size."
+  ]
+}

@@ -1,0 +1,6 @@
+{"task":"Add two small integers", "difficulty":0.1, "source":"hand-labelled test fixture, not RouterBench"}
+{"task":"Multiply two small integers", "difficulty":0.15, "source":"hand-labelled test fixture, not RouterBench"}
+{"task":"Name the capital of France", "difficulty":0.1, "source":"hand-labelled test fixture, not RouterBench"}
+{"task":"Prove a new graph theory theorem", "difficulty":0.95, "source":"hand-labelled test fixture, not RouterBench"}
+{"task":"Verify a complex concurrent algorithm", "difficulty":0.9, "source":"hand-labelled test fixture, not RouterBench"}
+{"task":"Design and prove a randomized algorithm", "difficulty":0.9, "source":"hand-labelled test fixture, not RouterBench"}

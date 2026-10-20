@@ -1,0 +1,617 @@
+{
+  "notes": [
+    "Training scores are not held-out evaluation scores.",
+    "Policy-gradient loss is not prediction error; a smaller loss alone does not establish better accuracy or efficiency.",
+    "Rollout decisions combine learning, different questions and random sampling.",
+    "Only fixed-probe snapshots compare the same questions after parameter updates; older runs have none.",
+    "Old update boundaries are left unknown rather than reconstructed from batch size."
+  ],
+  "rollouts": [
+    {
+      "rollout": 1,
+      "attempt": 1,
+      "key": "8cda2e0ec281a3d40845afceca70f56e92340fe844186c71ef6594a5e8ab7b1e",
+      "question_preview": "A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 0.9534955791999964,
+      "loss": 10.744894981384277,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 5,
+      "calls": 5,
+      "tokens": 6199,
+      "cost_usd": 0.0,
+      "graph_seconds": 15.50147360000119,
+      "assignments": {
+        "math_solver": "strong",
+        "programming_expert": "cheap",
+        "inspector": "cheap",
+        "math_solver_2": "strong",
+        "synthesizer": "strong"
+      },
+      "connections": 7,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "math_solver": "strong",
+          "programming_expert": "cheap",
+          "inspector": "cheap",
+          "math_solver_2": "strong",
+          "synthesizer": "strong"
+        },
+        "active_agents": 5,
+        "active_workers": 4,
+        "edges": [
+          [
+            "math_solver",
+            "inspector"
+          ],
+          [
+            "math_solver",
+            "math_solver_2"
+          ],
+          [
+            "programming_expert",
+            "math_solver_2"
+          ],
+          [
+            "math_solver",
+            "synthesizer"
+          ],
+          [
+            "programming_expert",
+            "synthesizer"
+          ],
+          [
+            "inspector",
+            "synthesizer"
+          ],
+          [
+            "math_solver_2",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.49889159202575684,
+        "ease": 0.5011084079742432,
+        "effective_difficulty": 0.7988916039466858,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap",
+            "strong"
+          ],
+          [
+            "cheap",
+            "strong"
+          ]
+        ],
+        "filtered_models": [
+          "medium"
+        ],
+        "model_probabilities": {
+          "math_solver": {
+            "cheap": 0.500034511089325,
+            "strong": 0.49996551871299744
+          },
+          "mathematical_analyst": {
+            "cheap": 0.5000467896461487,
+            "strong": 0.49995318055152893
+          },
+          "programming_expert": {
+            "cheap": 0.500013530254364,
+            "strong": 0.49998652935028076
+          },
+          "inspector": {
+            "cheap": 0.5000773072242737,
+            "strong": 0.4999226927757263
+          },
+          "math_solver_2": {
+            "cheap": 0.500034511089325,
+            "strong": 0.49996551871299744
+          }
+        },
+        "keep_probabilities": {
+          "math_solver": 0.49054816365242004,
+          "mathematical_analyst": 0.49000102281570435,
+          "programming_expert": 0.4879218339920044,
+          "inspector": 0.486074298620224,
+          "math_solver_2": 0.49054816365242004
+        },
+        "edge_probabilities": {
+          "math_solver->programming_expert": 0.593804121017456,
+          "math_solver->inspector": 0.5965187549591064,
+          "math_solver->math_solver_2": 0.5972700119018555,
+          "programming_expert->inspector": 0.5952881574630737,
+          "programming_expert->math_solver_2": 0.593804121017456,
+          "inspector->math_solver_2": 0.5965187549591064
+        },
+        "hop_limit": 2.565052032470703,
+        "hop_probabilities": [
+          0.5573332905769348,
+          0.3202812373638153,
+          0.1223854273557663
+        ],
+        "pruned_agents": [
+          "mathematical_analyst"
+        ],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -11.268951416015625
+      }
+    },
+    {
+      "rollout": 2,
+      "attempt": 1,
+      "key": "c6a82b556867cad9c786de5abebd43ed646534cf1f22a604bbdc1cf8e9522e55",
+      "question_preview": "The area of rectangle $ABCD$ is 72. If point $A$ and the midpoints of $\\overline{BC}$ and $\\overline{CD}$ are joined to form a triangle, what is the area of the",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 0.9813371869000003,
+      "loss": 7.2799224853515625,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 3,
+      "calls": 3,
+      "tokens": 3733,
+      "cost_usd": 0.0,
+      "graph_seconds": 6.220937699999922,
+      "assignments": {
+        "mathematical_analyst": "strong",
+        "math_solver_2": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 3,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "mathematical_analyst": "strong",
+          "math_solver_2": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 3,
+        "active_workers": 2,
+        "edges": [
+          [
+            "mathematical_analyst",
+            "math_solver_2"
+          ],
+          [
+            "mathematical_analyst",
+            "synthesizer"
+          ],
+          [
+            "math_solver_2",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.48653584718704224,
+        "ease": 0.5134641528129578,
+        "effective_difficulty": 0.7865358591079712,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap",
+            "strong"
+          ],
+          [
+            "cheap",
+            "strong"
+          ]
+        ],
+        "filtered_models": [
+          "medium"
+        ],
+        "model_probabilities": {
+          "math_solver": {
+            "cheap": 0.5000078678131104,
+            "strong": 0.49999213218688965
+          },
+          "mathematical_analyst": {
+            "cheap": 0.5000202059745789,
+            "strong": 0.4999798536300659
+          },
+          "programming_expert": {
+            "cheap": 0.499986857175827,
+            "strong": 0.5000131130218506
+          },
+          "inspector": {
+            "cheap": 0.5000506639480591,
+            "strong": 0.4999493360519409
+          },
+          "math_solver_2": {
+            "cheap": 0.5000078678131104,
+            "strong": 0.49999213218688965
+          }
+        },
+        "keep_probabilities": {
+          "math_solver": 0.49054816365242004,
+          "mathematical_analyst": 0.49000102281570435,
+          "programming_expert": 0.48792409896850586,
+          "inspector": 0.486074298620224,
+          "math_solver_2": 0.4905458092689514
+        },
+        "edge_probabilities": {
+          "mathematical_analyst->math_solver_2": 0.5958546996116638
+        },
+        "hop_limit": 2.0,
+        "hop_probabilities": [
+          1.0
+        ],
+        "pruned_agents": [
+          "math_solver",
+          "programming_expert",
+          "inspector"
+        ],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -7.418370246887207
+      }
+    },
+    {
+      "rollout": 3,
+      "attempt": 1,
+      "key": "21428fc756ac1f730cd33c839831fbf33b563313c9662953773894382d6a8d49",
+      "question_preview": "There is a number $C$. The number $C$ is a multiple of 7, but is NOT a multiple of 3. The number $C$ is greater than 20, but less than 30. What is this number $",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 0.9673829866000014,
+      "loss": 4.469056606292725,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 6,
+      "calls": 6,
+      "tokens": 6080,
+      "cost_usd": 0.0,
+      "graph_seconds": 10.872337799999514,
+      "assignments": {
+        "math_solver": "cheap",
+        "mathematical_analyst": "strong",
+        "programming_expert": "strong",
+        "inspector": "strong",
+        "math_solver_2": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 15,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "math_solver": "cheap",
+          "mathematical_analyst": "strong",
+          "programming_expert": "strong",
+          "inspector": "strong",
+          "math_solver_2": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 6,
+        "active_workers": 5,
+        "edges": [
+          [
+            "math_solver",
+            "mathematical_analyst"
+          ],
+          [
+            "math_solver",
+            "programming_expert"
+          ],
+          [
+            "math_solver",
+            "inspector"
+          ],
+          [
+            "math_solver",
+            "math_solver_2"
+          ],
+          [
+            "mathematical_analyst",
+            "programming_expert"
+          ],
+          [
+            "mathematical_analyst",
+            "inspector"
+          ],
+          [
+            "mathematical_analyst",
+            "math_solver_2"
+          ],
+          [
+            "programming_expert",
+            "inspector"
+          ],
+          [
+            "programming_expert",
+            "math_solver_2"
+          ],
+          [
+            "inspector",
+            "math_solver_2"
+          ],
+          [
+            "math_solver",
+            "synthesizer"
+          ],
+          [
+            "mathematical_analyst",
+            "synthesizer"
+          ],
+          [
+            "programming_expert",
+            "synthesizer"
+          ],
+          [
+            "inspector",
+            "synthesizer"
+          ],
+          [
+            "math_solver_2",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.4907124638557434,
+        "ease": 0.5092875361442566,
+        "effective_difficulty": 0.7907124757766724,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap",
+            "strong"
+          ],
+          [
+            "cheap",
+            "strong"
+          ]
+        ],
+        "filtered_models": [
+          "medium"
+        ],
+        "model_probabilities": {
+          "math_solver": {
+            "cheap": 0.3272392153739929,
+            "strong": 0.6727607846260071
+          },
+          "mathematical_analyst": {
+            "cheap": 0.4768058657646179,
+            "strong": 0.5231940746307373
+          },
+          "programming_expert": {
+            "cheap": 0.6028493642807007,
+            "strong": 0.3971506357192993
+          },
+          "inspector": {
+            "cheap": 0.5570743083953857,
+            "strong": 0.44292566180229187
+          },
+          "math_solver_2": {
+            "cheap": 0.3272392153739929,
+            "strong": 0.6727607846260071
+          }
+        },
+        "keep_probabilities": {
+          "math_solver": 1.0,
+          "mathematical_analyst": 1.0,
+          "programming_expert": 0.9999994039535522,
+          "inspector": 1.0,
+          "math_solver_2": 1.0
+        },
+        "edge_probabilities": {
+          "math_solver->mathematical_analyst": 1.0,
+          "math_solver->programming_expert": 1.0,
+          "math_solver->inspector": 1.0,
+          "math_solver->math_solver_2": 1.0,
+          "mathematical_analyst->programming_expert": 1.0,
+          "mathematical_analyst->inspector": 1.0,
+          "mathematical_analyst->math_solver_2": 1.0,
+          "programming_expert->inspector": 1.0,
+          "programming_expert->math_solver_2": 1.0,
+          "inspector->math_solver_2": 1.0
+        },
+        "hop_limit": 4.2200822830200195,
+        "hop_probabilities": [
+          0.06562672555446625,
+          0.046871837228536606,
+          0.4892938733100891,
+          0.39820751547813416
+        ],
+        "pruned_agents": [],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -4.619738578796387
+      }
+    },
+    {
+      "rollout": 4,
+      "attempt": 2,
+      "key": "b3eeb02cb2ae2fa06afc8a38c6fd54d358cc29ff1f886228e329f8f42ac47dde",
+      "question_preview": "Triangle $DEF$ is shown.  What is $\\cos{E}$?",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 0.9398359311999956,
+      "loss": 1.4956974155211356e-05,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 6,
+      "calls": 6,
+      "tokens": 7150,
+      "cost_usd": 0.0,
+      "graph_seconds": 20.05468960000144,
+      "assignments": {
+        "math_solver": "strong",
+        "mathematical_analyst": "strong",
+        "programming_expert": "strong",
+        "inspector": "strong",
+        "math_solver_2": "strong",
+        "synthesizer": "strong"
+      },
+      "connections": 15,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "math_solver": "strong",
+          "mathematical_analyst": "strong",
+          "programming_expert": "strong",
+          "inspector": "strong",
+          "math_solver_2": "strong",
+          "synthesizer": "strong"
+        },
+        "active_agents": 6,
+        "active_workers": 5,
+        "edges": [
+          [
+            "math_solver",
+            "mathematical_analyst"
+          ],
+          [
+            "math_solver",
+            "programming_expert"
+          ],
+          [
+            "math_solver",
+            "inspector"
+          ],
+          [
+            "math_solver",
+            "math_solver_2"
+          ],
+          [
+            "mathematical_analyst",
+            "programming_expert"
+          ],
+          [
+            "mathematical_analyst",
+            "inspector"
+          ],
+          [
+            "mathematical_analyst",
+            "math_solver_2"
+          ],
+          [
+            "programming_expert",
+            "inspector"
+          ],
+          [
+            "programming_expert",
+            "math_solver_2"
+          ],
+          [
+            "inspector",
+            "math_solver_2"
+          ],
+          [
+            "math_solver",
+            "synthesizer"
+          ],
+          [
+            "mathematical_analyst",
+            "synthesizer"
+          ],
+          [
+            "programming_expert",
+            "synthesizer"
+          ],
+          [
+            "inspector",
+            "synthesizer"
+          ],
+          [
+            "math_solver_2",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.49188554286956787,
+        "ease": 0.5081144571304321,
+        "effective_difficulty": 0.7918855547904968,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap",
+            "strong"
+          ],
+          [
+            "cheap",
+            "strong"
+          ]
+        ],
+        "filtered_models": [
+          "medium"
+        ],
+        "model_probabilities": {
+          "math_solver": {
+            "cheap": 0.0,
+            "strong": 1.0
+          },
+          "mathematical_analyst": {
+            "cheap": 0.0,
+            "strong": 1.0
+          },
+          "programming_expert": {
+            "cheap": 0.0,
+            "strong": 1.0
+          },
+          "inspector": {
+            "cheap": 0.0,
+            "strong": 1.0
+          },
+          "math_solver_2": {
+            "cheap": 0.0,
+            "strong": 1.0
+          }
+        },
+        "keep_probabilities": {
+          "math_solver": 1.0,
+          "mathematical_analyst": 1.0,
+          "programming_expert": 1.0,
+          "inspector": 1.0,
+          "math_solver_2": 1.0
+        },
+        "edge_probabilities": {
+          "math_solver->mathematical_analyst": 1.0,
+          "math_solver->programming_expert": 1.0,
+          "math_solver->inspector": 1.0,
+          "math_solver->math_solver_2": 1.0,
+          "mathematical_analyst->programming_expert": 1.0,
+          "mathematical_analyst->inspector": 1.0,
+          "mathematical_analyst->math_solver_2": 1.0,
+          "programming_expert->inspector": 1.0,
+          "programming_expert->math_solver_2": 1.0,
+          "inspector->math_solver_2": 1.0
+        },
+        "hop_limit": 4.336514472961426,
+        "hop_probabilities": [
+          0.0006079733720980585,
+          2.0076296891602396e-07,
+          0.6616608500480652,
+          0.3377309739589691
+        ],
+        "pruned_agents": [],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -1.5914452887955122e-05
+      }
+    }
+  ],
+  "fixed_probes": [],
+  "failed_graphs": [
+    {
+      "attempt": 1,
+      "key": "b3eeb02cb2ae2fa06afc8a38c6fd54d358cc29ff1f886228e329f8f42ac47dde",
+      "status": "error",
+      "calls": 6
+    }
+  ]
+}

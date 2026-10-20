@@ -1,0 +1,126 @@
+{
+  "observed_policy": {
+    "model_assignments": {
+      "strong": 18
+    },
+    "distinct_observed_configurations": 1,
+    "mean_active_agents": 6,
+    "mean_connections": 5
+  },
+  "questions": [
+    {
+      "question": 1,
+      "key": "ec878652c9ee436df8be9025ffe0b676c464e22edea1c549612d8499241be359",
+      "topology": "star",
+      "assignments": {
+        "knowlegable_expert": "strong",
+        "critic": "strong",
+        "mathematician": "strong",
+        "psychologist": "strong",
+        "historian": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5
+    },
+    {
+      "question": 2,
+      "key": "7cc752cd21b35fa535a4f5ee9ea3c109cadd02fd8220f8f39104d429c3fae1c3",
+      "topology": "star",
+      "assignments": {
+        "knowlegable_expert": "strong",
+        "critic": "strong",
+        "mathematician": "strong",
+        "psychologist": "strong",
+        "historian": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5
+    },
+    {
+      "question": 3,
+      "key": "11f6c64523a7a51223976b2d485d3037cd0dd2034b8fc7d8445f72626baf2cc1",
+      "topology": "star",
+      "assignments": {
+        "knowlegable_expert": "strong",
+        "critic": "strong",
+        "mathematician": "strong",
+        "psychologist": "strong",
+        "historian": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "runs": [
+    {
+      "kind": "evaluation",
+      "name": "math-eval-now",
+      "status": "provider_or_budget_failure",
+      "accuracy": 0.0,
+      "questions": 1,
+      "policy_steps": 3,
+      "calls": 6,
+      "report": "evaluation/math-eval-now/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "math-eval-slow-01",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 3,
+      "policy_steps": 3,
+      "calls": 18,
+      "report": "evaluation/math-eval-slow-01/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "math-learned-s42-p1",
+      "status": "provider_or_budget_failure",
+      "accuracy": 0.5,
+      "questions": 2,
+      "policy_steps": 3,
+      "calls": 7,
+      "report": "evaluation/math-learned-s42-p1/README.md"
+    },
+    {
+      "kind": "training",
+      "name": "math-s42-p1",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 4,
+      "policy_steps": 3,
+      "calls": 26,
+      "report": "training/math-s42-p1/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-balanced-s42",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": null,
+      "calls": 18,
+      "report": "evaluation/mmlu-balanced-s42/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-cheap-s42",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": null,
+      "calls": 18,
+      "report": "evaluation/mmlu-cheap-s42/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-learned-s42-p1",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": 2,
+      "calls": 18,
+      "report": "evaluation/mmlu-learned-s42-p1/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-learned-s42-p2",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": 2,
+      "calls": 18,
+      "report": "evaluation/mmlu-learned-s42-p2/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-learned-s42-p3",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": 2,
+      "calls": 18,
+      "report": "evaluation/mmlu-learned-s42-p3/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-learned-s42-p4",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 3,
+      "policy_steps": 2,
+      "calls": 18,
+      "report": "evaluation/mmlu-learned-s42-p4/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-medium-s42",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": null,
+      "calls": 18,
+      "report": "evaluation/mmlu-medium-s42/README.md"
+    },
+    {
+      "kind": "training",
+      "name": "mmlu-s42-p1",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 4,
+      "policy_steps": 2,
+      "calls": 22,
+      "report": "training/mmlu-s42-p1/README.md"
+    },
+    {
+      "kind": "training",
+      "name": "mmlu-s42-p2",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 4,
+      "policy_steps": 2,
+      "calls": 22,
+      "report": "training/mmlu-s42-p2/README.md"
+    },
+    {
+      "kind": "training",
+      "name": "mmlu-s42-p3",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 4,
+      "policy_steps": 2,
+      "calls": 22,
+      "report": "training/mmlu-s42-p3/README.md"
+    },
+    {
+      "kind": "training",
+      "name": "mmlu-s42-p4",
+      "status": "completed",
+      "accuracy": 1.0,
+      "questions": 4,
+      "policy_steps": 2,
+      "calls": 22,
+      "report": "training/mmlu-s42-p4/README.md"
+    },
+    {
+      "kind": "evaluation",
+      "name": "mmlu-strong-s42",
+      "status": "completed",
+      "accuracy": 0.6666666666666666,
+      "questions": 3,
+      "policy_steps": null,
+      "calls": 18,
+      "report": "evaluation/mmlu-strong-s42/README.md"
+    }
+  ],
+  "skipped": []
+}

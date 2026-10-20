@@ -1,0 +1,19 @@
+{
+  "cheap_model": "cheap",
+  "strong_model": "strong",
+  "max_output_tokens": 256,
+  "context_chars": 1200,
+  "request_timeout_seconds": 60,
+  "models": [
+    {
+      "id": "cheap", "provider": "mock", "model": "offline-cheap",
+      "quality": 0.35, "input_usd_per_million": 0,
+      "output_usd_per_million": 0, "latency_seconds": 0.04
+    },
+    {
+      "id": "strong", "provider": "mock", "model": "offline-strong",
+      "quality": 0.9, "input_usd_per_million": 1,
+      "output_usd_per_million": 3, "latency_seconds": 0.08
+    }
+  ]
+}

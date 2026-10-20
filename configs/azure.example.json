@@ -1,0 +1,67 @@
+{
+  "cheap_model": "cheap",
+  "strong_model": "strong",
+  "max_output_tokens": 2048,
+  "context_chars": 1200,
+  "request_timeout_seconds": 90,
+  "models": [
+    {
+      "id": "cheap",
+      "provider": "azure",
+      "model": "${AZURE_CHEAP_DEPLOYMENT}",
+      "endpoint": "${AZURE_CHAT_ENDPOINT}",
+      "protocol": "chat",
+      "auth_header": "api-key",
+      "api_key_env": "AZURE_API_KEY",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.4,
+      "input_usd_per_million": "${AZURE_CHEAP_INPUT_USD_PER_MILLION}",
+      "output_usd_per_million": "${AZURE_CHEAP_OUTPUT_USD_PER_MILLION}",
+      "latency_seconds": 3,
+      "performance_profile": "GPT-4.1 mini: compact instruction-following model without an explicit reasoning phase; unmeasured capability prior.",
+      "model_type": "general",
+      "extra_body": {}
+    },
+    {
+      "id": "medium",
+      "provider": "azure",
+      "model": "${AZURE_MEDIUM_DEPLOYMENT}",
+      "endpoint": "${AZURE_CHAT_ENDPOINT}",
+      "protocol": "chat",
+      "auth_header": "api-key",
+      "api_key_env": "AZURE_API_KEY",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.65,
+      "input_usd_per_million": "${AZURE_MEDIUM_INPUT_USD_PER_MILLION}",
+      "output_usd_per_million": "${AZURE_MEDIUM_OUTPUT_USD_PER_MILLION}",
+      "latency_seconds": 6,
+      "performance_profile": "GPT-5 mini: smaller reasoning model; unmeasured capability and latency priors.",
+      "model_type": "reasoning",
+      "extra_body": {
+        "reasoning_effort": "low"
+      }
+    },
+    {
+      "id": "strong",
+      "provider": "azure",
+      "model": "${AZURE_STRONG_DEPLOYMENT}",
+      "endpoint": "${AZURE_CHAT_ENDPOINT}",
+      "protocol": "chat",
+      "auth_header": "api-key",
+      "api_key_env": "AZURE_API_KEY",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.9,
+      "input_usd_per_million": "${AZURE_STRONG_INPUT_USD_PER_MILLION}",
+      "output_usd_per_million": "${AZURE_STRONG_OUTPUT_USD_PER_MILLION}",
+      "latency_seconds": 10,
+      "performance_profile": "GPT-5: full reasoning model, highest configured capability prior in this three-model experiment.",
+      "model_type": "reasoning",
+      "extra_body": {
+        "reasoning_effort": "low"
+      }
+    }
+  ],
+  "medium_model": "medium",
+  "pool_count": 2,
+  "pool_min_size": 2
+}

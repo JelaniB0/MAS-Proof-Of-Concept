@@ -1,0 +1,605 @@
+{
+  "notes": [
+    "Training scores are not held-out evaluation scores.",
+    "Policy-gradient loss is not prediction error; a smaller loss alone does not establish better accuracy or efficiency.",
+    "Rollout decisions combine learning, different questions and random sampling.",
+    "Only fixed-probe snapshots compare the same questions after parameter updates; older runs have none.",
+    "Old update boundaries are left unknown rather than reconstructed from batch size."
+  ],
+  "rollouts": [
+    {
+      "rollout": 1,
+      "attempt": 1,
+      "key": "0ce9dc3c9d1fd53e715ec7eb7b399ffc9543acabb7773addcc0bf46c7601fca4",
+      "question_preview": "A solution contains 2.00 mole of acetic acid, CH3COOH, and 1.00 mole of calcium acetate, Ca(CH3COO)2. The solution is able to resist the addition of a small amo",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 1.0,
+      "loss": 7.067021369934082,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 5,
+      "calls": 5,
+      "tokens": 2112,
+      "cost_usd": 0.0,
+      "graph_seconds": 9.428128299998207,
+      "assignments": {
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 8,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "critic": "cheap",
+          "mathematician": "cheap",
+          "psychologist": "cheap",
+          "historian": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 5,
+        "active_workers": 4,
+        "edges": [
+          [
+            "critic",
+            "psychologist"
+          ],
+          [
+            "mathematician",
+            "psychologist"
+          ],
+          [
+            "mathematician",
+            "historian"
+          ],
+          [
+            "psychologist",
+            "historian"
+          ],
+          [
+            "critic",
+            "synthesizer"
+          ],
+          [
+            "mathematician",
+            "synthesizer"
+          ],
+          [
+            "psychologist",
+            "synthesizer"
+          ],
+          [
+            "historian",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.4683840870857239,
+        "ease": 0.5316159129142761,
+        "effective_difficulty": 1.0,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap"
+          ]
+        ],
+        "filtered_models": [
+          "medium",
+          "strong"
+        ],
+        "model_probabilities": {
+          "knowlegable_expert": {
+            "cheap": 1.0
+          },
+          "critic": {
+            "cheap": 1.0
+          },
+          "mathematician": {
+            "cheap": 1.0
+          },
+          "psychologist": {
+            "cheap": 1.0
+          },
+          "historian": {
+            "cheap": 1.0
+          }
+        },
+        "keep_probabilities": {
+          "knowlegable_expert": 0.4852629005908966,
+          "critic": 0.4898003041744232,
+          "mathematician": 0.4925338625907898,
+          "psychologist": 0.49046722054481506,
+          "historian": 0.4893503487110138
+        },
+        "edge_probabilities": {
+          "critic->mathematician": 0.5850896239280701,
+          "critic->psychologist": 0.5865870714187622,
+          "critic->historian": 0.5845990777015686,
+          "mathematician->psychologist": 0.589445948600769,
+          "mathematician->historian": 0.5875336527824402,
+          "psychologist->historian": 0.5896041989326477
+        },
+        "hop_limit": 2.913674831390381,
+        "hop_probabilities": [
+          0.4472128748893738,
+          0.1918996274471283,
+          0.3608875274658203
+        ],
+        "pruned_agents": [
+          "knowlegable_expert"
+        ],
+        "hop_pruned_edges": [
+          [
+            "critic",
+            "mathematician"
+          ]
+        ],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -7.0497565269470215
+      }
+    },
+    {
+      "rollout": 2,
+      "attempt": 1,
+      "key": "30619591e6b96172261a3564c687978f475a1a57acf62dc0bcbd6ca5ce36aa7a",
+      "question_preview": "How many axles does a standard automobile have?",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 1.0,
+      "loss": 8.163846015930176,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 5,
+      "calls": 5,
+      "tokens": 2447,
+      "cost_usd": 0.0,
+      "graph_seconds": 9.160973300000478,
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 6,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "knowlegable_expert": "cheap",
+          "critic": "cheap",
+          "psychologist": "cheap",
+          "historian": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 5,
+        "active_workers": 4,
+        "edges": [
+          [
+            "critic",
+            "psychologist"
+          ],
+          [
+            "critic",
+            "historian"
+          ],
+          [
+            "knowlegable_expert",
+            "synthesizer"
+          ],
+          [
+            "critic",
+            "synthesizer"
+          ],
+          [
+            "psychologist",
+            "synthesizer"
+          ],
+          [
+            "historian",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.4819917678833008,
+        "ease": 0.5180082321166992,
+        "effective_difficulty": 1.0,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap"
+          ]
+        ],
+        "filtered_models": [
+          "medium",
+          "strong"
+        ],
+        "model_probabilities": {
+          "knowlegable_expert": {
+            "cheap": 1.0
+          },
+          "critic": {
+            "cheap": 1.0
+          },
+          "mathematician": {
+            "cheap": 1.0
+          },
+          "psychologist": {
+            "cheap": 1.0
+          },
+          "historian": {
+            "cheap": 1.0
+          }
+        },
+        "keep_probabilities": {
+          "knowlegable_expert": 0.4852629005908966,
+          "critic": 0.4898003041744232,
+          "mathematician": 0.4925338625907898,
+          "psychologist": 0.49046722054481506,
+          "historian": 0.4893503487110138
+        },
+        "edge_probabilities": {
+          "knowlegable_expert->critic": 0.5870592594146729,
+          "knowlegable_expert->psychologist": 0.5889868140220642,
+          "knowlegable_expert->historian": 0.588171124458313,
+          "critic->psychologist": 0.5865870714187622,
+          "critic->historian": 0.5845990777015686,
+          "psychologist->historian": 0.5896041989326477
+        },
+        "hop_limit": 2.8409717082977295,
+        "hop_probabilities": [
+          0.4735390543937683,
+          0.21195021271705627,
+          0.3145107328891754
+        ],
+        "pruned_agents": [
+          "mathematician"
+        ],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -8.163846015930176
+      }
+    },
+    {
+      "rollout": 3,
+      "attempt": 1,
+      "key": "fb80b2c80e14c661cd2693fdf7fb1639eb1eb097a8b169a1af70aa77c0188fec",
+      "question_preview": "Which of the following is true of a valid categorical syllogism?",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 1.0,
+      "loss": 0.12107709795236588,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 6,
+      "calls": 6,
+      "tokens": 3478,
+      "cost_usd": 0.0,
+      "graph_seconds": 11.726075200000196,
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 14,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "knowlegable_expert": "cheap",
+          "critic": "cheap",
+          "mathematician": "cheap",
+          "psychologist": "cheap",
+          "historian": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 6,
+        "active_workers": 5,
+        "edges": [
+          [
+            "knowlegable_expert",
+            "mathematician"
+          ],
+          [
+            "knowlegable_expert",
+            "psychologist"
+          ],
+          [
+            "knowlegable_expert",
+            "historian"
+          ],
+          [
+            "critic",
+            "mathematician"
+          ],
+          [
+            "critic",
+            "psychologist"
+          ],
+          [
+            "critic",
+            "historian"
+          ],
+          [
+            "mathematician",
+            "psychologist"
+          ],
+          [
+            "mathematician",
+            "historian"
+          ],
+          [
+            "psychologist",
+            "historian"
+          ],
+          [
+            "knowlegable_expert",
+            "synthesizer"
+          ],
+          [
+            "critic",
+            "synthesizer"
+          ],
+          [
+            "mathematician",
+            "synthesizer"
+          ],
+          [
+            "psychologist",
+            "synthesizer"
+          ],
+          [
+            "historian",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.5091109871864319,
+        "ease": 0.4908890128135681,
+        "effective_difficulty": 1.0,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap"
+          ]
+        ],
+        "filtered_models": [
+          "medium",
+          "strong"
+        ],
+        "model_probabilities": {
+          "knowlegable_expert": {
+            "cheap": 1.0
+          },
+          "critic": {
+            "cheap": 1.0
+          },
+          "mathematician": {
+            "cheap": 1.0
+          },
+          "psychologist": {
+            "cheap": 1.0
+          },
+          "historian": {
+            "cheap": 1.0
+          }
+        },
+        "keep_probabilities": {
+          "knowlegable_expert": 0.9909995198249817,
+          "critic": 1.0,
+          "mathematician": 1.0,
+          "psychologist": 1.0,
+          "historian": 0.9999992847442627
+        },
+        "edge_probabilities": {
+          "knowlegable_expert->critic": 1.0,
+          "knowlegable_expert->mathematician": 1.0,
+          "knowlegable_expert->psychologist": 1.0,
+          "knowlegable_expert->historian": 1.0,
+          "critic->mathematician": 1.0,
+          "critic->psychologist": 1.0,
+          "critic->historian": 1.0,
+          "mathematician->psychologist": 1.0,
+          "mathematician->historian": 1.0,
+          "psychologist->historian": 1.0
+        },
+        "hop_limit": 3.4398951530456543,
+        "hop_probabilities": [
+          0.11939015239477158,
+          0.5567991137504578,
+          0.08833585679531097,
+          0.2354748398065567
+        ],
+        "pruned_agents": [],
+        "hop_pruned_edges": [
+          [
+            "knowlegable_expert",
+            "critic"
+          ]
+        ],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -0.009056131355464458
+      }
+    },
+    {
+      "rollout": 4,
+      "attempt": 1,
+      "key": "26969e9c2b47caa6a21a214d9b5f4013259e7a85d10120986dd96d23d578cad5",
+      "question_preview": "Say the pupil of your eye has a diameter of 5 mm and you have a telescope with an aperture of 50 cm. How much more light can the telescope gather than your eye?",
+      "epoch": 0,
+      "score": 1.0,
+      "reward": 1.0,
+      "loss": 0.009055770002305508,
+      "policy_steps_before": null,
+      "policy_steps_after": null,
+      "agents": 6,
+      "calls": 6,
+      "tokens": 3865,
+      "cost_usd": 0.0,
+      "graph_seconds": 11.379000299999461,
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "connections": 15,
+      "policy": {
+        "topology": "adaptive",
+        "assignments": {
+          "knowlegable_expert": "cheap",
+          "critic": "cheap",
+          "mathematician": "cheap",
+          "psychologist": "cheap",
+          "historian": "cheap",
+          "synthesizer": "strong"
+        },
+        "active_agents": 6,
+        "active_workers": 5,
+        "edges": [
+          [
+            "knowlegable_expert",
+            "critic"
+          ],
+          [
+            "knowlegable_expert",
+            "mathematician"
+          ],
+          [
+            "knowlegable_expert",
+            "psychologist"
+          ],
+          [
+            "knowlegable_expert",
+            "historian"
+          ],
+          [
+            "critic",
+            "mathematician"
+          ],
+          [
+            "critic",
+            "psychologist"
+          ],
+          [
+            "critic",
+            "historian"
+          ],
+          [
+            "mathematician",
+            "psychologist"
+          ],
+          [
+            "mathematician",
+            "historian"
+          ],
+          [
+            "psychologist",
+            "historian"
+          ],
+          [
+            "knowlegable_expert",
+            "synthesizer"
+          ],
+          [
+            "critic",
+            "synthesizer"
+          ],
+          [
+            "mathematician",
+            "synthesizer"
+          ],
+          [
+            "psychologist",
+            "synthesizer"
+          ],
+          [
+            "historian",
+            "synthesizer"
+          ]
+        ],
+        "difficulty": 0.461253821849823,
+        "ease": 0.538746178150177,
+        "effective_difficulty": 1.0,
+        "selected_pool": 0,
+        "pool_probabilities": [
+          1.0
+        ],
+        "pools": [
+          [
+            "cheap"
+          ]
+        ],
+        "filtered_models": [
+          "medium",
+          "strong"
+        ],
+        "model_probabilities": {
+          "knowlegable_expert": {
+            "cheap": 1.0
+          },
+          "critic": {
+            "cheap": 1.0
+          },
+          "mathematician": {
+            "cheap": 1.0
+          },
+          "psychologist": {
+            "cheap": 1.0
+          },
+          "historian": {
+            "cheap": 1.0
+          }
+        },
+        "keep_probabilities": {
+          "knowlegable_expert": 0.9909998774528503,
+          "critic": 1.0,
+          "mathematician": 1.0,
+          "psychologist": 1.0,
+          "historian": 0.9999992847442627
+        },
+        "edge_probabilities": {
+          "knowlegable_expert->critic": 1.0,
+          "knowlegable_expert->mathematician": 1.0,
+          "knowlegable_expert->psychologist": 1.0,
+          "knowlegable_expert->historian": 1.0,
+          "critic->mathematician": 1.0,
+          "critic->psychologist": 1.0,
+          "critic->historian": 1.0,
+          "mathematician->psychologist": 1.0,
+          "mathematician->historian": 1.0,
+          "psychologist->historian": 1.0
+        },
+        "hop_limit": 4.095383644104004,
+        "hop_probabilities": [
+          0.0027883502189069986,
+          0.03083149716258049,
+          0.834588348865509,
+          0.13179175555706024
+        ],
+        "pruned_agents": [],
+        "hop_pruned_edges": [],
+        "sampled": true,
+        "feasible": true,
+        "joint_log_probability": -0.009055770002305508
+      }
+    }
+  ],
+  "fixed_probes": [],
+  "failed_graphs": []
+}

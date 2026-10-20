@@ -1,0 +1,436 @@
+{
+  "observed_policy": {
+    "model_assignments": {
+      "cheap": 15,
+      "strong": 3
+    },
+    "distinct_observed_configurations": 1,
+    "mean_active_agents": 6,
+    "mean_connections": 15
+  },
+  "questions": [
+    {
+      "question": 1,
+      "key": "ec878652c9ee436df8be9025ffe0b676c464e22edea1c549612d8499241be359",
+      "topology": "adaptive",
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "critic"
+        ],
+        [
+          "knowlegable_expert",
+          "mathematician"
+        ],
+        [
+          "knowlegable_expert",
+          "psychologist"
+        ],
+        [
+          "knowlegable_expert",
+          "historian"
+        ],
+        [
+          "critic",
+          "mathematician"
+        ],
+        [
+          "critic",
+          "psychologist"
+        ],
+        [
+          "critic",
+          "historian"
+        ],
+        [
+          "mathematician",
+          "psychologist"
+        ],
+        [
+          "mathematician",
+          "historian"
+        ],
+        [
+          "psychologist",
+          "historian"
+        ],
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.47991514205932617,
+      "ease": 0.5200848579406738,
+      "effective_difficulty": 0.8799151182174683,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap"
+        ]
+      ],
+      "filtered_models": [
+        "medium",
+        "strong"
+      ],
+      "model_probabilities": {
+        "knowlegable_expert": {
+          "cheap": 1.0
+        },
+        "critic": {
+          "cheap": 1.0
+        },
+        "mathematician": {
+          "cheap": 1.0
+        },
+        "psychologist": {
+          "cheap": 1.0
+        },
+        "historian": {
+          "cheap": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "knowlegable_expert": 1.0,
+        "critic": 1.0,
+        "mathematician": 1.0,
+        "psychologist": 1.0,
+        "historian": 1.0
+      },
+      "edge_probabilities": {
+        "knowlegable_expert->critic": 1.0,
+        "knowlegable_expert->mathematician": 1.0,
+        "knowlegable_expert->psychologist": 1.0,
+        "knowlegable_expert->historian": 1.0,
+        "critic->mathematician": 1.0,
+        "critic->psychologist": 1.0,
+        "critic->historian": 1.0,
+        "mathematician->psychologist": 1.0,
+        "mathematician->historian": 1.0,
+        "psychologist->historian": 1.0
+      },
+      "hop_limit": 5.0,
+      "hop_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    },
+    {
+      "question": 2,
+      "key": "7cc752cd21b35fa535a4f5ee9ea3c109cadd02fd8220f8f39104d429c3fae1c3",
+      "topology": "adaptive",
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "critic"
+        ],
+        [
+          "knowlegable_expert",
+          "mathematician"
+        ],
+        [
+          "knowlegable_expert",
+          "psychologist"
+        ],
+        [
+          "knowlegable_expert",
+          "historian"
+        ],
+        [
+          "critic",
+          "mathematician"
+        ],
+        [
+          "critic",
+          "psychologist"
+        ],
+        [
+          "critic",
+          "historian"
+        ],
+        [
+          "mathematician",
+          "psychologist"
+        ],
+        [
+          "mathematician",
+          "historian"
+        ],
+        [
+          "psychologist",
+          "historian"
+        ],
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.4862358570098877,
+      "ease": 0.5137641429901123,
+      "effective_difficulty": 0.8862358331680298,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap"
+        ]
+      ],
+      "filtered_models": [
+        "medium",
+        "strong"
+      ],
+      "model_probabilities": {
+        "knowlegable_expert": {
+          "cheap": 1.0
+        },
+        "critic": {
+          "cheap": 1.0
+        },
+        "mathematician": {
+          "cheap": 1.0
+        },
+        "psychologist": {
+          "cheap": 1.0
+        },
+        "historian": {
+          "cheap": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "knowlegable_expert": 1.0,
+        "critic": 1.0,
+        "mathematician": 1.0,
+        "psychologist": 1.0,
+        "historian": 1.0
+      },
+      "edge_probabilities": {
+        "knowlegable_expert->critic": 1.0,
+        "knowlegable_expert->mathematician": 1.0,
+        "knowlegable_expert->psychologist": 1.0,
+        "knowlegable_expert->historian": 1.0,
+        "critic->mathematician": 1.0,
+        "critic->psychologist": 1.0,
+        "critic->historian": 1.0,
+        "mathematician->psychologist": 1.0,
+        "mathematician->historian": 1.0,
+        "psychologist->historian": 1.0
+      },
+      "hop_limit": 5.0,
+      "hop_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    },
+    {
+      "question": 3,
+      "key": "11f6c64523a7a51223976b2d485d3037cd0dd2034b8fc7d8445f72626baf2cc1",
+      "topology": "adaptive",
+      "assignments": {
+        "knowlegable_expert": "cheap",
+        "critic": "cheap",
+        "mathematician": "cheap",
+        "psychologist": "cheap",
+        "historian": "cheap",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "knowlegable_expert",
+          "critic"
+        ],
+        [
+          "knowlegable_expert",
+          "mathematician"
+        ],
+        [
+          "knowlegable_expert",
+          "psychologist"
+        ],
+        [
+          "knowlegable_expert",
+          "historian"
+        ],
+        [
+          "critic",
+          "mathematician"
+        ],
+        [
+          "critic",
+          "psychologist"
+        ],
+        [
+          "critic",
+          "historian"
+        ],
+        [
+          "mathematician",
+          "psychologist"
+        ],
+        [
+          "mathematician",
+          "historian"
+        ],
+        [
+          "psychologist",
+          "historian"
+        ],
+        [
+          "knowlegable_expert",
+          "synthesizer"
+        ],
+        [
+          "critic",
+          "synthesizer"
+        ],
+        [
+          "mathematician",
+          "synthesizer"
+        ],
+        [
+          "psychologist",
+          "synthesizer"
+        ],
+        [
+          "historian",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5052191019058228,
+      "ease": 0.49478086829185486,
+      "effective_difficulty": 0.9052190780639648,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap"
+        ]
+      ],
+      "filtered_models": [
+        "medium",
+        "strong"
+      ],
+      "model_probabilities": {
+        "knowlegable_expert": {
+          "cheap": 1.0
+        },
+        "critic": {
+          "cheap": 1.0
+        },
+        "mathematician": {
+          "cheap": 1.0
+        },
+        "psychologist": {
+          "cheap": 1.0
+        },
+        "historian": {
+          "cheap": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "knowlegable_expert": 1.0,
+        "critic": 1.0,
+        "mathematician": 1.0,
+        "psychologist": 1.0,
+        "historian": 1.0
+      },
+      "edge_probabilities": {
+        "knowlegable_expert->critic": 1.0,
+        "knowlegable_expert->mathematician": 1.0,
+        "knowlegable_expert->psychologist": 1.0,
+        "knowlegable_expert->historian": 1.0,
+        "critic->mathematician": 1.0,
+        "critic->psychologist": 1.0,
+        "critic->historian": 1.0,
+        "mathematician->psychologist": 1.0,
+        "mathematician->historian": 1.0,
+        "psychologist->historian": 1.0
+      },
+      "hop_limit": 5.0,
+      "hop_probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    }
+  ]
+}

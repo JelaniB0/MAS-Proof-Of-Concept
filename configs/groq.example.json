@@ -1,0 +1,60 @@
+{
+  "cheap_model": "cheap",
+  "strong_model": "strong",
+  "max_output_tokens": 2048,
+  "context_chars": 1200,
+  "request_timeout_seconds": 90,
+  "models": [
+    {
+      "id": "cheap",
+      "provider": "groq",
+      "model": "${GROQ_CHEAP_MODEL}",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "protocol": "chat",
+      "api_key_env": "GROQ_API_KEY",
+      "auth_header": "Authorization",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.4,
+      "input_usd_per_million": 0,
+      "output_usd_per_million": 0,
+      "latency_seconds": 3,
+      "performance_profile": "GPT-OSS 20B: smaller open-weight reasoning candidate; quality and latency are unmeasured starting priors.",
+      "model_type": "reasoning"
+    },
+    {
+      "id": "medium",
+      "provider": "groq",
+      "model": "${GROQ_MEDIUM_MODEL}",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "protocol": "chat",
+      "api_key_env": "GROQ_API_KEY",
+      "auth_header": "Authorization",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.65,
+      "input_usd_per_million": 0,
+      "output_usd_per_million": 0,
+      "latency_seconds": 6,
+      "performance_profile": "Qwen3.8 27B: alternative-family reasoning candidate (preview); medium is a provisional capability tier, not a price ranking.",
+      "model_type": "reasoning"
+    },
+    {
+      "id": "strong",
+      "provider": "groq",
+      "model": "${GROQ_STRONG_MODEL}",
+      "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+      "protocol": "chat",
+      "api_key_env": "GROQ_API_KEY",
+      "auth_header": "Authorization",
+      "token_limit_field": "max_completion_tokens",
+      "quality": 0.9,
+      "input_usd_per_million": 0,
+      "output_usd_per_million": 0,
+      "latency_seconds": 10,
+      "performance_profile": "GPT-OSS 120B: larger open-weight reasoning candidate; validate task accuracy and latency by profiling.",
+      "model_type": "reasoning"
+    }
+  ],
+  "medium_model": "medium",
+  "pool_count": 2,
+  "pool_min_size": 2
+}

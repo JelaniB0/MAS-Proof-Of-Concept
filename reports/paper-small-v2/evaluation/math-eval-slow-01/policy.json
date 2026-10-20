@@ -1,0 +1,462 @@
+{
+  "observed_policy": {
+    "model_assignments": {
+      "strong": 18
+    },
+    "distinct_observed_configurations": 1,
+    "mean_active_agents": 6,
+    "mean_connections": 15
+  },
+  "questions": [
+    {
+      "question": 1,
+      "key": "5332e48630a9527f0c91152fb1314627e270a9d984f1cacfb50ce5b73bebeb33",
+      "topology": "adaptive",
+      "assignments": {
+        "math_solver": "strong",
+        "mathematical_analyst": "strong",
+        "programming_expert": "strong",
+        "inspector": "strong",
+        "math_solver_2": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "math_solver",
+          "mathematical_analyst"
+        ],
+        [
+          "math_solver",
+          "programming_expert"
+        ],
+        [
+          "math_solver",
+          "inspector"
+        ],
+        [
+          "math_solver",
+          "math_solver_2"
+        ],
+        [
+          "mathematical_analyst",
+          "programming_expert"
+        ],
+        [
+          "mathematical_analyst",
+          "inspector"
+        ],
+        [
+          "mathematical_analyst",
+          "math_solver_2"
+        ],
+        [
+          "programming_expert",
+          "inspector"
+        ],
+        [
+          "programming_expert",
+          "math_solver_2"
+        ],
+        [
+          "inspector",
+          "math_solver_2"
+        ],
+        [
+          "math_solver",
+          "synthesizer"
+        ],
+        [
+          "mathematical_analyst",
+          "synthesizer"
+        ],
+        [
+          "programming_expert",
+          "synthesizer"
+        ],
+        [
+          "inspector",
+          "synthesizer"
+        ],
+        [
+          "math_solver_2",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5019593238830566,
+      "ease": 0.49804064631462097,
+      "effective_difficulty": 0.8019593358039856,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap",
+          "strong"
+        ],
+        [
+          "cheap",
+          "strong"
+        ]
+      ],
+      "filtered_models": [
+        "medium"
+      ],
+      "model_probabilities": {
+        "math_solver": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "mathematical_analyst": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "programming_expert": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "inspector": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "math_solver_2": {
+          "cheap": 0.0,
+          "strong": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "math_solver": 1.0,
+        "mathematical_analyst": 1.0,
+        "programming_expert": 1.0,
+        "inspector": 1.0,
+        "math_solver_2": 1.0
+      },
+      "edge_probabilities": {
+        "math_solver->mathematical_analyst": 1.0,
+        "math_solver->programming_expert": 1.0,
+        "math_solver->inspector": 1.0,
+        "math_solver->math_solver_2": 1.0,
+        "mathematical_analyst->programming_expert": 1.0,
+        "mathematical_analyst->inspector": 1.0,
+        "mathematical_analyst->math_solver_2": 1.0,
+        "programming_expert->inspector": 1.0,
+        "programming_expert->math_solver_2": 1.0,
+        "inspector->math_solver_2": 1.0
+      },
+      "hop_limit": 4.0006818771362305,
+      "hop_probabilities": [
+        1.724858300633514e-08,
+        5.361998692277048e-11,
+        0.9993175268173218,
+        0.0006824414012953639
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    },
+    {
+      "question": 2,
+      "key": "eb19458226880efa62f7c2eadee0784892f986a11b32fc4520126b6c2523e265",
+      "topology": "adaptive",
+      "assignments": {
+        "math_solver": "strong",
+        "mathematical_analyst": "strong",
+        "programming_expert": "strong",
+        "inspector": "strong",
+        "math_solver_2": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "math_solver",
+          "mathematical_analyst"
+        ],
+        [
+          "math_solver",
+          "programming_expert"
+        ],
+        [
+          "math_solver",
+          "inspector"
+        ],
+        [
+          "math_solver",
+          "math_solver_2"
+        ],
+        [
+          "mathematical_analyst",
+          "programming_expert"
+        ],
+        [
+          "mathematical_analyst",
+          "inspector"
+        ],
+        [
+          "mathematical_analyst",
+          "math_solver_2"
+        ],
+        [
+          "programming_expert",
+          "inspector"
+        ],
+        [
+          "programming_expert",
+          "math_solver_2"
+        ],
+        [
+          "inspector",
+          "math_solver_2"
+        ],
+        [
+          "math_solver",
+          "synthesizer"
+        ],
+        [
+          "mathematical_analyst",
+          "synthesizer"
+        ],
+        [
+          "programming_expert",
+          "synthesizer"
+        ],
+        [
+          "inspector",
+          "synthesizer"
+        ],
+        [
+          "math_solver_2",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.5143628120422363,
+      "ease": 0.48563721776008606,
+      "effective_difficulty": 0.8143628239631653,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap",
+          "strong"
+        ],
+        [
+          "cheap",
+          "strong"
+        ]
+      ],
+      "filtered_models": [
+        "medium"
+      ],
+      "model_probabilities": {
+        "math_solver": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "mathematical_analyst": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "programming_expert": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "inspector": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "math_solver_2": {
+          "cheap": 0.0,
+          "strong": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "math_solver": 1.0,
+        "mathematical_analyst": 1.0,
+        "programming_expert": 1.0,
+        "inspector": 1.0,
+        "math_solver_2": 1.0
+      },
+      "edge_probabilities": {
+        "math_solver->mathematical_analyst": 1.0,
+        "math_solver->programming_expert": 1.0,
+        "math_solver->inspector": 1.0,
+        "math_solver->math_solver_2": 1.0,
+        "mathematical_analyst->programming_expert": 1.0,
+        "mathematical_analyst->inspector": 1.0,
+        "mathematical_analyst->math_solver_2": 1.0,
+        "programming_expert->inspector": 1.0,
+        "programming_expert->math_solver_2": 1.0,
+        "inspector->math_solver_2": 1.0
+      },
+      "hop_limit": 4.001959323883057,
+      "hop_probabilities": [
+        9.604321782319403e-09,
+        4.982190333034653e-13,
+        0.998040497303009,
+        0.001959470799192786
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    },
+    {
+      "question": 3,
+      "key": "1e34aa502a227cd0e6a96f326b5500c9c22c8df0a0dc20919f036b0f8592ae3b",
+      "topology": "adaptive",
+      "assignments": {
+        "math_solver": "strong",
+        "mathematical_analyst": "strong",
+        "programming_expert": "strong",
+        "inspector": "strong",
+        "math_solver_2": "strong",
+        "synthesizer": "strong"
+      },
+      "active_agents": 6,
+      "active_workers": 5,
+      "edges": [
+        [
+          "math_solver",
+          "mathematical_analyst"
+        ],
+        [
+          "math_solver",
+          "programming_expert"
+        ],
+        [
+          "math_solver",
+          "inspector"
+        ],
+        [
+          "math_solver",
+          "math_solver_2"
+        ],
+        [
+          "mathematical_analyst",
+          "programming_expert"
+        ],
+        [
+          "mathematical_analyst",
+          "inspector"
+        ],
+        [
+          "mathematical_analyst",
+          "math_solver_2"
+        ],
+        [
+          "programming_expert",
+          "inspector"
+        ],
+        [
+          "programming_expert",
+          "math_solver_2"
+        ],
+        [
+          "inspector",
+          "math_solver_2"
+        ],
+        [
+          "math_solver",
+          "synthesizer"
+        ],
+        [
+          "mathematical_analyst",
+          "synthesizer"
+        ],
+        [
+          "programming_expert",
+          "synthesizer"
+        ],
+        [
+          "inspector",
+          "synthesizer"
+        ],
+        [
+          "math_solver_2",
+          "synthesizer"
+        ]
+      ],
+      "difficulty": 0.4947534203529358,
+      "ease": 0.5052465796470642,
+      "effective_difficulty": 0.7947534322738647,
+      "selected_pool": 0,
+      "pool_probabilities": [
+        1.0
+      ],
+      "pools": [
+        [
+          "cheap",
+          "strong"
+        ],
+        [
+          "cheap",
+          "strong"
+        ]
+      ],
+      "filtered_models": [
+        "medium"
+      ],
+      "model_probabilities": {
+        "math_solver": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "mathematical_analyst": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "programming_expert": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "inspector": {
+          "cheap": 0.0,
+          "strong": 1.0
+        },
+        "math_solver_2": {
+          "cheap": 0.0,
+          "strong": 1.0
+        }
+      },
+      "keep_probabilities": {
+        "math_solver": 1.0,
+        "mathematical_analyst": 1.0,
+        "programming_expert": 1.0,
+        "inspector": 1.0,
+        "math_solver_2": 1.0
+      },
+      "edge_probabilities": {
+        "math_solver->mathematical_analyst": 1.0,
+        "math_solver->programming_expert": 1.0,
+        "math_solver->inspector": 1.0,
+        "math_solver->math_solver_2": 1.0,
+        "mathematical_analyst->programming_expert": 1.0,
+        "mathematical_analyst->inspector": 1.0,
+        "mathematical_analyst->math_solver_2": 1.0,
+        "programming_expert->inspector": 1.0,
+        "programming_expert->math_solver_2": 1.0,
+        "inspector->math_solver_2": 1.0
+      },
+      "hop_limit": 4.140723705291748,
+      "hop_probabilities": [
+        3.0833197683932667e-07,
+        1.257501221207935e-11,
+        0.8592751026153564,
+        0.1407245695590973
+      ],
+      "pruned_agents": [],
+      "hop_pruned_edges": [],
+      "sampled": true,
+      "feasible": true,
+      "joint_log_probability": -1.5914452887955122e-05
+    }
+  ]
+}

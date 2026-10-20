@@ -1,0 +1,48 @@
+{
+  "source": "mmlu-cheap-s42.json",
+  "status": "completed",
+  "complete": true,
+  "valid_live_evaluation": true,
+  "modes": [
+    "live"
+  ],
+  "accuracy": 0.6666666666666666,
+  "evaluated": 3,
+  "requested": 3,
+  "calls": 18,
+  "tokens": 5868,
+  "accounted_usd": 0.0,
+  "cost_usage_complete": true,
+  "nonzero_configured_prices": false,
+  "total_query_seconds": 0,
+  "policy_steps": null,
+  "sample_configuration": null,
+  "request_spacing_seconds": [
+    2.0
+  ],
+  "observed_policy": {
+    "model_assignments": {
+      "cheap": 18
+    },
+    "distinct_observed_configurations": 1,
+    "mean_active_agents": 6,
+    "mean_connections": 5
+  },
+  "model_profiles": [
+    {
+      "id": "cheap",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "quality": 1.0,
+      "input_usd_per_million": 0,
+      "output_usd_per_million": 0,
+      "latency_seconds": 1.707492949999505
+    }
+  ],
+  "notes": [
+    "Accuracy is a fraction; a partial or simulated evaluation is not a completed live benchmark.",
+    "USD uses configured prices, not a provider billing statement. Zero prices cannot show monetary savings.",
+    "Latency includes quota pacing. No training improvement is established without a matched baseline.",
+    "Policy decisions are observations on these questions, not a universal routing rule."
+  ]
+}

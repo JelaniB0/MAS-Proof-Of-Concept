@@ -1,0 +1,17 @@
+{
+  "cheap_model": "cheap", "strong_model": "strong",
+  "max_output_tokens": 1024, "context_chars": 1200, "request_timeout_seconds": 90,
+  "models": [
+    {
+      "id": "cheap", "provider": "ollama", "model": "${OLLAMA_MODEL}",
+      "endpoint": "http://localhost:11434/v1/chat/completions", "protocol": "chat",
+      "quality": 0.4, "input_usd_per_million": 0, "output_usd_per_million": 0, "latency_seconds": 5
+    },
+    {
+      "id": "strong", "provider": "azure", "model": "${AZURE_STRONG_DEPLOYMENT}",
+      "endpoint": "${AZURE_CHAT_ENDPOINT}", "protocol": "chat", "auth_header": "api-key",
+      "api_key_env": "AZURE_API_KEY", "token_limit_field": "max_completion_tokens", "quality": 0.9,
+      "input_usd_per_million": null, "output_usd_per_million": null, "latency_seconds": 10
+    }
+  ]
+}

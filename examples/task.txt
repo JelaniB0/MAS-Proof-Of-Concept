@@ -1,0 +1,2 @@
+A small team needs to store 10 GB of shared project files, track changes, and recover deleted work.
+Propose a simple approach. Explain three tradeoffs and a short recovery procedure.

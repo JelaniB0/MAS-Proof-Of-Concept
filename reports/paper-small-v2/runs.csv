@@ -1,0 +1,17 @@
+kind,name,status,accuracy,questions,policy_steps,calls,report
+evaluation,math-eval-now,provider_or_budget_failure,0.0,1,3,6,evaluation/math-eval-now/README.md
+evaluation,math-eval-slow-01,completed,1.0,3,3,18,evaluation/math-eval-slow-01/README.md
+evaluation,math-learned-s42-p1,provider_or_budget_failure,0.5,2,3,7,evaluation/math-learned-s42-p1/README.md
+training,math-s42-p1,completed,1.0,4,3,26,training/math-s42-p1/README.md
+evaluation,mmlu-balanced-s42,completed,0.6666666666666666,3,,18,evaluation/mmlu-balanced-s42/README.md
+evaluation,mmlu-cheap-s42,completed,0.6666666666666666,3,,18,evaluation/mmlu-cheap-s42/README.md
+evaluation,mmlu-learned-s42-p1,completed,0.6666666666666666,3,2,18,evaluation/mmlu-learned-s42-p1/README.md
+evaluation,mmlu-learned-s42-p2,completed,0.6666666666666666,3,2,18,evaluation/mmlu-learned-s42-p2/README.md
+evaluation,mmlu-learned-s42-p3,completed,0.6666666666666666,3,2,18,evaluation/mmlu-learned-s42-p3/README.md
+evaluation,mmlu-learned-s42-p4,completed,1.0,3,2,18,evaluation/mmlu-learned-s42-p4/README.md
+evaluation,mmlu-medium-s42,completed,0.6666666666666666,3,,18,evaluation/mmlu-medium-s42/README.md
+training,mmlu-s42-p1,completed,1.0,4,2,22,training/mmlu-s42-p1/README.md
+training,mmlu-s42-p2,completed,1.0,4,2,22,training/mmlu-s42-p2/README.md
+training,mmlu-s42-p3,completed,1.0,4,2,22,training/mmlu-s42-p3/README.md
+training,mmlu-s42-p4,completed,1.0,4,2,22,training/mmlu-s42-p4/README.md
+evaluation,mmlu-strong-s42,completed,0.6666666666666666,3,,18,evaluation/mmlu-strong-s42/README.md

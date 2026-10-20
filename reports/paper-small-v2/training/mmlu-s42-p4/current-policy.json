@@ -1,0 +1,145 @@
+{
+  "basis": "last sampled training rollout",
+  "policy_steps": 2,
+  "snapshot": null,
+  "last_observed_training_decision": {
+    "topology": "adaptive",
+    "assignments": {
+      "knowlegable_expert": "cheap",
+      "critic": "cheap",
+      "mathematician": "cheap",
+      "psychologist": "cheap",
+      "historian": "cheap",
+      "synthesizer": "strong"
+    },
+    "active_agents": 6,
+    "active_workers": 5,
+    "edges": [
+      [
+        "knowlegable_expert",
+        "critic"
+      ],
+      [
+        "knowlegable_expert",
+        "mathematician"
+      ],
+      [
+        "knowlegable_expert",
+        "psychologist"
+      ],
+      [
+        "knowlegable_expert",
+        "historian"
+      ],
+      [
+        "critic",
+        "mathematician"
+      ],
+      [
+        "critic",
+        "psychologist"
+      ],
+      [
+        "critic",
+        "historian"
+      ],
+      [
+        "mathematician",
+        "psychologist"
+      ],
+      [
+        "mathematician",
+        "historian"
+      ],
+      [
+        "psychologist",
+        "historian"
+      ],
+      [
+        "knowlegable_expert",
+        "synthesizer"
+      ],
+      [
+        "critic",
+        "synthesizer"
+      ],
+      [
+        "mathematician",
+        "synthesizer"
+      ],
+      [
+        "psychologist",
+        "synthesizer"
+      ],
+      [
+        "historian",
+        "synthesizer"
+      ]
+    ],
+    "difficulty": 0.461253821849823,
+    "ease": 0.538746178150177,
+    "effective_difficulty": 1.0,
+    "selected_pool": 0,
+    "pool_probabilities": [
+      1.0
+    ],
+    "pools": [
+      [
+        "cheap"
+      ]
+    ],
+    "filtered_models": [
+      "medium",
+      "strong"
+    ],
+    "model_probabilities": {
+      "knowlegable_expert": {
+        "cheap": 1.0
+      },
+      "critic": {
+        "cheap": 1.0
+      },
+      "mathematician": {
+        "cheap": 1.0
+      },
+      "psychologist": {
+        "cheap": 1.0
+      },
+      "historian": {
+        "cheap": 1.0
+      }
+    },
+    "keep_probabilities": {
+      "knowlegable_expert": 0.9909998774528503,
+      "critic": 1.0,
+      "mathematician": 1.0,
+      "psychologist": 1.0,
+      "historian": 0.9999992847442627
+    },
+    "edge_probabilities": {
+      "knowlegable_expert->critic": 1.0,
+      "knowlegable_expert->mathematician": 1.0,
+      "knowlegable_expert->psychologist": 1.0,
+      "knowlegable_expert->historian": 1.0,
+      "critic->mathematician": 1.0,
+      "critic->psychologist": 1.0,
+      "critic->historian": 1.0,
+      "mathematician->psychologist": 1.0,
+      "mathematician->historian": 1.0,
+      "psychologist->historian": 1.0
+    },
+    "hop_limit": 4.095383644104004,
+    "hop_probabilities": [
+      0.0027883502189069986,
+      0.03083149716258049,
+      0.834588348865509,
+      0.13179175555706024
+    ],
+    "pruned_agents": [],
+    "hop_pruned_edges": [],
+    "sampled": true,
+    "feasible": true,
+    "joint_log_probability": -0.009055770002305508
+  },
+  "note": "A query-conditioned neural policy cannot be reduced to a single global routing rule."
+}
