@@ -1,0 +1,47 @@
+{
+  "version": "frozen-study-v1",
+  "input_version": "question-input-v1",
+  "pool_contract_id": "7fb070864ed43e17036bf4d2dcec40221b3ba152f3a6396b7e151e991b761c38",
+  "prepared_sha256": {
+    "train": "6f5bf45e9e19ac0dc282d9a2bd0e29d9e4918706b2b25835c32289060cd25e44",
+    "validation": "f02880127047d5ef3c9c3b79d5a32e3981cf206a94039ac512652c2ec4089b82",
+    "test": "0a1928d2a63af219d5ab9b5d8d8da92cefbd0b43b19d3b91eaf5d3fcf9df7773"
+  },
+  "encoder_weights_sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "encoder_configuration_sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0",
+  "tokenizer_sha256": "e9be3c068e54b7c71ebd9ba7bfc48632e741ccd0cfaa4e58f3fabf9bee3db7e9",
+  "configurations": [
+    {
+      "name": "task_natural_mse",
+      "input_mode": "task",
+      "balanced": false,
+      "loss": "mse"
+    },
+    {
+      "name": "task_sqrt_balanced_mse",
+      "input_mode": "task",
+      "balanced": true,
+      "balance_power": 0.5,
+      "loss": "mse"
+    }
+  ],
+  "epochs": 100,
+  "patience": 12,
+  "head": {
+    "hidden_dim": 128,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 256
+  },
+  "selection": "Lowest ensemble validation MSE, averaging datasets equally; test does not select configuration.",
+  "test_status": "Existing test split has been inspected previously; this is an exploratory comparison, not a fresh confirmatory test.",
+  "input_versions": {
+    "task": "routerbench-task-v1"
+  }
+}

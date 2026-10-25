@@ -1,0 +1,62 @@
+{
+  "interpretation": "Exploratory within-subject association with human levels; not fixed-pool difficulty accuracy.",
+  "subjects": {
+    "Algebra": {
+      "questions": 1187,
+      "human_level_spearman": {
+        "weak": 0.3225975455417937,
+        "intermediate": 0.33748255222099766,
+        "strong": 0.3456616362959533
+      }
+    },
+    "Counting & Probability": {
+      "questions": 474,
+      "human_level_spearman": {
+        "weak": 0.016490550841814545,
+        "intermediate": 0.009709653907393019,
+        "strong": 0.005562031389629844
+      }
+    },
+    "Geometry": {
+      "questions": 479,
+      "human_level_spearman": {
+        "weak": 0.21559026220087496,
+        "intermediate": 0.18678934331801664,
+        "strong": 0.17417349239823723
+      }
+    },
+    "Intermediate Algebra": {
+      "questions": 903,
+      "human_level_spearman": {
+        "weak": 0.3051006816544311,
+        "intermediate": 0.2512366802473285,
+        "strong": 0.2521060781647768
+      }
+    },
+    "Number Theory": {
+      "questions": 540,
+      "human_level_spearman": {
+        "weak": 0.30314323361821405,
+        "intermediate": 0.2825758105970532,
+        "strong": 0.2853103549324874
+      }
+    },
+    "Prealgebra": {
+      "questions": 871,
+      "human_level_spearman": {
+        "weak": 0.21411110457296728,
+        "intermediate": 0.16996703779553432,
+        "strong": 0.13091281224351398
+      }
+    },
+    "Precalculus": {
+      "questions": 546,
+      "human_level_spearman": {
+        "weak": 0.3219978028889396,
+        "intermediate": 0.2901307488479153,
+        "strong": 0.2607852875169279
+      }
+    }
+  },
+  "predictor_id": "2dadbec6e82044fcc210b2837cae2e03024234f3d9c7ca8fe3f80fcaf9d4aab3"
+}

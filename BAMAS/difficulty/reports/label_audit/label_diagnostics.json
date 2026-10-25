@@ -1,0 +1,78 @@
+{
+  "by_split": {
+    "train": {
+      "n": 2546,
+      "pool_mean": {
+        "weak": 0.41054595443833464,
+        "intermediate": 0.2882953652788688,
+        "strong": 0.08719560094265515
+      },
+      "zero_target_fraction": {
+        "weak": 0.22230950510604872,
+        "intermediate": 0.3413197172034564,
+        "strong": 0.8106834249803614
+      }
+    },
+    "validation": {
+      "n": 548,
+      "pool_mean": {
+        "weak": 0.4000912408759124,
+        "intermediate": 0.2869525547445255,
+        "strong": 0.08880778588807786
+      },
+      "zero_target_fraction": {
+        "weak": 0.24817518248175183,
+        "intermediate": 0.354014598540146,
+        "strong": 0.8083941605839416
+      }
+    },
+    "test": {
+      "n": 514,
+      "pool_mean": {
+        "weak": 0.38764591439688717,
+        "intermediate": 0.27383268482490275,
+        "strong": 0.07392996108949416
+      },
+      "zero_target_fraction": {
+        "weak": 0.23346303501945526,
+        "intermediate": 0.36964980544747084,
+        "strong": 0.8404669260700389
+      }
+    }
+  },
+  "model_training_accuracy": {
+    "mistralai/mistral-7b-chat": 0.39984289080911234,
+    "meta/llama-2-70b-chat": 0.6307934014139828,
+    "WizardLM/WizardLM-13B-V1.2": 0.6280439905734485,
+    "zero-one-ai/Yi-34B-Chat": 0.6991358994501178,
+    "meta/code-llama-instruct-34b-chat": 0.48114689709347996,
+    "mistralai/mixtral-8x7b-chat": 0.6441476826394344,
+    "claude-instant-v1": 0.8366064414768264,
+    "claude-v1": 0.884917517674784,
+    "gpt-3.5-turbo-1106": 0.8511390416339356,
+    "claude-v2": 0.9218381775333857,
+    "gpt-4-1106-preview": 0.9654359780047133
+  },
+  "supplied_score_vs_regraded_correctness_all_parsed": {
+    "0.0": {
+      "n": 213,
+      "numeric_reference_accuracy": 0.5774647887323944
+    },
+    "0.25": {
+      "n": 19897,
+      "numeric_reference_accuracy": 0.027240287480524702
+    },
+    "0.5": {
+      "n": 11497,
+      "numeric_reference_accuracy": 0.976167695920675
+    },
+    "0.75": {
+      "n": 38291,
+      "numeric_reference_accuracy": 0.9869421012770625
+    },
+    "1.0": {
+      "n": 163,
+      "numeric_reference_accuracy": 0.1411042944785276
+    }
+  }
+}

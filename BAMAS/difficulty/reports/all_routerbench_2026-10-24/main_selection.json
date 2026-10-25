@@ -1,0 +1,279 @@
+{
+  "configuration": {
+    "name": "task_model_sqrt_mse",
+    "input_mode": "task",
+    "balanced": true,
+    "balance_power": 0.5,
+    "loss": "mse",
+    "prediction_level": "model",
+    "groups": {
+      "weak": [
+        "mistralai/mistral-7b-chat",
+        "meta/llama-2-70b-chat",
+        "WizardLM/WizardLM-13B-V1.2",
+        "zero-one-ai/Yi-34B-Chat"
+      ],
+      "intermediate": [
+        "meta/code-llama-instruct-34b-chat",
+        "mistralai/mixtral-8x7b-chat",
+        "claude-instant-v1",
+        "claude-v1"
+      ],
+      "strong": [
+        "gpt-3.5-turbo-1106",
+        "claude-v2",
+        "gpt-4-1106-preview"
+      ]
+    },
+    "model_order": [
+      "mistralai/mistral-7b-chat",
+      "meta/llama-2-70b-chat",
+      "WizardLM/WizardLM-13B-V1.2",
+      "zero-one-ai/Yi-34B-Chat",
+      "meta/code-llama-instruct-34b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "claude-instant-v1",
+      "claude-v1",
+      "gpt-3.5-turbo-1106",
+      "claude-v2",
+      "gpt-4-1106-preview"
+    ]
+  },
+  "criterion": "Lowest ensemble validation MSE, averaging datasets equally; test does not select configuration.",
+  "validation": {
+    "weak": {
+      "n": 5019,
+      "mae": 0.24951006472110748,
+      "rmse": 0.30257125890039555,
+      "mse": 0.09154936671257019,
+      "calibration_error": 0.0176280820840596,
+      "prediction_std": 0.17987795174121857,
+      "target_std": 0.341342955827713,
+      "mean_bias": 0.0035260578151792288,
+      "spearman": 0.4287141687515073
+    },
+    "intermediate": {
+      "n": 5052,
+      "mae": 0.24533326923847198,
+      "rmse": 0.29956902800525986,
+      "mse": 0.08974160254001617,
+      "calibration_error": 0.021212474070636884,
+      "prediction_std": 0.15810726583003998,
+      "target_std": 0.3267863094806671,
+      "mean_bias": -0.007979188114404678,
+      "spearman": 0.36803121590500176
+    },
+    "strong": {
+      "n": 5145,
+      "mae": 0.2157282531261444,
+      "rmse": 0.2761080305230709,
+      "mse": 0.07623564451932907,
+      "calibration_error": 0.012720055924502247,
+      "prediction_std": 0.17304293811321259,
+      "target_std": 0.31696218252182007,
+      "mean_bias": -0.0011263611959293485,
+      "spearman": 0.5116442645053569
+    },
+    "macro_mse": 0.08584220459063847,
+    "by_dataset": {
+      "additional-evals": {
+        "weak": {
+          "n": 266,
+          "mae": 0.11680387705564499,
+          "rmse": 0.17600385557971868,
+          "mse": 0.030977357178926468,
+          "calibration_error": 0.030497718868511058
+        },
+        "intermediate": {
+          "n": 266,
+          "mae": 0.15145081281661987,
+          "rmse": 0.2052398044316712,
+          "mse": 0.042123377323150635,
+          "calibration_error": 0.030929076422314
+        },
+        "strong": {
+          "n": 266,
+          "mae": 0.22393012046813965,
+          "rmse": 0.30334064933753885,
+          "mse": 0.09201554954051971,
+          "calibration_error": 0.06505460165707128
+        },
+        "macro_mse": 0.05503876134753227
+      },
+      "arc-challenge": {
+        "weak": {
+          "n": 234,
+          "mae": 0.24566932022571564,
+          "rmse": 0.2999916363583431,
+          "mse": 0.08999498188495636,
+          "calibration_error": 0.045305595247664004
+        },
+        "intermediate": {
+          "n": 234,
+          "mae": 0.2273719310760498,
+          "rmse": 0.28095269383810617,
+          "mse": 0.07893441617488861,
+          "calibration_error": 0.046050752839471534
+        },
+        "strong": {
+          "n": 234,
+          "mae": 0.2309509515762329,
+          "rmse": 0.27697916648255505,
+          "mse": 0.07671745866537094,
+          "calibration_error": 0.02566067524190642
+        },
+        "macro_mse": 0.08188228557507198
+      },
+      "grade-school-math": {
+        "weak": {
+          "n": 711,
+          "mae": 0.27041375637054443,
+          "rmse": 0.31691336318665,
+          "mse": 0.1004340797662735,
+          "calibration_error": 0.047483699503662546
+        },
+        "intermediate": {
+          "n": 744,
+          "mae": 0.22700485587120056,
+          "rmse": 0.2776905229074677,
+          "mse": 0.07711202651262283,
+          "calibration_error": 0.017322202092937885
+        },
+        "strong": {
+          "n": 837,
+          "mae": 0.15919244289398193,
+          "rmse": 0.2269483437748541,
+          "mse": 0.05150555074214935,
+          "calibration_error": 0.025275591774226093
+        },
+        "macro_mse": 0.07635055234034856
+      },
+      "hellaswag": {
+        "weak": {
+          "n": 1466,
+          "mae": 0.23747242987155914,
+          "rmse": 0.28830260841209804,
+          "mse": 0.08311839401721954,
+          "calibration_error": 0.035236917354806864
+        },
+        "intermediate": {
+          "n": 1466,
+          "mae": 0.26328471302986145,
+          "rmse": 0.3190266339078993,
+          "mse": 0.10177799314260483,
+          "calibration_error": 0.042708043949259256
+        },
+        "strong": {
+          "n": 1466,
+          "mae": 0.19773097336292267,
+          "rmse": 0.2521805291470983,
+          "mse": 0.06359501928091049,
+          "calibration_error": 0.025295953130372386
+        },
+        "macro_mse": 0.08283046881357829
+      },
+      "mbpp": {
+        "weak": {
+          "n": 61,
+          "mae": 0.28583744168281555,
+          "rmse": 0.3376863115477914,
+          "mse": 0.11403204500675201,
+          "calibration_error": 0.08259486956674544
+        },
+        "intermediate": {
+          "n": 61,
+          "mae": 0.3300696313381195,
+          "rmse": 0.3748706952325183,
+          "mse": 0.14052803814411163,
+          "calibration_error": 0.15135010588364523
+        },
+        "strong": {
+          "n": 61,
+          "mae": 0.35683557391166687,
+          "rmse": 0.410891554987239,
+          "mse": 0.16883186995983124,
+          "calibration_error": 0.16366255723062106
+        },
+        "macro_mse": 0.14113065103689829
+      },
+      "mmlu": {
+        "weak": {
+          "n": 2088,
+          "mae": 0.27010151743888855,
+          "rmse": 0.32189128982655274,
+          "mse": 0.10361400246620178,
+          "calibration_error": 0.01886905188104887
+        },
+        "intermediate": {
+          "n": 2088,
+          "mae": 0.25671783089637756,
+          "rmse": 0.30901815709605623,
+          "mse": 0.09549222141504288,
+          "calibration_error": 0.029369095690063133
+        },
+        "strong": {
+          "n": 2088,
+          "mae": 0.24332007765769958,
+          "rmse": 0.29939800351269724,
+          "mse": 0.08963916450738907,
+          "calibration_error": 0.02000417977828404
+        },
+        "macro_mse": 0.09624846279621124
+      },
+      "mtbench": {
+        "weak": {
+          "n": 11,
+          "mae": 0.260771244764328,
+          "rmse": 0.2777320132041121,
+          "mse": 0.07713507115840912,
+          "calibration_error": 0.1855120360851288
+        },
+        "intermediate": {
+          "n": 11,
+          "mae": 0.22110866010189056,
+          "rmse": 0.2561608932993861,
+          "mse": 0.06561840325593948,
+          "calibration_error": 0.17860632592981512
+        },
+        "strong": {
+          "n": 11,
+          "mae": 0.2623913884162903,
+          "rmse": 0.3385831868557649,
+          "mse": 0.11463857442140579,
+          "calibration_error": 0.15528024326671253
+        },
+        "macro_mse": 0.08579734961191814
+      },
+      "winogrande": {
+        "weak": {
+          "n": 182,
+          "mae": 0.21461109817028046,
+          "rmse": 0.26495688224837444,
+          "mse": 0.07020214945077896,
+          "calibration_error": 0.029708211566065696
+        },
+        "intermediate": {
+          "n": 182,
+          "mae": 0.1784200370311737,
+          "rmse": 0.2153382419373885,
+          "mse": 0.04637055844068527,
+          "calibration_error": 0.022547718014690903
+        },
+        "strong": {
+          "n": 182,
+          "mae": 0.22247633337974548,
+          "rmse": 0.2845622761258611,
+          "mse": 0.08097568899393082,
+          "calibration_error": 0.05220182633006966
+        },
+        "macro_mse": 0.06584946562846501
+      }
+    },
+    "dataset_macro_mse": 0.08564099964375296
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}

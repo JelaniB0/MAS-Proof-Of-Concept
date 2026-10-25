@@ -1,0 +1,751 @@
+{
+  "protocol": {
+    "version": "frozen-study-v1",
+    "input_version": "question-input-v1",
+    "pool_contract_id": "7fb070864ed43e17036bf4d2dcec40221b3ba152f3a6396b7e151e991b761c38",
+    "prepared_sha256": {
+      "train": "6f5bf45e9e19ac0dc282d9a2bd0e29d9e4918706b2b25835c32289060cd25e44",
+      "validation": "f02880127047d5ef3c9c3b79d5a32e3981cf206a94039ac512652c2ec4089b82",
+      "test": "0a1928d2a63af219d5ab9b5d8d8da92cefbd0b43b19d3b91eaf5d3fcf9df7773"
+    },
+    "encoder_weights_sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "encoder_configuration_sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0",
+    "tokenizer_sha256": "e9be3c068e54b7c71ebd9ba7bfc48632e741ccd0cfaa4e58f3fabf9bee3db7e9",
+    "configurations": [
+      {
+        "name": "task_natural_mse",
+        "input_mode": "task",
+        "balanced": false,
+        "loss": "mse"
+      },
+      {
+        "name": "task_sqrt_balanced_mse",
+        "input_mode": "task",
+        "balanced": true,
+        "balance_power": 0.5,
+        "loss": "mse"
+      }
+    ],
+    "epochs": 100,
+    "patience": 12,
+    "head": {
+      "hidden_dim": 128,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "batch_size": 256
+    },
+    "selection": "Lowest ensemble validation MSE, averaging datasets equally; test does not select configuration.",
+    "test_status": "Existing test split has been inspected previously; this is an exploratory comparison, not a fresh confirmatory test.",
+    "input_versions": {
+      "task": "routerbench-task-v1"
+    }
+  },
+  "selected_configuration": {
+    "name": "task_sqrt_balanced_mse",
+    "input_mode": "task",
+    "balanced": true,
+    "balance_power": 0.5,
+    "loss": "mse"
+  },
+  "selected_validation": {
+    "weak": {
+      "n": 81,
+      "mae": 0.3407836854457855,
+      "rmse": 0.3806400156426116,
+      "mse": 0.1448868215084076,
+      "calibration_error": 0.12785069810019598,
+      "prediction_std": 0.13796557486057281,
+      "target_std": 0.44056954979896545,
+      "mean_bias": 0.03253637254238129,
+      "spearman": 0.5693385744585663
+    },
+    "intermediate": {
+      "n": 81,
+      "mae": 0.35656437277793884,
+      "rmse": 0.3972258938976839,
+      "mse": 0.15778841078281403,
+      "calibration_error": 0.07759805152445663,
+      "prediction_std": 0.08797739446163177,
+      "target_std": 0.3963136076927185,
+      "mean_bias": 0.07759803533554077,
+      "spearman": 0.1922694805876087
+    },
+    "strong": {
+      "n": 81,
+      "mae": 0.40867510437965393,
+      "rmse": 0.44015973396804736,
+      "mse": 0.1937405914068222,
+      "calibration_error": 0.13223492363352832,
+      "prediction_std": 0.08336855471134186,
+      "target_std": 0.43822813034057617,
+      "mean_bias": 0.07306501269340515,
+      "spearman": 0.1698918491809377
+    },
+    "macro_mse": 0.16547194123268127,
+    "by_dataset": {
+      "rag_news": {
+        "weak": {
+          "n": 26,
+          "mae": 0.34569647908210754,
+          "rmse": 0.39061841959179056,
+          "mse": 0.15258274972438812,
+          "calibration_error": 0.19670613453938413
+        },
+        "intermediate": {
+          "n": 26,
+          "mae": 0.37988126277923584,
+          "rmse": 0.42365166291102196,
+          "mse": 0.17948073148727417,
+          "calibration_error": 0.053146282067665696
+        },
+        "strong": {
+          "n": 26,
+          "mae": 0.46261894702911377,
+          "rmse": 0.4860157557090114,
+          "mse": 0.23621131479740143,
+          "calibration_error": 0.15164637107115525
+        },
+        "macro_mse": 0.18942493200302124
+      },
+      "rag_wiki": {
+        "weak": {
+          "n": 55,
+          "mae": 0.3384611904621124,
+          "rmse": 0.3758307236047262,
+          "mse": 0.14124873280525208,
+          "calibration_error": 0.17253509705716913
+        },
+        "intermediate": {
+          "n": 55,
+          "mae": 0.3455418348312378,
+          "rmse": 0.3841013717534509,
+          "mse": 0.1475338637828827,
+          "calibration_error": 0.0891570432619615
+        },
+        "strong": {
+          "n": 55,
+          "mae": 0.3831743896007538,
+          "rmse": 0.41672952495729215,
+          "mse": 0.17366349697113037,
+          "calibration_error": 0.12305859083479101
+        },
+        "macro_mse": 0.15414869785308838
+      }
+    },
+    "dataset_macro_mse": 0.1717868149280548
+  },
+  "test": {
+    "global_mean": {
+      "prediction": {
+        "weak": {
+          "n": 131,
+          "mae": 0.3791748881340027,
+          "rmse": 0.43086691164150137,
+          "mse": 0.18564629554748535,
+          "calibration_error": 0.008954465389251709,
+          "prediction_std": 0.0,
+          "target_std": 0.43077388405799866,
+          "mean_bias": -0.008954459801316261,
+          "spearman": null
+        },
+        "intermediate": {
+          "n": 131,
+          "mae": 0.3586757183074951,
+          "rmse": 0.4083115465651422,
+          "mse": 0.16671831905841827,
+          "calibration_error": 0.0629727840423584,
+          "prediction_std": 2.9802322387695312e-08,
+          "target_std": 0.40342625975608826,
+          "mean_bias": -0.06297280639410019,
+          "spearman": null
+        },
+        "strong": {
+          "n": 131,
+          "mae": 0.47928643226623535,
+          "rmse": 0.5118698886993422,
+          "mse": 0.262010782957077,
+          "calibration_error": 0.12364697456359863,
+          "prediction_std": 0.0,
+          "target_std": 0.496711403131485,
+          "mean_bias": -0.12364697456359863,
+          "spearman": null
+        },
+        "macro_mse": 0.20479179918766022,
+        "by_dataset": {
+          "rag_news": {
+            "weak": {
+              "n": 61,
+              "mae": 0.39637136459350586,
+              "rmse": 0.43664421100546524,
+              "mse": 0.19065816700458527,
+              "calibration_error": 0.1593111753463745
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.3977896273136139,
+              "rmse": 0.44781467104463396,
+              "mse": 0.20053797960281372,
+              "calibration_error": 0.16120827198028564
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.4911033511161804,
+              "rmse": 0.5232855448143651,
+              "mse": 0.27382776141166687,
+              "calibration_error": 0.15630868077278137
+            },
+            "macro_mse": 0.22167463600635529
+          },
+          "rag_wiki": {
+            "weak": {
+              "n": 70,
+              "mae": 0.36418935656547546,
+              "rmse": 0.4257684583229831,
+              "mse": 0.1812787801027298,
+              "calibration_error": 0.12207058072090149
+            },
+            "intermediate": {
+              "n": 70,
+              "mae": 0.3245907127857208,
+              "rmse": 0.37046849630886936,
+              "mse": 0.13724690675735474,
+              "calibration_error": 0.022632479667663574
+            },
+            "strong": {
+              "n": 70,
+              "mae": 0.4689887464046478,
+              "rmse": 0.5017102615080308,
+              "mse": 0.25171318650245667,
+              "calibration_error": 0.0951845645904541
+            },
+            "macro_mse": 0.1900796244541804
+          }
+        },
+        "dataset_macro_mse": 0.20587713023026782
+      },
+      "strong_vs_weak_gain": {
+        "threshold": 0.1,
+        "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+        "all": {
+          "n": 131,
+          "positive_rate": 0.29770992366412213,
+          "gain_mae": 0.4323355257511139,
+          "auc": 0.5,
+          "spearman": null
+        },
+        "rag_news": {
+          "n": 61,
+          "positive_rate": 0.39344262295081966,
+          "gain_mae": 0.48740097880363464,
+          "auc": 0.5,
+          "spearman": null
+        },
+        "rag_wiki": {
+          "n": 70,
+          "positive_rate": 0.21428571428571427,
+          "gain_mae": 0.38434991240501404,
+          "auc": 0.5,
+          "spearman": null
+        }
+      },
+      "illustrative_tier_utility": {
+        "interpretation": "Illustrative offline pool-mean utility with arbitrary tier costs; NOT measured dollars, token use or MAS outcomes.",
+        "tier_costs": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "points": [
+          {
+            "cost_weight": 0.0,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 3.0,
+            "mean_utility": 0.5572519083969466,
+            "oracle_regret": 0.17938931297709923,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 0,
+              "strong": 131
+            }
+          },
+          {
+            "cost_weight": 0.025,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 3.0,
+            "mean_utility": 0.4822519083969465,
+            "oracle_regret": 0.21583969465648853,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 0,
+              "strong": 131
+            }
+          },
+          {
+            "cost_weight": 0.05,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 3.0,
+            "mean_utility": 0.4072519083969466,
+            "oracle_regret": 0.25229007633587797,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 0,
+              "strong": 131
+            }
+          },
+          {
+            "cost_weight": 0.1,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 2.0,
+            "mean_utility": 0.35725190839694654,
+            "oracle_regret": 0.22519083969465647,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 131,
+              "strong": 0
+            }
+          },
+          {
+            "cost_weight": 0.2,
+            "mean_recorded_quality": 0.46183204650878906,
+            "mean_proxy_cost": 1.0,
+            "mean_utility": 0.2618320610687023,
+            "oracle_regret": 0.166412213740458,
+            "selection_counts": {
+              "weak": 131,
+              "intermediate": 0,
+              "strong": 0
+            }
+          }
+        ]
+      }
+    },
+    "dataset_mean": {
+      "prediction": {
+        "weak": {
+          "n": 131,
+          "mae": 0.37026917934417725,
+          "rmse": 0.4107115120527545,
+          "mse": 0.1686839461326599,
+          "calibration_error": 0.04877189643510425,
+          "prediction_std": 0.16132588684558868,
+          "target_std": 0.43077388405799866,
+          "mean_bias": -0.048771873116493225,
+          "spearman": 0.32880082428922675
+        },
+        "intermediate": {
+          "n": 131,
+          "mae": 0.35216861963272095,
+          "rmse": 0.4015606416295611,
+          "mse": 0.16125094890594482,
+          "calibration_error": 0.08068290170822434,
+          "prediction_std": 0.07175471633672714,
+          "target_std": 0.40342625975608826,
+          "mean_bias": -0.08068285137414932,
+          "spearman": 0.22186689860435238
+        },
+        "strong": {
+          "n": 131,
+          "mae": 0.4754045903682709,
+          "rmse": 0.5138293122934269,
+          "mse": 0.26402056217193604,
+          "calibration_error": 0.13438292018329823,
+          "prediction_std": 0.043498121201992035,
+          "target_std": 0.496711403131485,
+          "mean_bias": -0.13438288867473602,
+          "spearman": 0.061383428669281884
+        },
+        "macro_mse": 0.19798515240351358,
+        "by_dataset": {
+          "rag_news": {
+            "weak": {
+              "n": 61,
+              "mae": 0.3723876476287842,
+              "rmse": 0.40739464892874655,
+              "mse": 0.16597039997577667,
+              "calibration_error": 0.026310980319976807
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.3754849433898926,
+              "rmse": 0.430075019873723,
+              "mse": 0.18496452271938324,
+              "calibration_error": 0.10205242037773132
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.49286696314811707,
+              "rmse": 0.5137149227075645,
+              "mse": 0.26390302181243896,
+              "calibration_error": 0.1204480230808258
+            },
+            "macro_mse": 0.20494598150253296
+          },
+          "rag_wiki": {
+            "weak": {
+              "n": 70,
+              "mae": 0.36842307448387146,
+              "rmse": 0.4135801997197027,
+              "mse": 0.1710485816001892,
+              "calibration_error": 0.06834498047828674
+            },
+            "intermediate": {
+              "n": 70,
+              "mae": 0.3318501114845276,
+              "rmse": 0.37494831921177457,
+              "mse": 0.1405862420797348,
+              "calibration_error": 0.0620608925819397
+            },
+            "strong": {
+              "n": 70,
+              "mae": 0.4601873755455017,
+              "rmse": 0.5139290053658238,
+              "mse": 0.26412302255630493,
+              "calibration_error": 0.14652618765830994
+            },
+            "macro_mse": 0.19191928207874298
+          }
+        },
+        "dataset_macro_mse": 0.19843263179063797
+      },
+      "strong_vs_weak_gain": {
+        "threshold": 0.1,
+        "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+        "all": {
+          "n": 131,
+          "positive_rate": 0.29770992366412213,
+          "gain_mae": 0.399509996175766,
+          "auc": 0.6066053511705686,
+          "spearman": 0.20482401954977947
+        },
+        "rag_news": {
+          "n": 61,
+          "positive_rate": 0.39344262295081966,
+          "gain_mae": 0.5081028938293457,
+          "auc": 0.5,
+          "spearman": null
+        },
+        "rag_wiki": {
+          "n": 70,
+          "positive_rate": 0.21428571428571427,
+          "gain_mae": 0.30487900972366333,
+          "auc": 0.5,
+          "spearman": null
+        }
+      },
+      "illustrative_tier_utility": {
+        "interpretation": "Illustrative offline pool-mean utility with arbitrary tier costs; NOT measured dollars, token use or MAS outcomes.",
+        "tier_costs": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "points": [
+          {
+            "cost_weight": 0.0,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 3.0,
+            "mean_utility": 0.5572519083969466,
+            "oracle_regret": 0.17938931297709923,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 0,
+              "strong": 131
+            }
+          },
+          {
+            "cost_weight": 0.025,
+            "mean_recorded_quality": 0.5572519302368164,
+            "mean_proxy_cost": 3.0,
+            "mean_utility": 0.4822519083969465,
+            "oracle_regret": 0.21583969465648853,
+            "selection_counts": {
+              "weak": 0,
+              "intermediate": 0,
+              "strong": 131
+            }
+          },
+          {
+            "cost_weight": 0.05,
+            "mean_recorded_quality": 0.5610687136650085,
+            "mean_proxy_cost": 1.9312977099236641,
+            "mean_utility": 0.4645038167938932,
+            "oracle_regret": 0.1950381679389313,
+            "selection_counts": {
+              "weak": 70,
+              "intermediate": 0,
+              "strong": 61
+            }
+          },
+          {
+            "cost_weight": 0.1,
+            "mean_recorded_quality": 0.5305343270301819,
+            "mean_proxy_cost": 1.465648854961832,
+            "mean_utility": 0.383969465648855,
+            "oracle_regret": 0.1984732824427481,
+            "selection_counts": {
+              "weak": 70,
+              "intermediate": 61,
+              "strong": 0
+            }
+          },
+          {
+            "cost_weight": 0.2,
+            "mean_recorded_quality": 0.5305343270301819,
+            "mean_proxy_cost": 1.465648854961832,
+            "mean_utility": 0.23740458015267177,
+            "oracle_regret": 0.19083969465648856,
+            "selection_counts": {
+              "weak": 70,
+              "intermediate": 61,
+              "strong": 0
+            }
+          }
+        ]
+      }
+    },
+    "selected_frozen_ensemble": {
+      "prediction": {
+        "weak": {
+          "n": 131,
+          "mae": 0.3543812930583954,
+          "rmse": 0.3960471349670108,
+          "mse": 0.1568533331155777,
+          "calibration_error": 0.057357414646913074,
+          "prediction_std": 0.15734705328941345,
+          "target_std": 0.43077388405799866,
+          "mean_bias": 0.0002821310772560537,
+          "spearman": 0.39000123136665416
+        },
+        "intermediate": {
+          "n": 131,
+          "mae": 0.33708056807518005,
+          "rmse": 0.39096558028625344,
+          "mse": 0.1528540849685669,
+          "calibration_error": 0.053736896232794255,
+          "prediction_std": 0.09179878979921341,
+          "target_std": 0.40342625975608826,
+          "mean_bias": -0.028382359072566032,
+          "spearman": 0.2274811927713149
+        },
+        "strong": {
+          "n": 131,
+          "mae": 0.47333329916000366,
+          "rmse": 0.49942795991862093,
+          "mse": 0.24942828714847565,
+          "calibration_error": 0.08240270523624565,
+          "prediction_std": 0.08118865638971329,
+          "target_std": 0.496711403131485,
+          "mean_bias": -0.08240271359682083,
+          "spearman": 0.12557842557818905
+        },
+        "macro_mse": 0.1863785684108734,
+        "by_dataset": {
+          "rag_news": {
+            "weak": {
+              "n": 61,
+              "mae": 0.365752249956131,
+              "rmse": 0.40986897535279365,
+              "mse": 0.16799257695674896,
+              "calibration_error": 0.08617010614911064
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.35774314403533936,
+              "rmse": 0.4151190826467522,
+              "mse": 0.17232385277748108,
+              "calibration_error": 0.09302054272323357
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.4837568700313568,
+              "rmse": 0.5045076669879776,
+              "mse": 0.2545279860496521,
+              "calibration_error": 0.08612932875508168
+            },
+            "macro_mse": 0.19828147192796072
+          },
+          "rag_wiki": {
+            "weak": {
+              "n": 70,
+              "mae": 0.34447234869003296,
+              "rmse": 0.3835964933091406,
+              "mse": 0.14714626967906952,
+              "calibration_error": 0.09445346125534601
+            },
+            "intermediate": {
+              "n": 70,
+              "mae": 0.3190746009349823,
+              "rmse": 0.3686293032690255,
+              "mse": 0.13588756322860718,
+              "calibration_error": 0.02430443125111716
+            },
+            "strong": {
+              "n": 70,
+              "mae": 0.464249849319458,
+              "rmse": 0.49495882590355783,
+              "mse": 0.2449842393398285,
+              "calibration_error": 0.07971676460334233
+            },
+            "macro_mse": 0.17600602408250174
+          }
+        },
+        "dataset_macro_mse": 0.18714374800523123
+      },
+      "strong_vs_weak_gain": {
+        "threshold": 0.1,
+        "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+        "all": {
+          "n": 131,
+          "positive_rate": 0.29770992366412213,
+          "gain_mae": 0.39970922470092773,
+          "auc": 0.6259754738015607,
+          "spearman": 0.20563680418401717
+        },
+        "rag_news": {
+          "n": 61,
+          "positive_rate": 0.39344262295081966,
+          "gain_mae": 0.4694400727748871,
+          "auc": 0.6418918918918919,
+          "spearman": 0.19233553994895786
+        },
+        "rag_wiki": {
+          "n": 70,
+          "positive_rate": 0.21428571428571427,
+          "gain_mae": 0.33894380927085876,
+          "auc": 0.4884848484848485,
+          "spearman": 0.06813822690107672
+        }
+      },
+      "illustrative_tier_utility": {
+        "interpretation": "Illustrative offline pool-mean utility with arbitrary tier costs; NOT measured dollars, token use or MAS outcomes.",
+        "tier_costs": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "points": [
+          {
+            "cost_weight": 0.0,
+            "mean_recorded_quality": 0.5610687136650085,
+            "mean_proxy_cost": 2.854961832061069,
+            "mean_utility": 0.5610687022900763,
+            "oracle_regret": 0.17557251908396945,
+            "selection_counts": {
+              "weak": 8,
+              "intermediate": 3,
+              "strong": 120
+            }
+          },
+          {
+            "cost_weight": 0.025,
+            "mean_recorded_quality": 0.5458015203475952,
+            "mean_proxy_cost": 2.5801526717557253,
+            "mean_utility": 0.481297709923664,
+            "oracle_regret": 0.216793893129771,
+            "selection_counts": {
+              "weak": 21,
+              "intermediate": 13,
+              "strong": 97
+            }
+          },
+          {
+            "cost_weight": 0.05,
+            "mean_recorded_quality": 0.5610687136650085,
+            "mean_proxy_cost": 2.2213740458015265,
+            "mean_utility": 0.45000000000000007,
+            "oracle_regret": 0.20954198473282445,
+            "selection_counts": {
+              "weak": 35,
+              "intermediate": 32,
+              "strong": 64
+            }
+          },
+          {
+            "cost_weight": 0.1,
+            "mean_recorded_quality": 0.5458015203475952,
+            "mean_proxy_cost": 1.7099236641221374,
+            "mean_utility": 0.37480916030534345,
+            "oracle_regret": 0.20763358778625957,
+            "selection_counts": {
+              "weak": 50,
+              "intermediate": 69,
+              "strong": 12
+            }
+          },
+          {
+            "cost_weight": 0.2,
+            "mean_recorded_quality": 0.5152671933174133,
+            "mean_proxy_cost": 1.1908396946564885,
+            "mean_utility": 0.2770992366412214,
+            "oracle_regret": 0.15114503816793892,
+            "selection_counts": {
+              "weak": 106,
+              "intermediate": 25,
+              "strong": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "paired_comparisons": {
+    "global_mean": {
+      "mean_mse_reduction": 0.01841324582961376,
+      "ci95": [
+        0.006573833396836316,
+        0.03246770203654232
+      ],
+      "dataset_macro_mean_mse_reduction": 0.018733382150588975,
+      "dataset_macro_ci95": [
+        0.006542719117839547,
+        0.03348662244352843
+      ],
+      "repetitions": 3000,
+      "method": "Paired source-cluster bootstrap stratified by dataset; positive means candidate is better."
+    },
+    "dataset_mean": {
+      "mean_mse_reduction": 0.011606586798456789,
+      "ci95": [
+        -0.004990958199852197,
+        0.028466145995433803
+      ],
+      "dataset_macro_mean_mse_reduction": 0.011288882789669512,
+      "dataset_macro_ci95": [
+        -0.005455448590930375,
+        0.02755723133120713
+      ],
+      "repetitions": 3000,
+      "method": "Paired source-cluster bootstrap stratified by dataset; positive means candidate is better."
+    }
+  },
+  "truncation": {
+    "development": {
+      "task": {
+        "train": {
+          "questions": 445,
+          "truncated": 0,
+          "max_original_tokens": 36,
+          "fraction_truncated": 0.0
+        },
+        "validation": {
+          "questions": 81,
+          "truncated": 0,
+          "max_original_tokens": 37,
+          "fraction_truncated": 0.0
+        }
+      }
+    },
+    "test": {
+      "questions": 131,
+      "truncated": 0,
+      "max_original_tokens": 47,
+      "fraction_truncated": 0.0
+    }
+  }
+}

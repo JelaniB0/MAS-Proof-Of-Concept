@@ -1,0 +1,1717 @@
+{
+  "protocol": {
+    "started_utc": "2026-10-25T04:03:45.625994+00:00",
+    "model": "C:\\Users\\jelan\\OneDrive\\Desktop\\MAS-Proof-Of-Concept\\BAMAS\\difficulty\\runs\\all_routerbench_v1\\main\\selected_model",
+    "predictor_id": "2dadbec6e82044fcc210b2837cae2e03024234f3d9c7ca8fe3f80fcaf9d4aab3",
+    "pool_contract_id": "6b1f8b33dae4aac3a42c39b6bc3ffb22f40a1784d50dd6493ef0ddf71a885221",
+    "model_metadata_sha256": "bc5168f06348204b52bce9d7b03aa0bc1544749f96363e7e4a30a0b87889afc9",
+    "source_manifest": {
+      "math": {
+        "repository": "EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "files": [
+          {
+            "path": "math\\algebra\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/test-00000-of-00001.parquet",
+            "sha256": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5",
+            "bytes": 353114,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\counting_and_probability\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/test-00000-of-00001.parquet",
+            "sha256": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966",
+            "bytes": 175032,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\geometry\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/test-00000-of-00001.parquet",
+            "sha256": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a",
+            "bytes": 263835,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\intermediate_algebra\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/test-00000-of-00001.parquet",
+            "sha256": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb",
+            "bytes": 394797,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\number_theory\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/test-00000-of-00001.parquet",
+            "sha256": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9",
+            "bytes": 182003,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\prealgebra\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/test-00000-of-00001.parquet",
+            "sha256": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc",
+            "bytes": 267729,
+            "platform_sha256_verified": true
+          },
+          {
+            "path": "math\\precalculus\\test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/test-00000-of-00001.parquet",
+            "sha256": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c",
+            "bytes": 242241,
+            "platform_sha256_verified": true
+          }
+        ]
+      },
+      "humaneval": {
+        "repository": "openai/human-eval",
+        "revision": "b9453e8f1865df0a0057a1383767caa400acfbcf",
+        "path": "HumanEval.jsonl.gz",
+        "url": "https://raw.githubusercontent.com/openai/human-eval/b9453e8f1865df0a0057a1383767caa400acfbcf/data/HumanEval.jsonl.gz",
+        "sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+        "bytes": 44877,
+        "git_blob_sha1": "998d25196e17af24daf9b6cb3a975fe752528e46",
+        "git_blob_verified": true
+      }
+    },
+    "prepared_sha256": {
+      "train": "5fa81ea4949ffc37435febd928792aa89eb6333eccdbfac99111c210b8aefe7d",
+      "validation": "c74f9341cf1bfb348baf44bfec331617ca571b046cf00e8ef2fe8840888664a7",
+      "test": "a77738dc3f41747cdf0de5a20779b2b39ac6f0edf719bf19ca22d5e5a6e54f44"
+    },
+    "gsm_official_test_sha256": "ca6e7c5108b7ab7bc920c707e021b21bd9bdaf725e48a179b781ce4be1e9ad13",
+    "new_questions": [
+      [
+        "addition",
+        "what's 1 + 1"
+      ],
+      [
+        "addition",
+        "What is 1 + 1?"
+      ],
+      [
+        "addition",
+        "Add one and one."
+      ],
+      [
+        "addition",
+        "Maya has one pear and receives another pear. How many pears does Maya have?"
+      ],
+      [
+        "addition",
+        "Compute 1 + 1. Return only the number."
+      ],
+      [
+        "addition",
+        "Compute 1 + 1 and briefly explain your answer."
+      ],
+      [
+        "arithmetic",
+        "What is 17 + 26?"
+      ],
+      [
+        "arithmetic",
+        "Calculate 89 minus 34."
+      ],
+      [
+        "arithmetic",
+        "What is three quarters plus two thirds?"
+      ],
+      [
+        "algebra",
+        "Solve 7x - 5 = 44 for x."
+      ],
+      [
+        "algebra",
+        "Find all real roots of x^4 - 5x^2 + 4 = 0."
+      ],
+      [
+        "proof",
+        "Prove that there are infinitely many primes congruent to 3 modulo 4."
+      ],
+      [
+        "code",
+        "Write a Python function that returns the square of an integer."
+      ],
+      [
+        "code",
+        "Write a Python function that checks whether parentheses, brackets, and braces are balanced."
+      ],
+      [
+        "code",
+        "Implement edit distance in Python using dynamic programming and explain its complexity."
+      ],
+      [
+        "code",
+        "Implement red-black tree insertion in Python, including rotations and rebalancing."
+      ],
+      [
+        "knowledge",
+        "What is the capital of France?"
+      ],
+      [
+        "comparison",
+        "Which integer is larger, 9 or 4?"
+      ],
+      [
+        "explanation",
+        "Explain why a photon can carry momentum despite having zero rest mass."
+      ],
+      [
+        "writing",
+        "Write a warm two-sentence thank-you note to a helpful neighbor."
+      ]
+    ],
+    "selection": "Checkpoint fixed before evaluation. No training, selection, threshold fitting or pool reranking.",
+    "test_status": "Repeated evaluation of an already inspected held-out split; not new independent validation.",
+    "external_scope": "Generalization in the supervised predictor only; encoder pretraining overlap cannot be ruled out.",
+    "unlabeled_interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy."
+  },
+  "labeled": {
+    "questions": 1156,
+    "questions_with_any_pool_label": 981,
+    "saved_prediction_max_abs_difference": 5.960464477539062e-07,
+    "models": {
+      "global_mean": {
+        "weak": {
+          "n": 744,
+          "mae": 0.2907087802886963,
+          "rmse": 0.3391431624628032,
+          "mse": 0.1150180846452713,
+          "calibration_error": 0.04651954770088196,
+          "prediction_std": 5.960464477539063e-08,
+          "target_std": 0.3359375,
+          "mean_bias": -0.04651961103081703,
+          "spearman": null
+        },
+        "intermediate": {
+          "n": 778,
+          "mae": 0.2689479887485504,
+          "rmse": 0.3099558502337451,
+          "mse": 0.09607262909412384,
+          "calibration_error": 0.06574341654777527,
+          "prediction_std": 0.0,
+          "target_std": 0.30290332436561584,
+          "mean_bias": 0.06574340164661407,
+          "spearman": null
+        },
+        "strong": {
+          "n": 888,
+          "mae": 0.2712051570415497,
+          "rmse": 0.2969777531736827,
+          "mse": 0.0881957858800888,
+          "calibration_error": 0.17385689914226532,
+          "prediction_std": 0.0,
+          "target_std": 0.240768700838089,
+          "mean_bias": 0.17385688424110413,
+          "spearman": null
+        },
+        "macro_mse": 0.09976216653982799,
+        "by_dataset": {
+          "grade-school-math": {
+            "weak": {
+              "n": 683,
+              "mae": 0.2797186076641083,
+              "rmse": 0.3265122562067995,
+              "mse": 0.1066102534532547,
+              "calibration_error": 0.026788264513015747
+            },
+            "intermediate": {
+              "n": 717,
+              "mae": 0.26342105865478516,
+              "rmse": 0.3023912638902555,
+              "mse": 0.09144047647714615,
+              "calibration_error": 0.07830426096916199
+            },
+            "strong": {
+              "n": 827,
+              "mae": 0.26289618015289307,
+              "rmse": 0.2824980805762246,
+              "mse": 0.0798051655292511,
+              "calibration_error": 0.19693408906459808
+            },
+            "macro_mse": 0.09261863181988399
+          },
+          "mbpp": {
+            "weak": {
+              "n": 61,
+              "mae": 0.41376274824142456,
+              "rmse": 0.4573380834126109,
+              "mse": 0.20915812253952026,
+              "calibration_error": 0.26744544506073
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.3339121639728546,
+              "rmse": 0.38796826034189297,
+              "mse": 0.15051937103271484,
+              "calibration_error": 0.08189758658409119
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.3838527798652649,
+              "rmse": 0.4493892677758547,
+              "mse": 0.20195071399211884,
+              "calibration_error": 0.1390092968940735
+            },
+            "macro_mse": 0.18720940252145132
+          }
+        },
+        "dataset_macro_mse": 0.13991401717066765
+      },
+      "dataset_mean": {
+        "weak": {
+          "n": 744,
+          "mae": 0.2844935357570648,
+          "rmse": 0.32944773683400236,
+          "mse": 0.10853581130504608,
+          "calibration_error": 0.004839477199380116,
+          "prediction_std": 0.059867411851882935,
+          "target_std": 0.3359375,
+          "mean_bias": 0.0017480559181421995,
+          "spearman": 0.18055711686119486
+        },
+        "intermediate": {
+          "n": 778,
+          "mae": 0.24668754637241364,
+          "rmse": 0.29993485597787267,
+          "mse": 0.08996091783046722,
+          "calibration_error": 0.006685013368074569,
+          "prediction_std": 0.03567098453640938,
+          "target_std": 0.30290332436561584,
+          "mean_bias": 0.003214607248082757,
+          "spearman": 0.11105523376401881
+        },
+        "strong": {
+          "n": 888,
+          "mae": 0.16426295042037964,
+          "rmse": 0.22696699011465843,
+          "mse": 0.05151401460170746,
+          "calibration_error": 0.013124727291633954,
+          "prediction_std": 0.05733877047896385,
+          "target_std": 0.240768700838089,
+          "mean_bias": -0.0009893885580822825,
+          "spearman": 0.26087126966433705
+        },
+        "macro_mse": 0.08333691457907359,
+        "by_dataset": {
+          "grade-school-math": {
+            "weak": {
+              "n": 683,
+              "mae": 0.28029677271842957,
+              "rmse": 0.3254312684503016,
+              "mse": 0.10590551048517227,
+              "calibration_error": 0.003587961196899414
+            },
+            "intermediate": {
+              "n": 717,
+              "mae": 0.23951685428619385,
+              "rmse": 0.2921262835056966,
+              "mse": 0.08533776551485062,
+              "calibration_error": 0.005370914936065674
+            },
+            "strong": {
+              "n": 827,
+              "mae": 0.14846065640449524,
+              "rmse": 0.2026439619493307,
+              "mse": 0.04106457531452179,
+              "calibration_error": 0.006515227258205414
+            },
+            "macro_mse": 0.07743595043818156
+          },
+          "mbpp": {
+            "weak": {
+              "n": 61,
+              "mae": 0.33148354291915894,
+              "rmse": 0.3714652360384253,
+              "mse": 0.137986421585083,
+              "calibration_error": 0.0188523530960083
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.330972820520401,
+              "rmse": 0.3798709661602859,
+              "mse": 0.14430195093154907,
+              "calibration_error": 0.0221310555934906
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.37850040197372437,
+              "rmse": 0.4395236319035313,
+              "mse": 0.19318102300167084,
+              "calibration_error": 0.10273221135139465
+            },
+            "macro_mse": 0.15848979850610098
+          }
+        },
+        "dataset_macro_mse": 0.11796287447214127
+      },
+      "predictor": {
+        "weak": {
+          "n": 744,
+          "mae": 0.2656475305557251,
+          "rmse": 0.3205756176737404,
+          "mse": 0.10276872664690018,
+          "calibration_error": 0.031996080511680215,
+          "prediction_std": 0.1317724585533142,
+          "target_std": 0.3359375,
+          "mean_bias": 0.024182124063372612,
+          "spearman": 0.3006251621701327
+        },
+        "intermediate": {
+          "n": 778,
+          "mae": 0.23734642565250397,
+          "rmse": 0.29060925523091036,
+          "mse": 0.08445373922586441,
+          "calibration_error": 0.023789448381083177,
+          "prediction_std": 0.1058976873755455,
+          "target_std": 0.30290332436561584,
+          "mean_bias": 0.017148740589618683,
+          "spearman": 0.2552404826619584
+        },
+        "strong": {
+          "n": 888,
+          "mae": 0.15999211370944977,
+          "rmse": 0.22318865884401518,
+          "mse": 0.049813177436590195,
+          "calibration_error": 0.01640950010770613,
+          "prediction_std": 0.10055287927389145,
+          "target_std": 0.240768700838089,
+          "mean_bias": 0.010547667741775513,
+          "spearman": 0.2475154322911713
+        },
+        "macro_mse": 0.07901188110311826,
+        "by_dataset": {
+          "grade-school-math": {
+            "weak": {
+              "n": 683,
+              "mae": 0.26181963086128235,
+              "rmse": 0.3142127308774067,
+              "mse": 0.09872964024543762,
+              "calibration_error": 0.032717929708486415
+            },
+            "intermediate": {
+              "n": 717,
+              "mae": 0.2326817661523819,
+              "rmse": 0.28526900949166517,
+              "mse": 0.08137840777635574,
+              "calibration_error": 0.020818327323662185
+            },
+            "strong": {
+              "n": 827,
+              "mae": 0.14468833804130554,
+              "rmse": 0.1998913853730084,
+              "mse": 0.03995656594634056,
+              "calibration_error": 0.01985236258215599
+            },
+            "macro_mse": 0.0733548713227113
+          },
+          "mbpp": {
+            "weak": {
+              "n": 61,
+              "mae": 0.30850768089294434,
+              "rmse": 0.3846989297911927,
+              "mse": 0.147993266582489,
+              "calibration_error": 0.11608291649427571
+            },
+            "intermediate": {
+              "n": 61,
+              "mae": 0.29217514395713806,
+              "rmse": 0.34727722037044045,
+              "mse": 0.12060146778821945,
+              "calibration_error": 0.09893985190352456
+            },
+            "strong": {
+              "n": 61,
+              "mae": 0.36747103929519653,
+              "rmse": 0.42830238774440316,
+              "mse": 0.18344293534755707,
+              "calibration_error": 0.13085972871936735
+            },
+            "macro_mse": 0.15067922323942184
+          }
+        },
+        "dataset_macro_mse": 0.11201704728106657
+      }
+    },
+    "paired_comparisons": {
+      "global_mean": {
+        "mean_mse_reduction": 0.020750283108104915,
+        "ci95": [
+          0.016314655083414575,
+          0.02505449237814218
+        ],
+        "dataset_macro_mean_mse_reduction": 0.027896968138947285,
+        "dataset_macro_ci95": [
+          0.007438438828519502,
+          0.047719467228539196
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      },
+      "dataset_mean": {
+        "mean_mse_reduction": 0.004325032332690698,
+        "ci95": [
+          0.0005403338467925062,
+          0.007958329790036151
+        ],
+        "dataset_macro_mean_mse_reduction": 0.005945826051374587,
+        "dataset_macro_ci95": [
+          -0.010477851906265892,
+          0.02045267993371818
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      }
+    },
+    "gain_diagnostics": {
+      "threshold": 0.1,
+      "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+      "all": {
+        "n": 689,
+        "positive_rate": 0.6995645863570392,
+        "gain_mae": 0.23244833946228027,
+        "auc": 0.599484835728747,
+        "spearman": 0.23489373562686366
+      },
+      "grade-school-math": {
+        "n": 628,
+        "positive_rate": 0.7197452229299363,
+        "gain_mae": 0.22946155071258545,
+        "auc": 0.5899663113435237,
+        "spearman": 0.22485579068875652
+      },
+      "mbpp": {
+        "n": 61,
+        "positive_rate": 0.4918032786885246,
+        "gain_mae": 0.26319754123687744,
+        "auc": 0.6258064516129032,
+        "spearman": 0.2638885538181359
+      }
+    },
+    "input_distribution": {
+      "questions": 1156,
+      "supported_fraction": 0.9948096885813149,
+      "mean_difficulty": {
+        "weak": 0.4564915782672105,
+        "intermediate": 0.3273320176919026,
+        "strong": 0.12201843107244882
+      },
+      "std_difficulty": {
+        "weak": 0.12601817875470644,
+        "intermediate": 0.10236060230120618,
+        "strong": 0.09413451760647949
+      }
+    },
+    "fixed_seed_examples": [
+      {
+        "sample_id": "grade-school-math.dev.6175",
+        "family": "grade-school-math",
+        "question": "If Layla scored 104 goals in four hockey games and Kristin scored 24 fewer goals in the same four games, calculate the average number of goals the two scored.",
+        "target": {
+          "weak": 0.75,
+          "intermediate": 0.75,
+          "strong": 1.0
+        },
+        "prediction": {
+          "weak": 0.36304089426994324,
+          "intermediate": 0.2848508954048157,
+          "strong": 0.06093791127204895
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.29663312435150146,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.5565906763076782,
+          "meta/llama-2-70b-chat": 0.3648415505886078,
+          "WizardLM/WizardLM-13B-V1.2": 0.3327033519744873,
+          "zero-one-ai/Yi-34B-Chat": 0.19802796840667725,
+          "meta/code-llama-instruct-34b-chat": 0.5414018034934998,
+          "mistralai/mixtral-8x7b-chat": 0.35459527373313904,
+          "claude-instant-v1": 0.1549144983291626,
+          "claude-v1": 0.08849206566810608,
+          "gpt-3.5-turbo-1106": 0.10977471619844437,
+          "claude-v2": 0.061250120401382446,
+          "gpt-4-1106-preview": 0.011788912117481232
+        }
+      },
+      {
+        "sample_id": "grade-school-math.dev.3984",
+        "family": "grade-school-math",
+        "question": "Judson, Camilo, and Kenny decided to contribute money to paint their house. Judson contributed $500, Kenny contributed 20% more money than Judson, and Camilo contributed $200 more than Kenny. How much was the cost of painting the house?",
+        "target": {
+          "weak": 0.25,
+          "intermediate": 0.0,
+          "strong": 0.0
+        },
+        "prediction": {
+          "weak": 0.36754870414733887,
+          "intermediate": 0.2801952660083771,
+          "strong": 0.08092094957828522
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.280720591545105,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.4635053873062134,
+          "meta/llama-2-70b-chat": 0.34980639815330505,
+          "WizardLM/WizardLM-13B-V1.2": 0.3486015498638153,
+          "zero-one-ai/Yi-34B-Chat": 0.30828142166137695,
+          "meta/code-llama-instruct-34b-chat": 0.48241159319877625,
+          "mistralai/mixtral-8x7b-chat": 0.30971911549568176,
+          "claude-instant-v1": 0.17799091339111328,
+          "claude-v1": 0.1506594866514206,
+          "gpt-3.5-turbo-1106": 0.1466689258813858,
+          "claude-v2": 0.04530004784464836,
+          "gpt-4-1106-preview": 0.05079387500882149
+        }
+      },
+      {
+        "sample_id": "grade-school-math.dev.5369",
+        "family": "grade-school-math",
+        "question": "Matt has a peanut plantation that is 500 feet by 500 feet.  1 square foot of peanuts can make 50 grams of peanuts.  If it takes 20 grams of peanuts to make 5 grams of peanut butter and 1 kg of peanut butter sells for $10 how much does he make from his plantation?",
+        "target": {
+          "weak": 0.75,
+          "intermediate": 0.5,
+          "strong": 0.33333333333333337
+        },
+        "prediction": {
+          "weak": 0.3045058846473694,
+          "intermediate": 0.19165876507759094,
+          "strong": 0.057916298508644104
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.3029690980911255,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.48190489411354065,
+          "meta/llama-2-70b-chat": 0.2700025737285614,
+          "WizardLM/WizardLM-13B-V1.2": 0.28886231780052185,
+          "zero-one-ai/Yi-34B-Chat": 0.17725376784801483,
+          "meta/code-llama-instruct-34b-chat": 0.39010676741600037,
+          "mistralai/mixtral-8x7b-chat": 0.22522549331188202,
+          "claude-instant-v1": 0.09272261708974838,
+          "claude-v1": 0.05858023092150688,
+          "gpt-3.5-turbo-1106": 0.11285132169723511,
+          "claude-v2": 0.03791342303156853,
+          "gpt-4-1106-preview": 0.022984148934483528
+        }
+      },
+      {
+        "sample_id": "grade-school-math.dev.1659",
+        "family": "grade-school-math",
+        "question": "In a national park, the number of redwoods is 20% more than the number of pines. If there are 600 pines in the national park, calculate the total number of pines and redwoods that are there.",
+        "target": {
+          "weak": 0.25,
+          "intermediate": 0.25,
+          "strong": 0.0
+        },
+        "prediction": {
+          "weak": 0.3625107407569885,
+          "intermediate": 0.25685662031173706,
+          "strong": 0.12650887668132782
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.31142735481262207,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.5266236662864685,
+          "meta/llama-2-70b-chat": 0.35013389587402344,
+          "WizardLM/WizardLM-13B-V1.2": 0.3974541127681732,
+          "zero-one-ai/Yi-34B-Chat": 0.17583125829696655,
+          "meta/code-llama-instruct-34b-chat": 0.41927263140678406,
+          "mistralai/mixtral-8x7b-chat": 0.32390478253364563,
+          "claude-instant-v1": 0.13249921798706055,
+          "claude-v1": 0.15174983441829681,
+          "gpt-3.5-turbo-1106": 0.1931200474500656,
+          "claude-v2": 0.15083466470241547,
+          "gpt-4-1106-preview": 0.035571932792663574
+        }
+      },
+      {
+        "sample_id": "grade-school-math.dev.3940",
+        "family": "grade-school-math",
+        "question": "Every 4 weeks, Helen hand washes her silk pillowcases.  It takes 30 minutes to hand wash all of them.  In 1 year, how much time does Helen spend hand washing her pillowcases?",
+        "target": {
+          "weak": 0.5,
+          "intermediate": 0.75,
+          "strong": null
+        },
+        "prediction": {
+          "weak": 0.3913538157939911,
+          "intermediate": 0.2292439192533493,
+          "strong": 0.07252474874258041
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.2450464963912964,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.5815265774726868,
+          "meta/llama-2-70b-chat": 0.34130871295928955,
+          "WizardLM/WizardLM-13B-V1.2": 0.3544051945209503,
+          "zero-one-ai/Yi-34B-Chat": 0.28817474842071533,
+          "meta/code-llama-instruct-34b-chat": 0.3929694890975952,
+          "mistralai/mixtral-8x7b-chat": 0.24546723067760468,
+          "claude-instant-v1": 0.15969720482826233,
+          "claude-v1": 0.1188417300581932,
+          "gpt-3.5-turbo-1106": 0.10869017243385315,
+          "claude-v2": 0.054294198751449585,
+          "gpt-4-1106-preview": 0.054589882493019104
+        }
+      },
+      {
+        "sample_id": "mbpp.dev.72",
+        "family": "mbpp",
+        "question": "Write a function to get the angle of a complex number.",
+        "target": {
+          "weak": 1.0,
+          "intermediate": 0.75,
+          "strong": 1.0
+        },
+        "prediction": {
+          "weak": 0.41607093811035156,
+          "intermediate": 0.34326091408729553,
+          "strong": 0.26712095737457275
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.40027058124542236,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.29892513155937195,
+          "meta/llama-2-70b-chat": 0.6343660950660706,
+          "WizardLM/WizardLM-13B-V1.2": 0.3820464611053467,
+          "zero-one-ai/Yi-34B-Chat": 0.34894609451293945,
+          "meta/code-llama-instruct-34b-chat": 0.2880037724971771,
+          "mistralai/mixtral-8x7b-chat": 0.2512160837650299,
+          "claude-instant-v1": 0.4839658737182617,
+          "claude-v1": 0.349857896566391,
+          "gpt-3.5-turbo-1106": 0.2824665606021881,
+          "claude-v2": 0.16710257530212402,
+          "gpt-4-1106-preview": 0.3517937660217285
+        }
+      },
+      {
+        "sample_id": "mbpp.dev.127",
+        "family": "mbpp",
+        "question": "Write a function that takes in a list and an element and inserts the element before each element in the list, and returns the resulting list.",
+        "target": {
+          "weak": 0.5,
+          "intermediate": 0.25,
+          "strong": 0.0
+        },
+        "prediction": {
+          "weak": 0.4430924355983734,
+          "intermediate": 0.18227098882198334,
+          "strong": 0.08579929918050766
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.3593760132789612,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.5063710808753967,
+          "meta/llama-2-70b-chat": 0.41650786995887756,
+          "WizardLM/WizardLM-13B-V1.2": 0.4291325509548187,
+          "zero-one-ai/Yi-34B-Chat": 0.42035821080207825,
+          "meta/code-llama-instruct-34b-chat": 0.19030481576919556,
+          "mistralai/mixtral-8x7b-chat": 0.32715317606925964,
+          "claude-instant-v1": 0.13614773750305176,
+          "claude-v1": 0.07547827810049057,
+          "gpt-3.5-turbo-1106": 0.09277071803808212,
+          "claude-v2": 0.13676108419895172,
+          "gpt-4-1106-preview": 0.027866104617714882
+        }
+      },
+      {
+        "sample_id": "mbpp.dev.239",
+        "family": "mbpp",
+        "question": "Write a function that gives loss amount on a sale if the given amount has loss else return 0.",
+        "target": {
+          "weak": 0.5,
+          "intermediate": 0.5,
+          "strong": 1.0
+        },
+        "prediction": {
+          "weak": 0.5817495584487915,
+          "intermediate": 0.4051734209060669,
+          "strong": 0.35678645968437195
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.20188617706298828,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.5472158789634705,
+          "meta/llama-2-70b-chat": 0.7653315663337708,
+          "WizardLM/WizardLM-13B-V1.2": 0.6172581315040588,
+          "zero-one-ai/Yi-34B-Chat": 0.3971925973892212,
+          "meta/code-llama-instruct-34b-chat": 0.6066000461578369,
+          "mistralai/mixtral-8x7b-chat": 0.43794772028923035,
+          "claude-instant-v1": 0.4027221202850342,
+          "claude-v1": 0.17342376708984375,
+          "gpt-3.5-turbo-1106": 0.5569568276405334,
+          "claude-v2": 0.3191124498844147,
+          "gpt-4-1106-preview": 0.19429004192352295
+        }
+      },
+      {
+        "sample_id": "mbpp.dev.383",
+        "family": "mbpp",
+        "question": "Write a function to check whether the given month number contains 30 days or not. Months are given as number from 1 to 12.",
+        "target": {
+          "weak": 0.75,
+          "intermediate": 0.0,
+          "strong": 0.0
+        },
+        "prediction": {
+          "weak": 0.2851763963699341,
+          "intermediate": 0.2740432918071747,
+          "strong": 0.1604297012090683
+        },
+        "input_support": {
+          "within_support": false,
+          "distance": 0.5146375298500061,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.3713517189025879,
+          "meta/llama-2-70b-chat": 0.3109332323074341,
+          "WizardLM/WizardLM-13B-V1.2": 0.2978057563304901,
+          "zero-one-ai/Yi-34B-Chat": 0.16061486303806305,
+          "meta/code-llama-instruct-34b-chat": 0.37054944038391113,
+          "mistralai/mixtral-8x7b-chat": 0.17173032462596893,
+          "claude-instant-v1": 0.3990192115306854,
+          "claude-v1": 0.15487422049045563,
+          "gpt-3.5-turbo-1106": 0.15082073211669922,
+          "claude-v2": 0.2622317373752594,
+          "gpt-4-1106-preview": 0.06823661923408508
+        }
+      },
+      {
+        "sample_id": "mbpp.dev.372",
+        "family": "mbpp",
+        "question": "Write a function to add the given tuple to the given list.",
+        "target": {
+          "weak": 1.0,
+          "intermediate": 0.75,
+          "strong": 1.0
+        },
+        "prediction": {
+          "weak": 0.7541710734367371,
+          "intermediate": 0.5860629677772522,
+          "strong": 0.5055654048919678
+        },
+        "input_support": {
+          "within_support": true,
+          "distance": 0.07941550016403198,
+          "threshold": 0.4764174818992615,
+          "method": "nearest-training cosine distance; validation 95th percentile",
+          "interpretation": "Input-similarity heuristic, not confidence or error probability."
+        },
+        "model_difficulty": {
+          "mistralai/mistral-7b-chat": 0.7804601788520813,
+          "meta/llama-2-70b-chat": 0.7176790237426758,
+          "WizardLM/WizardLM-13B-V1.2": 0.7578387260437012,
+          "zero-one-ai/Yi-34B-Chat": 0.7607064247131348,
+          "meta/code-llama-instruct-34b-chat": 0.4804447889328003,
+          "mistralai/mixtral-8x7b-chat": 0.7108554244041443,
+          "claude-instant-v1": 0.5411109328269958,
+          "claude-v1": 0.6118407845497131,
+          "gpt-3.5-turbo-1106": 0.4172419607639313,
+          "claude-v2": 0.6874594688415527,
+          "gpt-4-1106-preview": 0.4119947850704193
+        }
+      }
+    ],
+    "by_family_comparisons": {
+      "grade-school-math": {
+        "global_mean": {
+          "mean_mse_reduction": 0.019263758827975087,
+          "ci95": [
+            0.01582599088136643,
+            0.022430158563278534
+          ],
+          "dataset_macro_mean_mse_reduction": 0.019263758827975087,
+          "dataset_macro_ci95": [
+            0.01582599088136643,
+            0.022430158563278534
+          ],
+          "repetitions": 3000,
+          "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+        },
+        "dataset_mean": {
+          "mean_mse_reduction": 0.004081078668180029,
+          "ci95": [
+            0.0008983926473860199,
+            0.007089560073814231
+          ],
+          "dataset_macro_mean_mse_reduction": 0.004081078668180029,
+          "dataset_macro_ci95": [
+            0.0008983926473860199,
+            0.007089560073814231
+          ],
+          "repetitions": 3000,
+          "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+        }
+      },
+      "mbpp": {
+        "global_mean": {
+          "mean_mse_reduction": 0.03653017744991949,
+          "ci95": [
+            -0.0026400590651347975,
+            0.0765357920055181
+          ],
+          "dataset_macro_mean_mse_reduction": 0.03653017744991949,
+          "dataset_macro_ci95": [
+            -0.0026400590651347975,
+            0.0765357920055181
+          ],
+          "repetitions": 3000,
+          "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+        },
+        "dataset_mean": {
+          "mean_mse_reduction": 0.007810573434569146,
+          "ci95": [
+            -0.022162807466146725,
+            0.03644627376658019
+          ],
+          "dataset_macro_mean_mse_reduction": 0.007810573434569146,
+          "dataset_macro_ci95": [
+            -0.022162807466146725,
+            0.03644627376658019
+          ],
+          "repetitions": 3000,
+          "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+        }
+      }
+    }
+  },
+  "external": {
+    "GSM8K-official-test": {
+      "questions": 1319,
+      "supported_fraction": 0.9969673995451099,
+      "mean_difficulty": {
+        "weak": 0.45074341861337675,
+        "intermediate": 0.3239171114878007,
+        "strong": 0.11142041180085129
+      },
+      "std_difficulty": {
+        "weak": 0.11267679454486412,
+        "intermediate": 0.09183504865891585,
+        "strong": 0.06716252664895403
+      },
+      "source_questions": 1319,
+      "excluded": [],
+      "pool_difficulty_accuracy_available": false,
+      "interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy."
+    },
+    "MATH": {
+      "questions": 5000,
+      "supported_fraction": 0.5318,
+      "mean_difficulty": {
+        "weak": 0.5734941283866763,
+        "intermediate": 0.496218934841454,
+        "strong": 0.3404291379317641
+      },
+      "std_difficulty": {
+        "weak": 0.17322004382640482,
+        "intermediate": 0.1721107395760994,
+        "strong": 0.17819195429202572
+      },
+      "source_questions": 5000,
+      "excluded": [],
+      "pool_difficulty_accuracy_available": false,
+      "interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy.",
+      "level_proxy_spearman": {
+        "weak": 0.27166856266578304,
+        "intermediate": 0.23926080918274859,
+        "strong": 0.23025014755361375
+      },
+      "proxy_interpretation": "Association with MATH's human difficulty levels 1-5, not measured model-pool difficulty accuracy.",
+      "by_level": {
+        "1": {
+          "questions": 437,
+          "supported_fraction": 0.5377574370709383,
+          "mean_difficulty": {
+            "weak": 0.4820656736021184,
+            "intermediate": 0.4164357897516519,
+            "strong": 0.2698793810551445
+          },
+          "std_difficulty": {
+            "weak": 0.17381630344219787,
+            "intermediate": 0.16804975521345872,
+            "strong": 0.16613259325863197
+          }
+        },
+        "2": {
+          "questions": 894,
+          "supported_fraction": 0.5302013422818792,
+          "mean_difficulty": {
+            "weak": 0.5220835782937555,
+            "intermediate": 0.4526533354698812,
+            "strong": 0.2986323756626255
+          },
+          "std_difficulty": {
+            "weak": 0.17018343650170445,
+            "intermediate": 0.16804088069577913,
+            "strong": 0.17186717404559987
+          }
+        },
+        "3": {
+          "questions": 1131,
+          "supported_fraction": 0.5570291777188329,
+          "mean_difficulty": {
+            "weak": 0.5557566515501888,
+            "intermediate": 0.4779006318904782,
+            "strong": 0.317785661990378
+          },
+          "std_difficulty": {
+            "weak": 0.16750156089896726,
+            "intermediate": 0.1673975884966411,
+            "strong": 0.17272125880130043
+          }
+        },
+        "4": {
+          "questions": 1214,
+          "supported_fraction": 0.5115321252059308,
+          "mean_difficulty": {
+            "weak": 0.5980790017427389,
+            "intermediate": 0.5197007038816196,
+            "strong": 0.3633267641131946
+          },
+          "std_difficulty": {
+            "weak": 0.16968995647155855,
+            "intermediate": 0.17161966250155822,
+            "strong": 0.17642801983798648
+          }
+        },
+        "5": {
+          "questions": 1324,
+          "supported_fraction": 0.5279456193353474,
+          "mean_difficulty": {
+            "weak": 0.6309943674891917,
+            "intermediate": 0.546086014346909,
+            "strong": 0.3902845777574015
+          },
+          "std_difficulty": {
+            "weak": 0.15729718858054978,
+            "intermediate": 0.1608509415500771,
+            "strong": 0.174941817833446
+          }
+        }
+      },
+      "by_subject": {
+        "Algebra": {
+          "questions": 1187,
+          "human_level_spearman": {
+            "weak": 0.3225975455417937,
+            "intermediate": 0.33748255222099766,
+            "strong": 0.3456616362959533
+          }
+        },
+        "Counting & Probability": {
+          "questions": 474,
+          "human_level_spearman": {
+            "weak": 0.016490550841814545,
+            "intermediate": 0.009709653907393019,
+            "strong": 0.005562031389629844
+          }
+        },
+        "Geometry": {
+          "questions": 479,
+          "human_level_spearman": {
+            "weak": 0.21559026220087496,
+            "intermediate": 0.18678934331801664,
+            "strong": 0.17417349239823723
+          }
+        },
+        "Intermediate Algebra": {
+          "questions": 903,
+          "human_level_spearman": {
+            "weak": 0.3051006816544311,
+            "intermediate": 0.2512366802473285,
+            "strong": 0.2521060781647768
+          }
+        },
+        "Number Theory": {
+          "questions": 540,
+          "human_level_spearman": {
+            "weak": 0.30314323361821405,
+            "intermediate": 0.2825758105970532,
+            "strong": 0.2853103549324874
+          }
+        },
+        "Prealgebra": {
+          "questions": 871,
+          "human_level_spearman": {
+            "weak": 0.21411110457296728,
+            "intermediate": 0.16996703779553432,
+            "strong": 0.13091281224351398
+          }
+        },
+        "Precalculus": {
+          "questions": 546,
+          "human_level_spearman": {
+            "weak": 0.3219978028889396,
+            "intermediate": 0.2901307488479153,
+            "strong": 0.2607852875169279
+          }
+        }
+      }
+    },
+    "HumanEval": {
+      "questions": 164,
+      "supported_fraction": 0.7865853658536586,
+      "mean_difficulty": {
+        "weak": 0.6583783570222739,
+        "intermediate": 0.5075451424572526,
+        "strong": 0.385314796937675
+      },
+      "std_difficulty": {
+        "weak": 0.17444868272422293,
+        "intermediate": 0.15679561271624373,
+        "strong": 0.16568569265653404
+      },
+      "source_questions": 164,
+      "excluded": [],
+      "pool_difficulty_accuracy_available": false,
+      "interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy."
+    },
+    "new-questions": {
+      "questions": 20,
+      "supported_fraction": 0.45,
+      "mean_difficulty": {
+        "weak": 0.4770237136632204,
+        "intermediate": 0.42139515578746795,
+        "strong": 0.27662271903827784
+      },
+      "std_difficulty": {
+        "weak": 0.2183401625068063,
+        "intermediate": 0.21729094769945254,
+        "strong": 0.19450934497990002
+      },
+      "source_questions": 20,
+      "excluded": [],
+      "pool_difficulty_accuracy_available": false,
+      "interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy.",
+      "predictions": [
+        {
+          "question": "what's 1 + 1",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.6707757115364075,
+            "intermediate": 0.7426859736442566,
+            "strong": 0.5946812033653259
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.5602010488510132,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.7899889349937439,
+            "meta/llama-2-70b-chat": 0.6355003714561462,
+            "WizardLM/WizardLM-13B-V1.2": 0.6008898615837097,
+            "zero-one-ai/Yi-34B-Chat": 0.6567237377166748,
+            "meta/code-llama-instruct-34b-chat": 0.7855405211448669,
+            "mistralai/mixtral-8x7b-chat": 0.6734633445739746,
+            "claude-instant-v1": 0.812018096446991,
+            "claude-v1": 0.6997217535972595,
+            "gpt-3.5-turbo-1106": 0.6301863193511963,
+            "claude-v2": 0.7398310303688049,
+            "gpt-4-1106-preview": 0.4140263497829437
+          }
+        },
+        {
+          "question": "What is 1 + 1?",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.5289270281791687,
+            "intermediate": 0.6330892443656921,
+            "strong": 0.3948844373226166
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.571690559387207,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.6564650535583496,
+            "meta/llama-2-70b-chat": 0.47545281052589417,
+            "WizardLM/WizardLM-13B-V1.2": 0.46784600615501404,
+            "zero-one-ai/Yi-34B-Chat": 0.5159441828727722,
+            "meta/code-llama-instruct-34b-chat": 0.6658993363380432,
+            "mistralai/mixtral-8x7b-chat": 0.4851505756378174,
+            "claude-instant-v1": 0.7808260917663574,
+            "claude-v1": 0.6004810929298401,
+            "gpt-3.5-turbo-1106": 0.46860161423683167,
+            "claude-v2": 0.45660170912742615,
+            "gpt-4-1106-preview": 0.25944995880126953
+          }
+        },
+        {
+          "question": "Add one and one.",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.644477903842926,
+            "intermediate": 0.6091311573982239,
+            "strong": 0.2624844014644623
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.5857424736022949,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.7811456322669983,
+            "meta/llama-2-70b-chat": 0.6225832104682922,
+            "WizardLM/WizardLM-13B-V1.2": 0.6227803230285645,
+            "zero-one-ai/Yi-34B-Chat": 0.5514023303985596,
+            "meta/code-llama-instruct-34b-chat": 0.7135089039802551,
+            "mistralai/mixtral-8x7b-chat": 0.7022833228111267,
+            "claude-instant-v1": 0.5777837634086609,
+            "claude-v1": 0.4429485499858856,
+            "gpt-3.5-turbo-1106": 0.37043118476867676,
+            "claude-v2": 0.29963362216949463,
+            "gpt-4-1106-preview": 0.11738844960927963
+          }
+        },
+        {
+          "question": "Maya has one pear and receives another pear. How many pears does Maya have?",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.3161567747592926,
+            "intermediate": 0.20395460724830627,
+            "strong": 0.081916943192482
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.30425214767456055,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.4341939389705658,
+            "meta/llama-2-70b-chat": 0.2308918684720993,
+            "WizardLM/WizardLM-13B-V1.2": 0.26825323700904846,
+            "zero-one-ai/Yi-34B-Chat": 0.3312881290912628,
+            "meta/code-llama-instruct-34b-chat": 0.2593517601490021,
+            "mistralai/mixtral-8x7b-chat": 0.21482305228710175,
+            "claude-instant-v1": 0.2218879908323288,
+            "claude-v1": 0.11975564807653427,
+            "gpt-3.5-turbo-1106": 0.1089228019118309,
+            "claude-v2": 0.10548581928014755,
+            "gpt-4-1106-preview": 0.03134220466017723
+          }
+        },
+        {
+          "question": "Compute 1 + 1. Return only the number.",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.6333873271942139,
+            "intermediate": 0.6059939861297607,
+            "strong": 0.45517632365226746
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.47827476263046265,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.7431368231773376,
+            "meta/llama-2-70b-chat": 0.7285749316215515,
+            "WizardLM/WizardLM-13B-V1.2": 0.5315309166908264,
+            "zero-one-ai/Yi-34B-Chat": 0.5303065180778503,
+            "meta/code-llama-instruct-34b-chat": 0.6994463801383972,
+            "mistralai/mixtral-8x7b-chat": 0.4316871166229248,
+            "claude-instant-v1": 0.7228439450263977,
+            "claude-v1": 0.5699984431266785,
+            "gpt-3.5-turbo-1106": 0.47943106293678284,
+            "claude-v2": 0.6001597046852112,
+            "gpt-4-1106-preview": 0.2859381139278412
+          }
+        },
+        {
+          "question": "Compute 1 + 1 and briefly explain your answer.",
+          "probe_kind": "addition",
+          "prediction": {
+            "weak": 0.8406982421875,
+            "intermediate": 0.8227184414863586,
+            "strong": 0.647832453250885
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.5259948372840881,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.8897685408592224,
+            "meta/llama-2-70b-chat": 0.8454992771148682,
+            "WizardLM/WizardLM-13B-V1.2": 0.8060758709907532,
+            "zero-one-ai/Yi-34B-Chat": 0.821449339389801,
+            "meta/code-llama-instruct-34b-chat": 0.8697981834411621,
+            "mistralai/mixtral-8x7b-chat": 0.7609966397285461,
+            "claude-instant-v1": 0.8817642331123352,
+            "claude-v1": 0.7783148288726807,
+            "gpt-3.5-turbo-1106": 0.7605698108673096,
+            "claude-v2": 0.6470722556114197,
+            "gpt-4-1106-preview": 0.5358553528785706
+          }
+        },
+        {
+          "question": "What is 17 + 26?",
+          "probe_kind": "arithmetic",
+          "prediction": {
+            "weak": 0.3246089220046997,
+            "intermediate": 0.3318461775779724,
+            "strong": 0.15369881689548492
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.41407954692840576,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.40463295578956604,
+            "meta/llama-2-70b-chat": 0.31355783343315125,
+            "WizardLM/WizardLM-13B-V1.2": 0.28833866119384766,
+            "zero-one-ai/Yi-34B-Chat": 0.2919062674045563,
+            "meta/code-llama-instruct-34b-chat": 0.3619978725910187,
+            "mistralai/mixtral-8x7b-chat": 0.2749628722667694,
+            "claude-instant-v1": 0.4487328827381134,
+            "claude-v1": 0.24169106781482697,
+            "gpt-3.5-turbo-1106": 0.15329670906066895,
+            "claude-v2": 0.21562957763671875,
+            "gpt-4-1106-preview": 0.09217014908790588
+          }
+        },
+        {
+          "question": "Calculate 89 minus 34.",
+          "probe_kind": "arithmetic",
+          "prediction": {
+            "weak": 0.36254042387008667,
+            "intermediate": 0.22190268337726593,
+            "strong": 0.12017764896154404
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.4999643564224243,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.539883017539978,
+            "meta/llama-2-70b-chat": 0.3658602237701416,
+            "WizardLM/WizardLM-13B-V1.2": 0.3032773435115814,
+            "zero-one-ai/Yi-34B-Chat": 0.24114112555980682,
+            "meta/code-llama-instruct-34b-chat": 0.394458144903183,
+            "mistralai/mixtral-8x7b-chat": 0.29257795214653015,
+            "claude-instant-v1": 0.12670107185840607,
+            "claude-v1": 0.07387355715036392,
+            "gpt-3.5-turbo-1106": 0.10540705919265747,
+            "claude-v2": 0.21706439554691315,
+            "gpt-4-1106-preview": 0.038061484694480896
+          }
+        },
+        {
+          "question": "What is three quarters plus two thirds?",
+          "probe_kind": "arithmetic",
+          "prediction": {
+            "weak": 0.3607306182384491,
+            "intermediate": 0.3480943441390991,
+            "strong": 0.10212648659944534
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.3523355722427368,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.44570398330688477,
+            "meta/llama-2-70b-chat": 0.44203439354896545,
+            "WizardLM/WizardLM-13B-V1.2": 0.3690986633300781,
+            "zero-one-ai/Yi-34B-Chat": 0.186085507273674,
+            "meta/code-llama-instruct-34b-chat": 0.478890061378479,
+            "mistralai/mixtral-8x7b-chat": 0.2677667438983917,
+            "claude-instant-v1": 0.37478187680244446,
+            "claude-v1": 0.2709387540817261,
+            "gpt-3.5-turbo-1106": 0.12804393470287323,
+            "claude-v2": 0.08740004897117615,
+            "gpt-4-1106-preview": 0.09093549102544785
+          }
+        },
+        {
+          "question": "Solve 7x - 5 = 44 for x.",
+          "probe_kind": "algebra",
+          "prediction": {
+            "weak": 0.5279430150985718,
+            "intermediate": 0.44992727041244507,
+            "strong": 0.1347280591726303
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.4445793628692627,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.813586413860321,
+            "meta/llama-2-70b-chat": 0.5481937527656555,
+            "WizardLM/WizardLM-13B-V1.2": 0.47487178444862366,
+            "zero-one-ai/Yi-34B-Chat": 0.27512016892433167,
+            "meta/code-llama-instruct-34b-chat": 0.6018826365470886,
+            "mistralai/mixtral-8x7b-chat": 0.6632254719734192,
+            "claude-instant-v1": 0.3157503604888916,
+            "claude-v1": 0.21885056793689728,
+            "gpt-3.5-turbo-1106": 0.20207302272319794,
+            "claude-v2": 0.13832791149616241,
+            "gpt-4-1106-preview": 0.06378325819969177
+          }
+        },
+        {
+          "question": "Find all real roots of x^4 - 5x^2 + 4 = 0.",
+          "probe_kind": "algebra",
+          "prediction": {
+            "weak": 0.2463172823190689,
+            "intermediate": 0.21624161303043365,
+            "strong": 0.13274236023426056
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.4930378198623657,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.3178347647190094,
+            "meta/llama-2-70b-chat": 0.26862990856170654,
+            "WizardLM/WizardLM-13B-V1.2": 0.2600245773792267,
+            "zero-one-ai/Yi-34B-Chat": 0.13877995312213898,
+            "meta/code-llama-instruct-34b-chat": 0.2594689130783081,
+            "mistralai/mixtral-8x7b-chat": 0.4126953184604645,
+            "claude-instant-v1": 0.11766885966062546,
+            "claude-v1": 0.07513336837291718,
+            "gpt-3.5-turbo-1106": 0.13443748652935028,
+            "claude-v2": 0.2064981907606125,
+            "gpt-4-1106-preview": 0.057291388511657715
+          }
+        },
+        {
+          "question": "Prove that there are infinitely many primes congruent to 3 modulo 4.",
+          "probe_kind": "proof",
+          "prediction": {
+            "weak": 0.23540732264518738,
+            "intermediate": 0.315268337726593,
+            "strong": 0.2520477771759033
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.616425633430481,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.2254086285829544,
+            "meta/llama-2-70b-chat": 0.32519352436065674,
+            "WizardLM/WizardLM-13B-V1.2": 0.26250922679901123,
+            "zero-one-ai/Yi-34B-Chat": 0.12851791083812714,
+            "meta/code-llama-instruct-34b-chat": 0.34925368428230286,
+            "mistralai/mixtral-8x7b-chat": 0.2478928118944168,
+            "claude-instant-v1": 0.31971654295921326,
+            "claude-v1": 0.3442102372646332,
+            "gpt-3.5-turbo-1106": 0.21044369041919708,
+            "claude-v2": 0.3861478269100189,
+            "gpt-4-1106-preview": 0.15955178439617157
+          }
+        },
+        {
+          "question": "Write a Python function that returns the square of an integer.",
+          "probe_kind": "code",
+          "prediction": {
+            "weak": 0.37732887268066406,
+            "intermediate": 0.1277007907629013,
+            "strong": 0.1128949522972107
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.261124849319458,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.33888205885887146,
+            "meta/llama-2-70b-chat": 0.47033846378326416,
+            "WizardLM/WizardLM-13B-V1.2": 0.2858949899673462,
+            "zero-one-ai/Yi-34B-Chat": 0.41419991850852966,
+            "meta/code-llama-instruct-34b-chat": 0.1931341290473938,
+            "mistralai/mixtral-8x7b-chat": 0.16278982162475586,
+            "claude-instant-v1": 0.08790082484483719,
+            "claude-v1": 0.06697839498519897,
+            "gpt-3.5-turbo-1106": 0.123283751308918,
+            "claude-v2": 0.07836232334375381,
+            "gpt-4-1106-preview": 0.13703878223896027
+          }
+        },
+        {
+          "question": "Write a Python function that checks whether parentheses, brackets, and braces are balanced.",
+          "probe_kind": "code",
+          "prediction": {
+            "weak": 0.5455087423324585,
+            "intermediate": 0.30290892720222473,
+            "strong": 0.15743179619312286
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.4443226456642151,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.7094619274139404,
+            "meta/llama-2-70b-chat": 0.512056291103363,
+            "WizardLM/WizardLM-13B-V1.2": 0.6101462244987488,
+            "zero-one-ai/Yi-34B-Chat": 0.3503703773021698,
+            "meta/code-llama-instruct-34b-chat": 0.44188106060028076,
+            "mistralai/mixtral-8x7b-chat": 0.24117422103881836,
+            "claude-instant-v1": 0.25243818759918213,
+            "claude-v1": 0.2761422395706177,
+            "gpt-3.5-turbo-1106": 0.14193624258041382,
+            "claude-v2": 0.25399646162986755,
+            "gpt-4-1106-preview": 0.07636269927024841
+          }
+        },
+        {
+          "question": "Implement edit distance in Python using dynamic programming and explain its complexity.",
+          "probe_kind": "code",
+          "prediction": {
+            "weak": 0.8858031630516052,
+            "intermediate": 0.8110077381134033,
+            "strong": 0.7234475016593933
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.44381487369537354,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.9309331774711609,
+            "meta/llama-2-70b-chat": 0.7892134785652161,
+            "WizardLM/WizardLM-13B-V1.2": 0.8769261240959167,
+            "zero-one-ai/Yi-34B-Chat": 0.9461397528648376,
+            "meta/code-llama-instruct-34b-chat": 0.8496379852294922,
+            "mistralai/mixtral-8x7b-chat": 0.8343312740325928,
+            "claude-instant-v1": 0.7225075364112854,
+            "claude-v1": 0.8375542759895325,
+            "gpt-3.5-turbo-1106": 0.8105766177177429,
+            "claude-v2": 0.733936071395874,
+            "gpt-4-1106-preview": 0.6258296370506287
+          }
+        },
+        {
+          "question": "Implement red-black tree insertion in Python, including rotations and rebalancing.",
+          "probe_kind": "code",
+          "prediction": {
+            "weak": 0.8386042714118958,
+            "intermediate": 0.555797278881073,
+            "strong": 0.40168917179107666
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.5967233180999756,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.827725887298584,
+            "meta/llama-2-70b-chat": 0.7873724102973938,
+            "WizardLM/WizardLM-13B-V1.2": 0.8976584076881409,
+            "zero-one-ai/Yi-34B-Chat": 0.8416604399681091,
+            "meta/code-llama-instruct-34b-chat": 0.8223893642425537,
+            "mistralai/mixtral-8x7b-chat": 0.5231246948242188,
+            "claude-instant-v1": 0.4794866740703583,
+            "claude-v1": 0.39818835258483887,
+            "gpt-3.5-turbo-1106": 0.5791127681732178,
+            "claude-v2": 0.4371131360530853,
+            "gpt-4-1106-preview": 0.1888415813446045
+          }
+        },
+        {
+          "question": "What is the capital of France?",
+          "probe_kind": "knowledge",
+          "prediction": {
+            "weak": 0.09574735909700394,
+            "intermediate": 0.10428981482982635,
+            "strong": 0.023499542847275734
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.42410802841186523,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.07748784124851227,
+            "meta/llama-2-70b-chat": 0.15438318252563477,
+            "WizardLM/WizardLM-13B-V1.2": 0.12009921669960022,
+            "zero-one-ai/Yi-34B-Chat": 0.031019171699881554,
+            "meta/code-llama-instruct-34b-chat": 0.06636115163564682,
+            "mistralai/mixtral-8x7b-chat": 0.036076005548238754,
+            "claude-instant-v1": 0.18372869491577148,
+            "claude-v1": 0.13099342584609985,
+            "gpt-3.5-turbo-1106": 0.028103381395339966,
+            "claude-v2": 0.03020051121711731,
+            "gpt-4-1106-preview": 0.012194734066724777
+          }
+        },
+        {
+          "question": "Which integer is larger, 9 or 4?",
+          "probe_kind": "comparison",
+          "prediction": {
+            "weak": 0.39611944556236267,
+            "intermediate": 0.3955087661743164,
+            "strong": 0.24660642445087433
+          },
+          "input_support": {
+            "within_support": true,
+            "distance": 0.4675534963607788,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.4667825400829315,
+            "meta/llama-2-70b-chat": 0.47621777653694153,
+            "WizardLM/WizardLM-13B-V1.2": 0.4398229122161865,
+            "zero-one-ai/Yi-34B-Chat": 0.2016545683145523,
+            "meta/code-llama-instruct-34b-chat": 0.3351071774959564,
+            "mistralai/mixtral-8x7b-chat": 0.3056615889072418,
+            "claude-instant-v1": 0.4843071401119232,
+            "claude-v1": 0.4569591283798218,
+            "gpt-3.5-turbo-1106": 0.1994481086730957,
+            "claude-v2": 0.4400660991668701,
+            "gpt-4-1106-preview": 0.10030508786439896
+          }
+        },
+        {
+          "question": "Explain why a photon can carry momentum despite having zero rest mass.",
+          "probe_kind": "explanation",
+          "prediction": {
+            "weak": 0.5033796429634094,
+            "intermediate": 0.40762844681739807,
+            "strong": 0.28733283281326294
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.5402960777282715,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.5450260043144226,
+            "meta/llama-2-70b-chat": 0.640603244304657,
+            "WizardLM/WizardLM-13B-V1.2": 0.5414474606513977,
+            "zero-one-ai/Yi-34B-Chat": 0.2864418923854828,
+            "meta/code-llama-instruct-34b-chat": 0.4955434501171112,
+            "mistralai/mixtral-8x7b-chat": 0.46263620257377625,
+            "claude-instant-v1": 0.3567292392253876,
+            "claude-v1": 0.31560489535331726,
+            "gpt-3.5-turbo-1106": 0.27427810430526733,
+            "claude-v2": 0.5262323021888733,
+            "gpt-4-1106-preview": 0.061488110572099686
+          }
+        },
+        {
+          "question": "Write a warm two-sentence thank-you note to a helpful neighbor.",
+          "probe_kind": "writing",
+          "prediction": {
+            "weak": 0.20601220428943634,
+            "intermediate": 0.22220751643180847,
+            "strong": 0.24705524742603302
+          },
+          "input_support": {
+            "within_support": false,
+            "distance": 0.4765983819961548,
+            "threshold": 0.4764174818992615,
+            "method": "nearest-training cosine distance; validation 95th percentile",
+            "interpretation": "Input-similarity heuristic, not confidence or error probability."
+          },
+          "model_difficulty": {
+            "mistralai/mistral-7b-chat": 0.29324910044670105,
+            "meta/llama-2-70b-chat": 0.202292338013649,
+            "WizardLM/WizardLM-13B-V1.2": 0.2560224235057831,
+            "zero-one-ai/Yi-34B-Chat": 0.07248492538928986,
+            "meta/code-llama-instruct-34b-chat": 0.28477898240089417,
+            "mistralai/mixtral-8x7b-chat": 0.34573766589164734,
+            "claude-instant-v1": 0.10295257717370987,
+            "claude-v1": 0.15536081790924072,
+            "gpt-3.5-turbo-1106": 0.1954607516527176,
+            "claude-v2": 0.4665570557117462,
+            "gpt-4-1106-preview": 0.07914794236421585
+          }
+        }
+      ],
+      "addition_paraphrase_range": {
+        "weak": 0.5245414674282074,
+        "intermediate": 0.6187638342380524,
+        "strong": 0.565915510058403
+      }
+    }
+  },
+  "elapsed_seconds": 174.63543489999574
+}
