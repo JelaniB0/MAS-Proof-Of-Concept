@@ -1,0 +1,29 @@
+{
+  "grader_version": "gsm-final-numeric-v2",
+  "response_source_sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d",
+  "reference_sha256": "2437d36d59167432067063aedc7b0cd2a203731556bd0aa7042d6e5d9e54e3d7",
+  "original_split_sha256": {
+    "train": "fdc6dd79d2c24505f2de337cfe9427291d3e0785cce90974f322ebd19ded1c57",
+    "validation": "20382a3e244584c0546d4ddc035f70911d7360b67c1d3f338cbea878ccfadbf8",
+    "test": "b70431303d0d24e1bf3902d61f85aba1ece9e3bca45771bff8a35a1dd8bf0e1f"
+  },
+  "groups": {
+    "weak": [
+      "mistralai/mistral-7b-chat",
+      "meta/llama-2-70b-chat",
+      "WizardLM/WizardLM-13B-V1.2",
+      "zero-one-ai/Yi-34B-Chat"
+    ],
+    "intermediate": [
+      "meta/code-llama-instruct-34b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "claude-instant-v1",
+      "claude-v1"
+    ],
+    "strong": [
+      "gpt-3.5-turbo-1106",
+      "claude-v2",
+      "gpt-4-1106-preview"
+    ]
+  }
+}

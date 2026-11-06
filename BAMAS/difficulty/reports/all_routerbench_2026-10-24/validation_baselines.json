@@ -1,0 +1,46 @@
+{
+  "main": {
+    "global_mean": {
+      "dataset_macro_mse": 0.11764432801007296,
+      "by_family_mse": {
+        "winogrande": 0.0688288917490361,
+        "mmlu": 0.1163504862897561,
+        "mbpp": 0.15316567870750128,
+        "mtbench": 0.10866539816705635,
+        "hellaswag": 0.08908142280517928,
+        "additional-evals": 0.21080688145747076,
+        "arc-challenge": 0.10102004024909055,
+        "grade-school-math": 0.09323582465549331
+      }
+    },
+    "dataset_mean": {
+      "dataset_macro_mse": 0.1031557828614566,
+      "by_family_mse": {
+        "winogrande": 0.06569319057590252,
+        "mmlu": 0.11498081425873641,
+        "mbpp": 0.12897886868324923,
+        "mtbench": 0.11269720059390198,
+        "hellaswag": 0.086290377290091,
+        "additional-evals": 0.15085027695685407,
+        "arc-challenge": 0.08571274039394287,
+        "grade-school-math": 0.08004279413897468
+      }
+    }
+  },
+  "rag": {
+    "global_mean": {
+      "dataset_macro_mse": 0.18830847539028323,
+      "by_family_mse": {
+        "rag_wiki": 0.17747468371379493,
+        "rag_news": 0.19914226706677154
+      }
+    },
+    "dataset_mean": {
+      "dataset_macro_mse": 0.17174546435163968,
+      "by_family_mse": {
+        "rag_wiki": 0.15989587716274092,
+        "rag_news": 0.18359505154053843
+      }
+    }
+  }
+}

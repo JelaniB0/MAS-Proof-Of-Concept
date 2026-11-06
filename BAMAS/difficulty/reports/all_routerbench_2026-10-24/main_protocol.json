@@ -1,0 +1,87 @@
+{
+  "version": "frozen-study-v1",
+  "input_version": "question-input-v1",
+  "pool_contract_id": "6b1f8b33dae4aac3a42c39b6bc3ffb22f40a1784d50dd6493ef0ddf71a885221",
+  "prepared_sha256": {
+    "train": "5fa81ea4949ffc37435febd928792aa89eb6333eccdbfac99111c210b8aefe7d",
+    "validation": "c74f9341cf1bfb348baf44bfec331617ca571b046cf00e8ef2fe8840888664a7",
+    "test": "a77738dc3f41747cdf0de5a20779b2b39ac6f0edf719bf19ca22d5e5a6e54f44"
+  },
+  "encoder_weights_sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "encoder_configuration_sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0",
+  "tokenizer_sha256": "e9be3c068e54b7c71ebd9ba7bfc48632e741ccd0cfaa4e58f3fabf9bee3db7e9",
+  "configurations": [
+    {
+      "name": "task_natural_mse",
+      "input_mode": "task",
+      "balanced": false,
+      "loss": "mse"
+    },
+    {
+      "name": "task_sqrt_balanced_mse",
+      "input_mode": "task",
+      "balanced": true,
+      "balance_power": 0.5,
+      "loss": "mse"
+    },
+    {
+      "name": "task_model_sqrt_mse",
+      "input_mode": "task",
+      "balanced": true,
+      "balance_power": 0.5,
+      "loss": "mse",
+      "prediction_level": "model",
+      "groups": {
+        "weak": [
+          "mistralai/mistral-7b-chat",
+          "meta/llama-2-70b-chat",
+          "WizardLM/WizardLM-13B-V1.2",
+          "zero-one-ai/Yi-34B-Chat"
+        ],
+        "intermediate": [
+          "meta/code-llama-instruct-34b-chat",
+          "mistralai/mixtral-8x7b-chat",
+          "claude-instant-v1",
+          "claude-v1"
+        ],
+        "strong": [
+          "gpt-3.5-turbo-1106",
+          "claude-v2",
+          "gpt-4-1106-preview"
+        ]
+      },
+      "model_order": [
+        "mistralai/mistral-7b-chat",
+        "meta/llama-2-70b-chat",
+        "WizardLM/WizardLM-13B-V1.2",
+        "zero-one-ai/Yi-34B-Chat",
+        "meta/code-llama-instruct-34b-chat",
+        "mistralai/mixtral-8x7b-chat",
+        "claude-instant-v1",
+        "claude-v1",
+        "gpt-3.5-turbo-1106",
+        "claude-v2",
+        "gpt-4-1106-preview"
+      ]
+    }
+  ],
+  "epochs": 100,
+  "patience": 12,
+  "head": {
+    "hidden_dim": 128,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 256
+  },
+  "selection": "Lowest ensemble validation MSE, averaging datasets equally; test does not select configuration.",
+  "test_status": "Existing test split has been inspected previously; this is an exploratory comparison, not a fresh confirmatory test.",
+  "input_versions": {
+    "task": "routerbench-task-v1"
+  }
+}

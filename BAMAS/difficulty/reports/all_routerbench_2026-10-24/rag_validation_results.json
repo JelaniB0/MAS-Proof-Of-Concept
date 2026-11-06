@@ -1,0 +1,237 @@
+[
+  {
+    "config": {
+      "name": "task_natural_mse",
+      "input_mode": "task",
+      "balanced": false,
+      "loss": "mse"
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "best_epoch": 32,
+        "validation_dataset_macro_mse": 0.17209498584270477
+      },
+      {
+        "seed": 43,
+        "best_epoch": 32,
+        "validation_dataset_macro_mse": 0.17236843705177307
+      },
+      {
+        "seed": 44,
+        "best_epoch": 31,
+        "validation_dataset_macro_mse": 0.17216597000757855
+      }
+    ],
+    "ensemble_validation": {
+      "weak": {
+        "n": 81,
+        "mae": 0.3444094657897949,
+        "rmse": 0.38434401519068995,
+        "mse": 0.1477203220129013,
+        "calibration_error": 0.11426620590098109,
+        "prediction_std": 0.12967456877231598,
+        "target_std": 0.44056954979896545,
+        "mean_bias": 0.04367559775710106,
+        "spearman": 0.5645102871153928
+      },
+      "intermediate": {
+        "n": 81,
+        "mae": 0.3569103181362152,
+        "rmse": 0.39729802497466,
+        "mse": 0.15784572064876556,
+        "calibration_error": 0.07914297448264228,
+        "prediction_std": 0.0825253427028656,
+        "target_std": 0.3963136076927185,
+        "mean_bias": 0.07914300262928009,
+        "spearman": 0.18556314135026536
+      },
+      "strong": {
+        "n": 81,
+        "mae": 0.4102385640144348,
+        "rmse": 0.44064802691304567,
+        "mse": 0.19417068362236023,
+        "calibration_error": 0.10668472780121696,
+        "prediction_std": 0.07712069898843765,
+        "target_std": 0.43822813034057617,
+        "mean_bias": 0.07345504313707352,
+        "spearman": 0.16145750205847978
+      },
+      "macro_mse": 0.16657890876134238,
+      "by_dataset": {
+        "rag_news": {
+          "weak": {
+            "n": 26,
+            "mae": 0.3434191346168518,
+            "rmse": 0.3870845952268357,
+            "mse": 0.14983448386192322,
+            "calibration_error": 0.16817265978226295
+          },
+          "intermediate": {
+            "n": 26,
+            "mae": 0.37791669368743896,
+            "rmse": 0.4218843070522405,
+            "mse": 0.17798636853694916,
+            "calibration_error": 0.048598341070688694
+          },
+          "strong": {
+            "n": 26,
+            "mae": 0.4612541198730469,
+            "rmse": 0.48549784982894617,
+            "mse": 0.23570816218852997,
+            "calibration_error": 0.09679107654553194
+          },
+          "macro_mse": 0.18784300486246744
+        },
+        "rag_wiki": {
+          "weak": {
+            "n": 55,
+            "mae": 0.3448776304721832,
+            "rmse": 0.38304164412192826,
+            "mse": 0.14672090113162994,
+            "calibration_error": 0.187626618959687
+          },
+          "intermediate": {
+            "n": 55,
+            "mae": 0.3469800353050232,
+            "rmse": 0.38512947577525636,
+            "mse": 0.14832471311092377,
+            "calibration_error": 0.09358230558308687
+          },
+          "strong": {
+            "n": 55,
+            "mae": 0.3861221373081207,
+            "rmse": 0.41777360228632904,
+            "mse": 0.17453478276729584,
+            "calibration_error": 0.11852544329383156
+          },
+          "macro_mse": 0.15652679900328317
+        }
+      },
+      "dataset_macro_mse": 0.1721849019328753
+    },
+    "head_files": [
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_natural_mse\\seed_42\\head.pt",
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_natural_mse\\seed_43\\head.pt",
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_natural_mse\\seed_44\\head.pt"
+    ]
+  },
+  {
+    "config": {
+      "name": "task_sqrt_balanced_mse",
+      "input_mode": "task",
+      "balanced": true,
+      "balance_power": 0.5,
+      "loss": "mse"
+    },
+    "seeds": [
+      {
+        "seed": 42,
+        "best_epoch": 34,
+        "validation_dataset_macro_mse": 0.17156271636486053
+      },
+      {
+        "seed": 43,
+        "best_epoch": 36,
+        "validation_dataset_macro_mse": 0.17272451023260754
+      },
+      {
+        "seed": 44,
+        "best_epoch": 34,
+        "validation_dataset_macro_mse": 0.1713564172387123
+      }
+    ],
+    "ensemble_validation": {
+      "weak": {
+        "n": 81,
+        "mae": 0.3407836854457855,
+        "rmse": 0.3806400156426116,
+        "mse": 0.1448868215084076,
+        "calibration_error": 0.12785069810019598,
+        "prediction_std": 0.13796557486057281,
+        "target_std": 0.44056954979896545,
+        "mean_bias": 0.03253637254238129,
+        "spearman": 0.5693385744585663
+      },
+      "intermediate": {
+        "n": 81,
+        "mae": 0.35656437277793884,
+        "rmse": 0.3972258938976839,
+        "mse": 0.15778841078281403,
+        "calibration_error": 0.07759805152445663,
+        "prediction_std": 0.08797739446163177,
+        "target_std": 0.3963136076927185,
+        "mean_bias": 0.07759803533554077,
+        "spearman": 0.1922694805876087
+      },
+      "strong": {
+        "n": 81,
+        "mae": 0.40867510437965393,
+        "rmse": 0.44015973396804736,
+        "mse": 0.1937405914068222,
+        "calibration_error": 0.13223492363352832,
+        "prediction_std": 0.08336855471134186,
+        "target_std": 0.43822813034057617,
+        "mean_bias": 0.07306501269340515,
+        "spearman": 0.1698918491809377
+      },
+      "macro_mse": 0.16547194123268127,
+      "by_dataset": {
+        "rag_news": {
+          "weak": {
+            "n": 26,
+            "mae": 0.34569647908210754,
+            "rmse": 0.39061841959179056,
+            "mse": 0.15258274972438812,
+            "calibration_error": 0.19670613453938413
+          },
+          "intermediate": {
+            "n": 26,
+            "mae": 0.37988126277923584,
+            "rmse": 0.42365166291102196,
+            "mse": 0.17948073148727417,
+            "calibration_error": 0.053146282067665696
+          },
+          "strong": {
+            "n": 26,
+            "mae": 0.46261894702911377,
+            "rmse": 0.4860157557090114,
+            "mse": 0.23621131479740143,
+            "calibration_error": 0.15164637107115525
+          },
+          "macro_mse": 0.18942493200302124
+        },
+        "rag_wiki": {
+          "weak": {
+            "n": 55,
+            "mae": 0.3384611904621124,
+            "rmse": 0.3758307236047262,
+            "mse": 0.14124873280525208,
+            "calibration_error": 0.17253509705716913
+          },
+          "intermediate": {
+            "n": 55,
+            "mae": 0.3455418348312378,
+            "rmse": 0.3841013717534509,
+            "mse": 0.1475338637828827,
+            "calibration_error": 0.0891570432619615
+          },
+          "strong": {
+            "n": 55,
+            "mae": 0.3831743896007538,
+            "rmse": 0.41672952495729215,
+            "mse": 0.17366349697113037,
+            "calibration_error": 0.12305859083479101
+          },
+          "macro_mse": 0.15414869785308838
+        }
+      },
+      "dataset_macro_mse": 0.1717868149280548
+    },
+    "head_files": [
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_sqrt_balanced_mse\\seed_42\\head.pt",
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_sqrt_balanced_mse\\seed_43\\head.pt",
+      "BAMAS\\difficulty\\runs\\all_routerbench_v1\\rag\\candidates\\task_sqrt_balanced_mse\\seed_44\\head.pt"
+    ]
+  }
+]

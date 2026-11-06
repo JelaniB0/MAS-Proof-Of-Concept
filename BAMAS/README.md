@@ -121,12 +121,28 @@ python experiments/main_experiment_mbpp.py
 - **Modular design**: Easy to extend with new agents and topologies
 - **Multi-dataset support**: Works across different task domains
 
-## Citation
+## Difficulty prediction experiment
 
-If you use this code in your research, please cite our paper:
+The standalone [difficulty predictor](difficulty/README.md) uses frozen
+`all-mpnet-base-v2` embeddings and a three-seed ensemble of MLP heads. The selected
+head predicts difficulties for eleven historical RouterBench models and averages
+them into fixed weak/intermediate/strong pools. It is not yet connected to BAMAS's
+RL controller or ILP planner.
 
-To be released
+The main study uses 25,710 training, 5,406 validation and 5,381 test questions.
+See the [training and held-out results](difficulty/reports/all_routerbench_2026-10-24/REPORT.md),
+[reviewed GSM8K labels](difficulty/reports/label_audit/README.md),
+[external evaluation](difficulty/reports/generalization_2026-10-25/REPORT.md) and
+[controller contract](difficulty/CONTROLLER_INTEGRATION.md).
+Short-arithmetic predictions remain unreliable; external MATH/HumanEval pool-outcome
+accuracy is not established without the corresponding graded model responses.
 
-## License
+```powershell
+python BAMAS/scripts/try_difficulty.py
+python -m BAMAS.difficulty benchmark --device auto
+```
 
-This project is licensed under the terms specified in the LICENSE file.
+Run these commands from the workspace root. Datasets and model weights are ignored
+by Git; preparation and training commands are in the difficulty README.
+
+

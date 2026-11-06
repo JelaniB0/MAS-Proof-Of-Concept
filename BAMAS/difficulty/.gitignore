@@ -1,0 +1,6 @@
+__pycache__/
+data/
+runs/
+_archive/
+.pytest_cache/
+reports/cleanup_*/*.log

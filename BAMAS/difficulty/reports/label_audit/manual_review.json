@@ -1,0 +1,372 @@
+{
+  "status": "passed_sample_review",
+  "reviewer": "Codex; inspected response conclusions against extracted numbers and references",
+  "sample_sha256": "876534812f94d79c0194f23e966574a5cb90353df4f771377287d7cd8e744e16",
+  "accepted_reviewed": 40,
+  "accepted_extraction_errors_found": 0,
+  "unknown_reviewed": 20,
+  "unknown_notes": "Conservative abstentions include contextual numbers, conflicting statements and multiple entities; no synthetic labels assigned.",
+  "scope": "Training-only stratified 20 correct / 20 incorrect / 20 unresolved sample, not corpus-wide verification. Numeric final answers only; unit-equivalence and reasoning validity are not adjudicated.",
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "grade-school-math.dev.5458",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 1,
+      "sample_id": "grade-school-math.dev.2317",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 2,
+      "sample_id": "grade-school-math.dev.6530",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 3,
+      "sample_id": "grade-school-math.dev.1556",
+      "model": "claude-instant-v1",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 4,
+      "sample_id": "grade-school-math.dev.3339",
+      "model": "claude-instant-v1",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 5,
+      "sample_id": "grade-school-math.dev.5961",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 6,
+      "sample_id": "grade-school-math.dev.1116",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 7,
+      "sample_id": "grade-school-math.dev.2413",
+      "model": "claude-instant-v1",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 8,
+      "sample_id": "grade-school-math.dev.4967",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 9,
+      "sample_id": "grade-school-math.dev.883",
+      "model": "claude-v1",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 10,
+      "sample_id": "grade-school-math.dev.6859",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 11,
+      "sample_id": "grade-school-math.dev.1448",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 12,
+      "sample_id": "grade-school-math.dev.6653",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 13,
+      "sample_id": "grade-school-math.dev.600",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 14,
+      "sample_id": "grade-school-math.dev.5228",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 15,
+      "sample_id": "grade-school-math.dev.1642",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 16,
+      "sample_id": "grade-school-math.dev.3562",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 17,
+      "sample_id": "grade-school-math.dev.967",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 18,
+      "sample_id": "grade-school-math.dev.4855",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 19,
+      "sample_id": "grade-school-math.dev.770",
+      "model": "claude-instant-v1",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 20,
+      "sample_id": "grade-school-math.dev.7337",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 21,
+      "sample_id": "grade-school-math.dev.5348",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 22,
+      "sample_id": "grade-school-math.dev.6023",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 23,
+      "sample_id": "grade-school-math.dev.7332",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 24,
+      "sample_id": "grade-school-math.dev.3",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 25,
+      "sample_id": "grade-school-math.dev.3186",
+      "model": "gpt-4-1106-preview",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 26,
+      "sample_id": "grade-school-math.dev.6950",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 27,
+      "sample_id": "grade-school-math.dev.6474",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 28,
+      "sample_id": "grade-school-math.dev.7138",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 29,
+      "sample_id": "grade-school-math.dev.4335",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 30,
+      "sample_id": "grade-school-math.dev.4174",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 31,
+      "sample_id": "grade-school-math.dev.5641",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 32,
+      "sample_id": "grade-school-math.dev.5200",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 33,
+      "sample_id": "grade-school-math.dev.4567",
+      "model": "claude-v2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 34,
+      "sample_id": "grade-school-math.dev.1933",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 35,
+      "sample_id": "grade-school-math.dev.1512",
+      "model": "gpt-4-1106-preview",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 36,
+      "sample_id": "grade-school-math.dev.626",
+      "model": "claude-v2",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 37,
+      "sample_id": "grade-school-math.dev.1722",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 38,
+      "sample_id": "grade-school-math.dev.2754",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 39,
+      "sample_id": "grade-school-math.dev.4881",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "decision": "numeric conclusion matches extraction"
+    },
+    {
+      "index": 40,
+      "sample_id": "grade-school-math.dev.932",
+      "model": "claude-instant-v1",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 41,
+      "sample_id": "grade-school-math.dev.3093",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 42,
+      "sample_id": "grade-school-math.dev.2789",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 43,
+      "sample_id": "grade-school-math.dev.4614",
+      "model": "gpt-4-1106-preview",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 44,
+      "sample_id": "grade-school-math.dev.2167",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 45,
+      "sample_id": "grade-school-math.dev.5887",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 46,
+      "sample_id": "grade-school-math.dev.4304",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 47,
+      "sample_id": "grade-school-math.dev.1382",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 48,
+      "sample_id": "grade-school-math.dev.5159",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 49,
+      "sample_id": "grade-school-math.dev.5265",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 50,
+      "sample_id": "grade-school-math.dev.7079",
+      "model": "claude-v2",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 51,
+      "sample_id": "grade-school-math.dev.1682",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 52,
+      "sample_id": "grade-school-math.dev.1425",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 53,
+      "sample_id": "grade-school-math.dev.6343",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 54,
+      "sample_id": "grade-school-math.dev.3542",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 55,
+      "sample_id": "grade-school-math.dev.2055",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 56,
+      "sample_id": "grade-school-math.dev.870",
+      "model": "gpt-3.5-turbo-1106",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 57,
+      "sample_id": "grade-school-math.dev.79",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 58,
+      "sample_id": "grade-school-math.dev.2583",
+      "model": "mistralai/mistral-7b-chat",
+      "decision": "abstention retained"
+    },
+    {
+      "index": 59,
+      "sample_id": "grade-school-math.dev.159",
+      "model": "meta/llama-2-70b-chat",
+      "decision": "abstention retained"
+    }
+  ]
+}

@@ -1,0 +1,751 @@
+{
+  "questions": 1156,
+  "questions_with_any_pool_label": 981,
+  "saved_prediction_max_abs_difference": 5.960464477539062e-07,
+  "models": {
+    "global_mean": {
+      "weak": {
+        "n": 744,
+        "mae": 0.2907087802886963,
+        "rmse": 0.3391431624628032,
+        "mse": 0.1150180846452713,
+        "calibration_error": 0.04651954770088196,
+        "prediction_std": 5.960464477539063e-08,
+        "target_std": 0.3359375,
+        "mean_bias": -0.04651961103081703,
+        "spearman": null
+      },
+      "intermediate": {
+        "n": 778,
+        "mae": 0.2689479887485504,
+        "rmse": 0.3099558502337451,
+        "mse": 0.09607262909412384,
+        "calibration_error": 0.06574341654777527,
+        "prediction_std": 0.0,
+        "target_std": 0.30290332436561584,
+        "mean_bias": 0.06574340164661407,
+        "spearman": null
+      },
+      "strong": {
+        "n": 888,
+        "mae": 0.2712051570415497,
+        "rmse": 0.2969777531736827,
+        "mse": 0.0881957858800888,
+        "calibration_error": 0.17385689914226532,
+        "prediction_std": 0.0,
+        "target_std": 0.240768700838089,
+        "mean_bias": 0.17385688424110413,
+        "spearman": null
+      },
+      "macro_mse": 0.09976216653982799,
+      "by_dataset": {
+        "grade-school-math": {
+          "weak": {
+            "n": 683,
+            "mae": 0.2797186076641083,
+            "rmse": 0.3265122562067995,
+            "mse": 0.1066102534532547,
+            "calibration_error": 0.026788264513015747
+          },
+          "intermediate": {
+            "n": 717,
+            "mae": 0.26342105865478516,
+            "rmse": 0.3023912638902555,
+            "mse": 0.09144047647714615,
+            "calibration_error": 0.07830426096916199
+          },
+          "strong": {
+            "n": 827,
+            "mae": 0.26289618015289307,
+            "rmse": 0.2824980805762246,
+            "mse": 0.0798051655292511,
+            "calibration_error": 0.19693408906459808
+          },
+          "macro_mse": 0.09261863181988399
+        },
+        "mbpp": {
+          "weak": {
+            "n": 61,
+            "mae": 0.41376274824142456,
+            "rmse": 0.4573380834126109,
+            "mse": 0.20915812253952026,
+            "calibration_error": 0.26744544506073
+          },
+          "intermediate": {
+            "n": 61,
+            "mae": 0.3339121639728546,
+            "rmse": 0.38796826034189297,
+            "mse": 0.15051937103271484,
+            "calibration_error": 0.08189758658409119
+          },
+          "strong": {
+            "n": 61,
+            "mae": 0.3838527798652649,
+            "rmse": 0.4493892677758547,
+            "mse": 0.20195071399211884,
+            "calibration_error": 0.1390092968940735
+          },
+          "macro_mse": 0.18720940252145132
+        }
+      },
+      "dataset_macro_mse": 0.13991401717066765
+    },
+    "dataset_mean": {
+      "weak": {
+        "n": 744,
+        "mae": 0.2844935357570648,
+        "rmse": 0.32944773683400236,
+        "mse": 0.10853581130504608,
+        "calibration_error": 0.004839477199380116,
+        "prediction_std": 0.059867411851882935,
+        "target_std": 0.3359375,
+        "mean_bias": 0.0017480559181421995,
+        "spearman": 0.18055711686119486
+      },
+      "intermediate": {
+        "n": 778,
+        "mae": 0.24668754637241364,
+        "rmse": 0.29993485597787267,
+        "mse": 0.08996091783046722,
+        "calibration_error": 0.006685013368074569,
+        "prediction_std": 0.03567098453640938,
+        "target_std": 0.30290332436561584,
+        "mean_bias": 0.003214607248082757,
+        "spearman": 0.11105523376401881
+      },
+      "strong": {
+        "n": 888,
+        "mae": 0.16426295042037964,
+        "rmse": 0.22696699011465843,
+        "mse": 0.05151401460170746,
+        "calibration_error": 0.013124727291633954,
+        "prediction_std": 0.05733877047896385,
+        "target_std": 0.240768700838089,
+        "mean_bias": -0.0009893885580822825,
+        "spearman": 0.26087126966433705
+      },
+      "macro_mse": 0.08333691457907359,
+      "by_dataset": {
+        "grade-school-math": {
+          "weak": {
+            "n": 683,
+            "mae": 0.28029677271842957,
+            "rmse": 0.3254312684503016,
+            "mse": 0.10590551048517227,
+            "calibration_error": 0.003587961196899414
+          },
+          "intermediate": {
+            "n": 717,
+            "mae": 0.23951685428619385,
+            "rmse": 0.2921262835056966,
+            "mse": 0.08533776551485062,
+            "calibration_error": 0.005370914936065674
+          },
+          "strong": {
+            "n": 827,
+            "mae": 0.14846065640449524,
+            "rmse": 0.2026439619493307,
+            "mse": 0.04106457531452179,
+            "calibration_error": 0.006515227258205414
+          },
+          "macro_mse": 0.07743595043818156
+        },
+        "mbpp": {
+          "weak": {
+            "n": 61,
+            "mae": 0.33148354291915894,
+            "rmse": 0.3714652360384253,
+            "mse": 0.137986421585083,
+            "calibration_error": 0.0188523530960083
+          },
+          "intermediate": {
+            "n": 61,
+            "mae": 0.330972820520401,
+            "rmse": 0.3798709661602859,
+            "mse": 0.14430195093154907,
+            "calibration_error": 0.0221310555934906
+          },
+          "strong": {
+            "n": 61,
+            "mae": 0.37850040197372437,
+            "rmse": 0.4395236319035313,
+            "mse": 0.19318102300167084,
+            "calibration_error": 0.10273221135139465
+          },
+          "macro_mse": 0.15848979850610098
+        }
+      },
+      "dataset_macro_mse": 0.11796287447214127
+    },
+    "predictor": {
+      "weak": {
+        "n": 744,
+        "mae": 0.2656475305557251,
+        "rmse": 0.3205756176737404,
+        "mse": 0.10276872664690018,
+        "calibration_error": 0.031996080511680215,
+        "prediction_std": 0.1317724585533142,
+        "target_std": 0.3359375,
+        "mean_bias": 0.024182124063372612,
+        "spearman": 0.3006251621701327
+      },
+      "intermediate": {
+        "n": 778,
+        "mae": 0.23734642565250397,
+        "rmse": 0.29060925523091036,
+        "mse": 0.08445373922586441,
+        "calibration_error": 0.023789448381083177,
+        "prediction_std": 0.1058976873755455,
+        "target_std": 0.30290332436561584,
+        "mean_bias": 0.017148740589618683,
+        "spearman": 0.2552404826619584
+      },
+      "strong": {
+        "n": 888,
+        "mae": 0.15999211370944977,
+        "rmse": 0.22318865884401518,
+        "mse": 0.049813177436590195,
+        "calibration_error": 0.01640950010770613,
+        "prediction_std": 0.10055287927389145,
+        "target_std": 0.240768700838089,
+        "mean_bias": 0.010547667741775513,
+        "spearman": 0.2475154322911713
+      },
+      "macro_mse": 0.07901188110311826,
+      "by_dataset": {
+        "grade-school-math": {
+          "weak": {
+            "n": 683,
+            "mae": 0.26181963086128235,
+            "rmse": 0.3142127308774067,
+            "mse": 0.09872964024543762,
+            "calibration_error": 0.032717929708486415
+          },
+          "intermediate": {
+            "n": 717,
+            "mae": 0.2326817661523819,
+            "rmse": 0.28526900949166517,
+            "mse": 0.08137840777635574,
+            "calibration_error": 0.020818327323662185
+          },
+          "strong": {
+            "n": 827,
+            "mae": 0.14468833804130554,
+            "rmse": 0.1998913853730084,
+            "mse": 0.03995656594634056,
+            "calibration_error": 0.01985236258215599
+          },
+          "macro_mse": 0.0733548713227113
+        },
+        "mbpp": {
+          "weak": {
+            "n": 61,
+            "mae": 0.30850768089294434,
+            "rmse": 0.3846989297911927,
+            "mse": 0.147993266582489,
+            "calibration_error": 0.11608291649427571
+          },
+          "intermediate": {
+            "n": 61,
+            "mae": 0.29217514395713806,
+            "rmse": 0.34727722037044045,
+            "mse": 0.12060146778821945,
+            "calibration_error": 0.09893985190352456
+          },
+          "strong": {
+            "n": 61,
+            "mae": 0.36747103929519653,
+            "rmse": 0.42830238774440316,
+            "mse": 0.18344293534755707,
+            "calibration_error": 0.13085972871936735
+          },
+          "macro_mse": 0.15067922323942184
+        }
+      },
+      "dataset_macro_mse": 0.11201704728106657
+    }
+  },
+  "paired_comparisons": {
+    "global_mean": {
+      "mean_mse_reduction": 0.020750283108104915,
+      "ci95": [
+        0.016314655083414575,
+        0.02505449237814218
+      ],
+      "dataset_macro_mean_mse_reduction": 0.027896968138947285,
+      "dataset_macro_ci95": [
+        0.007438438828519502,
+        0.047719467228539196
+      ],
+      "repetitions": 3000,
+      "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+    },
+    "dataset_mean": {
+      "mean_mse_reduction": 0.004325032332690698,
+      "ci95": [
+        0.0005403338467925062,
+        0.007958329790036151
+      ],
+      "dataset_macro_mean_mse_reduction": 0.005945826051374587,
+      "dataset_macro_ci95": [
+        -0.010477851906265892,
+        0.02045267993371818
+      ],
+      "repetitions": 3000,
+      "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+    }
+  },
+  "gain_diagnostics": {
+    "threshold": 0.1,
+    "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+    "all": {
+      "n": 689,
+      "positive_rate": 0.6995645863570392,
+      "gain_mae": 0.23244833946228027,
+      "auc": 0.599484835728747,
+      "spearman": 0.23489373562686366
+    },
+    "grade-school-math": {
+      "n": 628,
+      "positive_rate": 0.7197452229299363,
+      "gain_mae": 0.22946155071258545,
+      "auc": 0.5899663113435237,
+      "spearman": 0.22485579068875652
+    },
+    "mbpp": {
+      "n": 61,
+      "positive_rate": 0.4918032786885246,
+      "gain_mae": 0.26319754123687744,
+      "auc": 0.6258064516129032,
+      "spearman": 0.2638885538181359
+    }
+  },
+  "input_distribution": {
+    "questions": 1156,
+    "supported_fraction": 0.9948096885813149,
+    "mean_difficulty": {
+      "weak": 0.4564915782672105,
+      "intermediate": 0.3273320176919026,
+      "strong": 0.12201843107244882
+    },
+    "std_difficulty": {
+      "weak": 0.12601817875470644,
+      "intermediate": 0.10236060230120618,
+      "strong": 0.09413451760647949
+    }
+  },
+  "fixed_seed_examples": [
+    {
+      "sample_id": "grade-school-math.dev.6175",
+      "family": "grade-school-math",
+      "question": "If Layla scored 104 goals in four hockey games and Kristin scored 24 fewer goals in the same four games, calculate the average number of goals the two scored.",
+      "target": {
+        "weak": 0.75,
+        "intermediate": 0.75,
+        "strong": 1.0
+      },
+      "prediction": {
+        "weak": 0.36304089426994324,
+        "intermediate": 0.2848508954048157,
+        "strong": 0.06093791127204895
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.29663312435150146,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.5565906763076782,
+        "meta/llama-2-70b-chat": 0.3648415505886078,
+        "WizardLM/WizardLM-13B-V1.2": 0.3327033519744873,
+        "zero-one-ai/Yi-34B-Chat": 0.19802796840667725,
+        "meta/code-llama-instruct-34b-chat": 0.5414018034934998,
+        "mistralai/mixtral-8x7b-chat": 0.35459527373313904,
+        "claude-instant-v1": 0.1549144983291626,
+        "claude-v1": 0.08849206566810608,
+        "gpt-3.5-turbo-1106": 0.10977471619844437,
+        "claude-v2": 0.061250120401382446,
+        "gpt-4-1106-preview": 0.011788912117481232
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.3984",
+      "family": "grade-school-math",
+      "question": "Judson, Camilo, and Kenny decided to contribute money to paint their house. Judson contributed $500, Kenny contributed 20% more money than Judson, and Camilo contributed $200 more than Kenny. How much was the cost of painting the house?",
+      "target": {
+        "weak": 0.25,
+        "intermediate": 0.0,
+        "strong": 0.0
+      },
+      "prediction": {
+        "weak": 0.36754870414733887,
+        "intermediate": 0.2801952660083771,
+        "strong": 0.08092094957828522
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.280720591545105,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.4635053873062134,
+        "meta/llama-2-70b-chat": 0.34980639815330505,
+        "WizardLM/WizardLM-13B-V1.2": 0.3486015498638153,
+        "zero-one-ai/Yi-34B-Chat": 0.30828142166137695,
+        "meta/code-llama-instruct-34b-chat": 0.48241159319877625,
+        "mistralai/mixtral-8x7b-chat": 0.30971911549568176,
+        "claude-instant-v1": 0.17799091339111328,
+        "claude-v1": 0.1506594866514206,
+        "gpt-3.5-turbo-1106": 0.1466689258813858,
+        "claude-v2": 0.04530004784464836,
+        "gpt-4-1106-preview": 0.05079387500882149
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.5369",
+      "family": "grade-school-math",
+      "question": "Matt has a peanut plantation that is 500 feet by 500 feet.  1 square foot of peanuts can make 50 grams of peanuts.  If it takes 20 grams of peanuts to make 5 grams of peanut butter and 1 kg of peanut butter sells for $10 how much does he make from his plantation?",
+      "target": {
+        "weak": 0.75,
+        "intermediate": 0.5,
+        "strong": 0.33333333333333337
+      },
+      "prediction": {
+        "weak": 0.3045058846473694,
+        "intermediate": 0.19165876507759094,
+        "strong": 0.057916298508644104
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.3029690980911255,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.48190489411354065,
+        "meta/llama-2-70b-chat": 0.2700025737285614,
+        "WizardLM/WizardLM-13B-V1.2": 0.28886231780052185,
+        "zero-one-ai/Yi-34B-Chat": 0.17725376784801483,
+        "meta/code-llama-instruct-34b-chat": 0.39010676741600037,
+        "mistralai/mixtral-8x7b-chat": 0.22522549331188202,
+        "claude-instant-v1": 0.09272261708974838,
+        "claude-v1": 0.05858023092150688,
+        "gpt-3.5-turbo-1106": 0.11285132169723511,
+        "claude-v2": 0.03791342303156853,
+        "gpt-4-1106-preview": 0.022984148934483528
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.1659",
+      "family": "grade-school-math",
+      "question": "In a national park, the number of redwoods is 20% more than the number of pines. If there are 600 pines in the national park, calculate the total number of pines and redwoods that are there.",
+      "target": {
+        "weak": 0.25,
+        "intermediate": 0.25,
+        "strong": 0.0
+      },
+      "prediction": {
+        "weak": 0.3625107407569885,
+        "intermediate": 0.25685662031173706,
+        "strong": 0.12650887668132782
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.31142735481262207,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.5266236662864685,
+        "meta/llama-2-70b-chat": 0.35013389587402344,
+        "WizardLM/WizardLM-13B-V1.2": 0.3974541127681732,
+        "zero-one-ai/Yi-34B-Chat": 0.17583125829696655,
+        "meta/code-llama-instruct-34b-chat": 0.41927263140678406,
+        "mistralai/mixtral-8x7b-chat": 0.32390478253364563,
+        "claude-instant-v1": 0.13249921798706055,
+        "claude-v1": 0.15174983441829681,
+        "gpt-3.5-turbo-1106": 0.1931200474500656,
+        "claude-v2": 0.15083466470241547,
+        "gpt-4-1106-preview": 0.035571932792663574
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.3940",
+      "family": "grade-school-math",
+      "question": "Every 4 weeks, Helen hand washes her silk pillowcases.  It takes 30 minutes to hand wash all of them.  In 1 year, how much time does Helen spend hand washing her pillowcases?",
+      "target": {
+        "weak": 0.5,
+        "intermediate": 0.75,
+        "strong": null
+      },
+      "prediction": {
+        "weak": 0.3913538157939911,
+        "intermediate": 0.2292439192533493,
+        "strong": 0.07252474874258041
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.2450464963912964,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.5815265774726868,
+        "meta/llama-2-70b-chat": 0.34130871295928955,
+        "WizardLM/WizardLM-13B-V1.2": 0.3544051945209503,
+        "zero-one-ai/Yi-34B-Chat": 0.28817474842071533,
+        "meta/code-llama-instruct-34b-chat": 0.3929694890975952,
+        "mistralai/mixtral-8x7b-chat": 0.24546723067760468,
+        "claude-instant-v1": 0.15969720482826233,
+        "claude-v1": 0.1188417300581932,
+        "gpt-3.5-turbo-1106": 0.10869017243385315,
+        "claude-v2": 0.054294198751449585,
+        "gpt-4-1106-preview": 0.054589882493019104
+      }
+    },
+    {
+      "sample_id": "mbpp.dev.72",
+      "family": "mbpp",
+      "question": "Write a function to get the angle of a complex number.",
+      "target": {
+        "weak": 1.0,
+        "intermediate": 0.75,
+        "strong": 1.0
+      },
+      "prediction": {
+        "weak": 0.41607093811035156,
+        "intermediate": 0.34326091408729553,
+        "strong": 0.26712095737457275
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.40027058124542236,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.29892513155937195,
+        "meta/llama-2-70b-chat": 0.6343660950660706,
+        "WizardLM/WizardLM-13B-V1.2": 0.3820464611053467,
+        "zero-one-ai/Yi-34B-Chat": 0.34894609451293945,
+        "meta/code-llama-instruct-34b-chat": 0.2880037724971771,
+        "mistralai/mixtral-8x7b-chat": 0.2512160837650299,
+        "claude-instant-v1": 0.4839658737182617,
+        "claude-v1": 0.349857896566391,
+        "gpt-3.5-turbo-1106": 0.2824665606021881,
+        "claude-v2": 0.16710257530212402,
+        "gpt-4-1106-preview": 0.3517937660217285
+      }
+    },
+    {
+      "sample_id": "mbpp.dev.127",
+      "family": "mbpp",
+      "question": "Write a function that takes in a list and an element and inserts the element before each element in the list, and returns the resulting list.",
+      "target": {
+        "weak": 0.5,
+        "intermediate": 0.25,
+        "strong": 0.0
+      },
+      "prediction": {
+        "weak": 0.4430924355983734,
+        "intermediate": 0.18227098882198334,
+        "strong": 0.08579929918050766
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.3593760132789612,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.5063710808753967,
+        "meta/llama-2-70b-chat": 0.41650786995887756,
+        "WizardLM/WizardLM-13B-V1.2": 0.4291325509548187,
+        "zero-one-ai/Yi-34B-Chat": 0.42035821080207825,
+        "meta/code-llama-instruct-34b-chat": 0.19030481576919556,
+        "mistralai/mixtral-8x7b-chat": 0.32715317606925964,
+        "claude-instant-v1": 0.13614773750305176,
+        "claude-v1": 0.07547827810049057,
+        "gpt-3.5-turbo-1106": 0.09277071803808212,
+        "claude-v2": 0.13676108419895172,
+        "gpt-4-1106-preview": 0.027866104617714882
+      }
+    },
+    {
+      "sample_id": "mbpp.dev.239",
+      "family": "mbpp",
+      "question": "Write a function that gives loss amount on a sale if the given amount has loss else return 0.",
+      "target": {
+        "weak": 0.5,
+        "intermediate": 0.5,
+        "strong": 1.0
+      },
+      "prediction": {
+        "weak": 0.5817495584487915,
+        "intermediate": 0.4051734209060669,
+        "strong": 0.35678645968437195
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.20188617706298828,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.5472158789634705,
+        "meta/llama-2-70b-chat": 0.7653315663337708,
+        "WizardLM/WizardLM-13B-V1.2": 0.6172581315040588,
+        "zero-one-ai/Yi-34B-Chat": 0.3971925973892212,
+        "meta/code-llama-instruct-34b-chat": 0.6066000461578369,
+        "mistralai/mixtral-8x7b-chat": 0.43794772028923035,
+        "claude-instant-v1": 0.4027221202850342,
+        "claude-v1": 0.17342376708984375,
+        "gpt-3.5-turbo-1106": 0.5569568276405334,
+        "claude-v2": 0.3191124498844147,
+        "gpt-4-1106-preview": 0.19429004192352295
+      }
+    },
+    {
+      "sample_id": "mbpp.dev.383",
+      "family": "mbpp",
+      "question": "Write a function to check whether the given month number contains 30 days or not. Months are given as number from 1 to 12.",
+      "target": {
+        "weak": 0.75,
+        "intermediate": 0.0,
+        "strong": 0.0
+      },
+      "prediction": {
+        "weak": 0.2851763963699341,
+        "intermediate": 0.2740432918071747,
+        "strong": 0.1604297012090683
+      },
+      "input_support": {
+        "within_support": false,
+        "distance": 0.5146375298500061,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.3713517189025879,
+        "meta/llama-2-70b-chat": 0.3109332323074341,
+        "WizardLM/WizardLM-13B-V1.2": 0.2978057563304901,
+        "zero-one-ai/Yi-34B-Chat": 0.16061486303806305,
+        "meta/code-llama-instruct-34b-chat": 0.37054944038391113,
+        "mistralai/mixtral-8x7b-chat": 0.17173032462596893,
+        "claude-instant-v1": 0.3990192115306854,
+        "claude-v1": 0.15487422049045563,
+        "gpt-3.5-turbo-1106": 0.15082073211669922,
+        "claude-v2": 0.2622317373752594,
+        "gpt-4-1106-preview": 0.06823661923408508
+      }
+    },
+    {
+      "sample_id": "mbpp.dev.372",
+      "family": "mbpp",
+      "question": "Write a function to add the given tuple to the given list.",
+      "target": {
+        "weak": 1.0,
+        "intermediate": 0.75,
+        "strong": 1.0
+      },
+      "prediction": {
+        "weak": 0.7541710734367371,
+        "intermediate": 0.5860629677772522,
+        "strong": 0.5055654048919678
+      },
+      "input_support": {
+        "within_support": true,
+        "distance": 0.07941550016403198,
+        "threshold": 0.4764174818992615,
+        "method": "nearest-training cosine distance; validation 95th percentile",
+        "interpretation": "Input-similarity heuristic, not confidence or error probability."
+      },
+      "model_difficulty": {
+        "mistralai/mistral-7b-chat": 0.7804601788520813,
+        "meta/llama-2-70b-chat": 0.7176790237426758,
+        "WizardLM/WizardLM-13B-V1.2": 0.7578387260437012,
+        "zero-one-ai/Yi-34B-Chat": 0.7607064247131348,
+        "meta/code-llama-instruct-34b-chat": 0.4804447889328003,
+        "mistralai/mixtral-8x7b-chat": 0.7108554244041443,
+        "claude-instant-v1": 0.5411109328269958,
+        "claude-v1": 0.6118407845497131,
+        "gpt-3.5-turbo-1106": 0.4172419607639313,
+        "claude-v2": 0.6874594688415527,
+        "gpt-4-1106-preview": 0.4119947850704193
+      }
+    }
+  ],
+  "by_family_comparisons": {
+    "grade-school-math": {
+      "global_mean": {
+        "mean_mse_reduction": 0.019263758827975087,
+        "ci95": [
+          0.01582599088136643,
+          0.022430158563278534
+        ],
+        "dataset_macro_mean_mse_reduction": 0.019263758827975087,
+        "dataset_macro_ci95": [
+          0.01582599088136643,
+          0.022430158563278534
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      },
+      "dataset_mean": {
+        "mean_mse_reduction": 0.004081078668180029,
+        "ci95": [
+          0.0008983926473860199,
+          0.007089560073814231
+        ],
+        "dataset_macro_mean_mse_reduction": 0.004081078668180029,
+        "dataset_macro_ci95": [
+          0.0008983926473860199,
+          0.007089560073814231
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      }
+    },
+    "mbpp": {
+      "global_mean": {
+        "mean_mse_reduction": 0.03653017744991949,
+        "ci95": [
+          -0.0026400590651347975,
+          0.0765357920055181
+        ],
+        "dataset_macro_mean_mse_reduction": 0.03653017744991949,
+        "dataset_macro_ci95": [
+          -0.0026400590651347975,
+          0.0765357920055181
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      },
+      "dataset_mean": {
+        "mean_mse_reduction": 0.007810573434569146,
+        "ci95": [
+          -0.022162807466146725,
+          0.03644627376658019
+        ],
+        "dataset_macro_mean_mse_reduction": 0.007810573434569146,
+        "dataset_macro_ci95": [
+          -0.022162807466146725,
+          0.03644627376658019
+        ],
+        "repetitions": 3000,
+        "method": "Paired question bootstrap stratified by dataset; positive means candidate is better."
+      }
+    }
+  }
+}
