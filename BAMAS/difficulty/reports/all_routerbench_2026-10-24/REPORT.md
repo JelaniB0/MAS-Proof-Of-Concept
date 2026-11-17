@@ -373,9 +373,10 @@ Evidence is under [the study directory](../../runs/all_routerbench_v1):
 `prepared/preparation_protocol.json`, per-cohort `protocol.json`,
 `validation_results.json`, `selection.json`, `comparison.json`, `RESULTS.md`,
 `release_evaluation.json`, saved test predictions and candidate training histories.
-Candidate training histories record actual epochs. The report folder contains
-copied coverage/audit evidence and model verification output. Redundant execution
-transcripts were moved to the ignored local archive during cleanup.
+Candidate training histories record actual epochs when regenerated; candidate
+checkpoints/caches are not shipped. Machine-readable coverage, audits, protocols,
+selection, and verification evidence are retained once in the study directory.
+This report folder contains the human-readable study summary.
 
 Code changes cover asset verification, inert data extraction, task normalization,
 all-family preparation, per-model heads and aggregation, masked bootstrap

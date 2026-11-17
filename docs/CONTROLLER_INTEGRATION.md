@@ -9,7 +9,7 @@ objective, agents or executor. A separate `BAMAS_adjusted` adapter already uses
 its neural features for LinUCB topology selection. The single-agent Azure-neighbor
 blend is not connected to a model-pool LinUCB policy yet. For the plain-language
 design, including proposed starting thresholds and feedback, see
-[Difficulty prediction and LinUCB](DIFFICULTY_AND_LINUCB_README.md).
+[Difficulty prediction and LinUCB](DIFFICULTY_AND_LINUCB.md).
 
 ## Current checkpoint and API
 
@@ -87,14 +87,14 @@ For an ILP, predicted utilities may be fixed coefficients on binary
 `z[role, model, token_bin]` choices under measured cost and role/topology
 constraints. Pool averages alone do not distinguish the best model, role or token
 allocation. Measure those conditional utilities before claiming team-success or
-marginal-token estimates. See [CODE_REVIEW.md](CODE_REVIEW.md) for existing planner
-preferences that an added feature alone will not change.
+marginal-token estimates. Review the receiving controller's allocation rules;
+adding difficulty features alone does not change its existing preferences.
 
 Collect graded outcomes for the intended BAMAS models, prompts, roles and token
 caps, with repeated trials as needed and actual tokens, latency and costs. Compare
 end-to-end success versus cost, budget violations and predictor overhead at equal
 budgets. Single-model historical outcomes do not measure multi-agent interactions.
 
-For current training methods and results, see the [README](README.md),
-[all-family report](reports/all_routerbench_2026-10-24/REPORT.md) and
-[external evaluation](reports/generalization_2026-10-25/REPORT.md).
+For current training methods and results, see the [README](../TECHNICAL_README.md),
+[all-family report](../BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md) and
+[external evaluation](../BAMAS/difficulty/reports/generalization_2026-10-25/REPORT.md).

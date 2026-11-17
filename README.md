@@ -5,10 +5,19 @@ and the selected trained checkpoints. It excludes the BAMAS executor, LinUCB
 implementations, Azure routing application, API credentials, generated cloud
 responses, and large intermediate training caches.
 
-Start with the [readable difficulty/LinUCB guide](BAMAS/difficulty/DIFFICULTY_AND_LINUCB_README.md)
-for score interpretation, training, and the proposed routing design. Its
-retrieval and bandit sections describe integration work in the broader workspace;
-this branch runs the trained neural predictor independently.
+## Documentation
+
+| Start here | What it covers |
+| --- | --- |
+| **[Technical README](TECHNICAL_README.md)** | Architecture, exact training procedure, targets, results, and reproduction. |
+| [Difficulty and LinUCB guide](docs/DIFFICULTY_AND_LINUCB.md) | Plain-language explanation, examples, and proposed bandit integration. |
+| [Controller API contract](docs/CONTROLLER_INTEGRATION.md) | Python feature schema and integration constraints. |
+| [Datasets](DATASETS.md) | Included splits, provenance, and upstream terms. |
+| [Evaluation evidence](BAMAS/difficulty/reports/README.md) | Training report, generalization report, and label audits. |
+
+The quick start is below. Retrieval and bandit sections in the design guide refer
+to integration work in the broader workspace; this branch runs the trained neural
+predictor independently.
 
 ## What is included?
 
@@ -94,7 +103,7 @@ git lfs fsck
 The tests check software behavior; they do not establish accuracy on current
 cloud models. Keep validation and test labels out of training/reference fitting.
 For source preparation and training procedures, see the
-[technical README](BAMAS/difficulty/README.md#reproduce-the-current-study).
+[technical README](TECHNICAL_README.md#reproduce-the-current-study).
 Raw export archives and additional external evaluation sets can be obtained using
 the pinned download code; they are not additional training questions in this release.
 

@@ -187,9 +187,10 @@ For your own terminal questions:
 The benchmark writes detailed tables and sampled labeled questions (`../../runs/generalization_test/RESULTS.md`, broader-workspace reference)
 and per-question JSONL files under `runs/generalization_test`. The machine-readable
 results, protocol and source checksums are also copied alongside this report.
-Historical execution transcripts were moved to the ignored local archive during
-cleanup; current software checks are recorded under `reports/cleanup_2026-10-25/`. The production model remains in its existing
-study directory; rerunning this test does not train it.
+Historical execution transcripts are omitted. Current software checks are
+recorded in [release verification](../../../../RELEASE_VERIFICATION.json).
+The production model remains in its study directory; rerunning this test does
+not train it.
 
 ## What to do with these results
 

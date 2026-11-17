@@ -1,10 +1,10 @@
 {
   "date": "2026-11-17",
-  "scope": "Standalone difficulty predictor release",
+  "scope": "Standalone difficulty predictor cleanup and documentation organization",
   "offline_tests": {
     "passed": 49,
     "failed": 0,
-    "test_runtime_seconds": 14.083
+    "test_runtime_seconds": 7.042
   },
   "real_checkpoint_smoke": {
     "main": "passed local CPU load and three finite [0,1] scores",
@@ -31,5 +31,17 @@
     "Python syntax",
     "byte-preserving Git attributes",
     "prepared split counts"
-  ]
+  ],
+  "cleanup": {
+    "removed_redundant_or_unrelated_files": 24,
+    "duplicate_report_copies_removed": 17,
+    "technical_readme": "TECHNICAL_README.md",
+    "readable_guide": "docs/DIFFICULTY_AND_LINUCB.md",
+    "api_contract": "docs/CONTROLLER_INTEGRATION.md",
+    "canonical_preparation_protocol": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/preparation_protocol.json",
+    "preserved_source_and_asset_hashes_verified": 110,
+    "local_markdown_links_verified": 48,
+    "runtime_source_changes": false,
+    "retraining_or_reselection": false
+  }
 }

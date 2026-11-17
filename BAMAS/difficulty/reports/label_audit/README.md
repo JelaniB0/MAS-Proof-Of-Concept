@@ -23,5 +23,5 @@ target requires known outcomes for every member of that pool.
 For current corpus coverage, masking and measured results, see the
 [all-RouterBench report](../all_routerbench_2026-10-24/REPORT.md).
 
-Earlier correctness-only training comparisons and development reports were moved
-to the ignored local `_archive/cleanup_2026-10-25/` folder during repository cleanup.
+Earlier correctness-only training comparisons and superseded development
+reports are omitted from this standalone release.

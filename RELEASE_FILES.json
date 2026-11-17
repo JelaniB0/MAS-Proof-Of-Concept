@@ -1,5 +1,5 @@
 {
-  "scope": "Standalone difficulty predictor source, main/RAG prepared splits, GSM8K references, selected trained checkpoints, training reports and tests. Other BAMAS applications and credentials excluded.",
+  "scope": "Standalone difficulty predictor source, main/RAG prepared splits, GSM8K references, selected trained checkpoints, canonical training evidence, documentation and tests. Other BAMAS applications and credentials excluded.",
   "files": [
     {
       "path": ".gitattributes",
@@ -25,6 +25,11 @@
       "path": "BAMAS/difficulty/.gitignore",
       "bytes": 117,
       "sha256": "6619a24dbe0f77959269e13d813fe4331fae890329f20e46403157fe85176d2b"
+    },
+    {
+      "path": "BAMAS/difficulty/README.md",
+      "bytes": 640,
+      "sha256": "b14664f968250dcd0a7b87bb15e7179a3ff4a99b978426d554a74ffe8dee93b2"
     },
     {
       "path": "BAMAS/difficulty/__init__.py",
@@ -57,24 +62,9 @@
       "sha256": "066a867bc6ee23117bd66f91ba05cf1dbb75267d12a7f9552d95101a1ecad44f"
     },
     {
-      "path": "BAMAS/difficulty/CODE_REVIEW.md",
-      "bytes": 5207,
-      "sha256": "4cfab61a67d6fa27778df6ebb26ef959e78f92245aef4e0ed148fe6c67023428"
-    },
-    {
-      "path": "BAMAS/difficulty/CONTROLLER_INTEGRATION.md",
-      "bytes": 5570,
-      "sha256": "574162419a95d56f8f1b8c63e5aef5a4aba062d6160fc8287c3c4fd766cf7f37"
-    },
-    {
       "path": "BAMAS/difficulty/data.py",
       "bytes": 10610,
       "sha256": "892619d2b71184064f5bf2c28a844ed9aa32608030204bf14243e89d8b7cfc59"
-    },
-    {
-      "path": "BAMAS/difficulty/DIFFICULTY_AND_LINUCB_README.md",
-      "bytes": 32768,
-      "sha256": "db1f53e19befe3c2e5b3acd5580c4386b82367b20eb41f5ca761a8bd0bfd1bc8"
     },
     {
       "path": "BAMAS/difficulty/evaluation.py",
@@ -117,129 +107,24 @@
       "sha256": "dd05c486281f59e32d851ea75d73084836be847a35a4449df2173f1c634bc0ea"
     },
     {
-      "path": "BAMAS/difficulty/README.md",
-      "bytes": 12872,
-      "sha256": "99786ee95012273a9fd181f23effe9f34137edbd7f6917bf4cfd7611bb5a01fa"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/coverage.json",
-      "bytes": 4626,
-      "sha256": "60036b32851ec7c54e699e7aaca7e3fbe856efd5ab5a54c08623ea392c36f17e"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/environment.json",
-      "bytes": 405,
-      "sha256": "5ca28e65411565c3b4a73c8335350108415cc580562546f578f8315ec1fa5de0"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_comparison.json",
-      "bytes": 50426,
-      "sha256": "ba61431950c1f3682eb27367b1fe8107a2f9e2750f63efa1ee78cb578c3f1e02"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_protocol.json",
-      "bytes": 2701,
-      "sha256": "ed7e02e291739ea42e5e7390fcc3e61eae9536495a087981137ccfeeac87d128"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_release_evaluation.json",
-      "bytes": 67665,
-      "sha256": "d5f797b304314af795c7ff38703eed7e58478e91805e28d663038ee26fc1368f"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_selection.json",
-      "bytes": 8451,
-      "sha256": "b44afd19705cd4275916467655b64ce3d4bf82d2141e1e5a18b2bb518b506048"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_validation_results.json",
-      "bytes": 26851,
-      "sha256": "c120dfaf45bf5b641ad23cb7577805fee4ab812c60db012c67275a278edb3e03"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/preparation_protocol.json",
-      "bytes": 2286,
-      "sha256": "af231a09f03a19e6a45d68202d6a0f66da793a863b615da6fedab40046f4377f"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/probe_overlap.json",
-      "bytes": 786,
-      "sha256": "b1ac3089b0c11ed773a3904036d707c85248017408f0a7af24e15def77948f7a"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_comparison.json",
-      "bytes": 24734,
-      "sha256": "b8e3ef4e9ced628e2a106ec0dedc55d1346983dd11f63d0de7ee785a31655c8d"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_protocol.json",
-      "bytes": 1587,
-      "sha256": "f29d20f6c0ed1aa93be0c86a876a0eb45b6c46daba2fec0bf227df52c4dcd762"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_release_evaluation.json",
-      "bytes": 20394,
-      "sha256": "bd6bc40d7813f520f5a00107bda00c39e6a7bf282461cdab0b1004b1a91b1101"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_selection.json",
-      "bytes": 3038,
-      "sha256": "78bddab95978616c97d3bc4f4729059868632accd2c2e4624b88af1d43988710"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_validation_results.json",
-      "bytes": 7642,
-      "sha256": "42a8e6cc90070e4bda7857fb498d8039dfadaf6cd83b837d633a74b7eb962a40"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/release_evaluation.json",
-      "bytes": 93195,
-      "sha256": "f81de260016fcdd6ca75cd028e27a7f385a8d20f346db4fdc0979f7d503c5d09"
+      "path": "BAMAS/difficulty/reports/README.md",
+      "bytes": 1575,
+      "sha256": "c5f88cb5838b23c9f8d8e444dd1195d099f92df536faf61d33eb3c346ea0d41f"
     },
     {
       "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md",
-      "bytes": 21864,
-      "sha256": "c4b5baebebd242be822fe7952fe1689f9586c858d18130f16ca05480d3218bb6"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/source_audit.json",
-      "bytes": 800,
-      "sha256": "3c365981e1bf77fa743b0c735f1964e8f8ad6738eecd0b29ae22fcf40e0457fe"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/training_label_audit.json",
-      "bytes": 2377,
-      "sha256": "0eb4eff5d316b582b324fa282e25718276a93222a43648374cf1fc1183abb816"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/validation_baselines.json",
-      "bytes": 1361,
-      "sha256": "88a7dd0a1ba4ae9d7df4eb9d451cadb8b13b8751e1808bd45f3a33adf02d3338"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/checkpoint_checks.json",
-      "bytes": 594,
-      "sha256": "2b0fd00f682d3f16d02e099fcb93de7dcb4c976c258b1c654ca6a687cedae14d"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/README.md",
-      "bytes": 2051,
-      "sha256": "35e363c917c499bb2af310e0cfb49472bc94ebf147fe348ba0b642dcb23bcd35"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/source_checks.json",
-      "bytes": 887,
-      "sha256": "3f36b9f5c8840cadca0bb5610aaeef750ec06a79d8a8c61d7083ac2b6a34c4ff"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/verification.json",
-      "bytes": 2323,
-      "sha256": "34df6a13d2e68d7092e85e124a3d6f01c30a0f76365ea77ce178f96176a2ab9e"
+      "bytes": 21938,
+      "sha256": "f8179b01c23482f4db301c0207103685edd7a28d82ddbc4c13308a824d64bee8"
     },
     {
       "path": "BAMAS/difficulty/reports/generalization_2026-10-25/DETAILS.md",
       "bytes": 8786,
       "sha256": "3bd194a589e351818542d14576cd4cecd547d642757024ca02f70aa9875ae7a8"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/REPORT.md",
+      "bytes": 11055,
+      "sha256": "6bab97dab0e57aaab1fe4e0e79b9c8fbd8fbf3dc9bac40546dc7a4542575fd1e"
     },
     {
       "path": "BAMAS/difficulty/reports/generalization_2026-10-25/labeled_results.json",
@@ -257,11 +142,6 @@
       "sha256": "218fa13eea925f1c160074761d35c3fc01c5a39546ccd3fefc4417e174eedccf"
     },
     {
-      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/REPORT.md",
-      "bytes": 11077,
-      "sha256": "97e776680a757eaa0f66decf04efddd22dcc2f583fea8646436e3a163e2b62d9"
-    },
-    {
       "path": "BAMAS/difficulty/reports/generalization_2026-10-25/results.json",
       "bytes": 71039,
       "sha256": "86b5f31ee1a063d00479b8dbdd0689ced26f0a7fc247cb7e3211ddf8faaee995"
@@ -275,6 +155,11 @@
       "path": "BAMAS/difficulty/reports/generalization_2026-10-25/verification.json",
       "bytes": 216,
       "sha256": "ed21593d6f91477d73f23298f99567a87afe85ca35980e9097baf7819e9e62f1"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/README.md",
+      "bytes": 1523,
+      "sha256": "f8df70a3802c9b44b4e599653da40505e6180f52dddb1ceb537c1a066e3116f3"
     },
     {
       "path": "BAMAS/difficulty/reports/label_audit/edge_review.json",
@@ -295,11 +180,6 @@
       "path": "BAMAS/difficulty/reports/label_audit/manual_review.json",
       "bytes": 11486,
       "sha256": "1b4b16be70a168aa14e62ee4f9998178e91e7785cd0f154298dbda42fb948479"
-    },
-    {
-      "path": "BAMAS/difficulty/reports/label_audit/README.md",
-      "bytes": 1567,
-      "sha256": "c36a2f059177a110bd9bd971297a00ccf42d97b8eddf8f2e7944187b38e26ff7"
     },
     {
       "path": "BAMAS/difficulty/reports/label_audit/regrade_protocol.json",
@@ -342,6 +222,11 @@
       "sha256": "5ca28e65411565c3b4a73c8335350108415cc580562546f578f8315ec1fa5de0"
     },
     {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/RESULTS.md",
+      "bytes": 2001,
+      "sha256": "cc4968447b68ca71c526b92882c84605b40768f927b169ac40d33b22d830e1ab"
+    },
+    {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/comparison.json",
       "bytes": 50426,
       "sha256": "ba61431950c1f3682eb27367b1fe8107a2f9e2750f63efa1ee78cb578c3f1e02"
@@ -360,11 +245,6 @@
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/release_evaluation.json",
       "bytes": 67665,
       "sha256": "d5f797b304314af795c7ff38703eed7e58478e91805e28d663038ee26fc1368f"
-    },
-    {
-      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/RESULTS.md",
-      "bytes": 2001,
-      "sha256": "cc4968447b68ca71c526b92882c84605b40768f927b169ac40d33b22d830e1ab"
     },
     {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/config.json",
@@ -442,11 +322,6 @@
       "sha256": "4880634e9bb5c9d62a1dba2c32c0e2d404806eb9ad3f2e909fca8defd104a3c1"
     },
     {
-      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/test_predictions_with_questions.jsonl",
-      "bytes": 7899365,
-      "sha256": "35853c0de06ae05c48f855266579227d046045a9426156b74ba6521fc3b02394"
-    },
-    {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selection.json",
       "bytes": 8451,
       "sha256": "b44afd19705cd4275916467655b64ce3d4bf82d2141e1e5a18b2bb518b506048"
@@ -482,6 +357,11 @@
       "sha256": "c74f9341cf1bfb348baf44bfec331617ca571b046cf00e8ef2fe8840888664a7"
     },
     {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/preparation_protocol.json",
+      "bytes": 2286,
+      "sha256": "af231a09f03a19e6a45d68202d6a0f66da793a863b615da6fedab40046f4377f"
+    },
+    {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/coverage.json",
       "bytes": 554,
       "sha256": "a580315ba9d35b46b2d8bf801570ddd85b30220ed3abab948df1c67c3053f977"
@@ -512,6 +392,11 @@
       "sha256": "b1ac3089b0c11ed773a3904036d707c85248017408f0a7af24e15def77948f7a"
     },
     {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/RESULTS.md",
+      "bytes": 1614,
+      "sha256": "aa67c1160eb360f1574a4f1049eff1411808b652b21b6078924f5b71915baf89"
+    },
+    {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/comparison.json",
       "bytes": 24734,
       "sha256": "b8e3ef4e9ced628e2a106ec0dedc55d1346983dd11f63d0de7ee785a31655c8d"
@@ -530,11 +415,6 @@
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/release_evaluation.json",
       "bytes": 20394,
       "sha256": "bd6bc40d7813f520f5a00107bda00c39e6a7bf282461cdab0b1004b1a91b1101"
-    },
-    {
-      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/RESULTS.md",
-      "bytes": 1614,
-      "sha256": "aa67c1160eb360f1574a4f1049eff1411808b652b21b6078924f5b71915baf89"
     },
     {
       "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/config.json",
@@ -707,11 +587,6 @@
       "sha256": "fc7f59acba9b988d2b167a02c0061c614ca6a6af474ba969fc5e58299514cdc6"
     },
     {
-      "path": "BAMAS/LICENSE",
-      "bytes": 11558,
-      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
-    },
-    {
       "path": "BAMAS/scripts/try_difficulty.py",
       "bytes": 4081,
       "sha256": "2fd35875a3c4a18ab2841d8c2220cdb41a5eb3e0db0533f552e153568d695465"
@@ -728,13 +603,28 @@
     },
     {
       "path": "README.md",
-      "bytes": 4878,
-      "sha256": "471b5c575bb70dc1a438aa8476558d730c9752c50fa5d37c7cee12b0f00da3b5"
+      "bytes": 5389,
+      "sha256": "e9a1d1f70639260b5f93ac909f0e8569ad232a39e8427cc0d76a3968c5931c9b"
     },
     {
       "path": "RELEASE_VERIFICATION.json",
-      "bytes": 867,
-      "sha256": "ccb05abfa9951e23d9029a88c627a583415dd77383bde7db6efba0f51053422f"
+      "bytes": 1418,
+      "sha256": "827b7a397020284b282c9bfaa623738807509072bcfc2477dec9f7088abe88e7"
+    },
+    {
+      "path": "TECHNICAL_README.md",
+      "bytes": 13145,
+      "sha256": "69fcb16b92a1d244c6c3759cdeb3b586e28708772b1ebfee8afe76d2cc40ddca"
+    },
+    {
+      "path": "docs/CONTROLLER_INTEGRATION.md",
+      "bytes": 5628,
+      "sha256": "393daf700836f02bf26066f52a2d39a6b8032c04bbfd065b7844f8db20d2f672"
+    },
+    {
+      "path": "docs/DIFFICULTY_AND_LINUCB.md",
+      "bytes": 32874,
+      "sha256": "b16f834b2c95e87a3ed1cf9de31a14bd687168608399c2c0c5364a9fd8e5fa83"
     }
   ]
 }
