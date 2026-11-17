@@ -1,0 +1,370 @@
+{
+  "prediction": {
+    "weak": {
+      "n": 4969,
+      "mae": 0.2516767680644989,
+      "rmse": 0.3074821417941781,
+      "mse": 0.09454526752233505,
+      "calibration_error": 0.01799489207030494,
+      "prediction_std": 0.178600013256073,
+      "target_std": 0.34770190715789795,
+      "mean_bias": -0.009612362831830978,
+      "spearman": 0.43295888345107647
+    },
+    "intermediate": {
+      "n": 5003,
+      "mae": 0.24712945520877838,
+      "rmse": 0.3021081908730324,
+      "mse": 0.0912693589925766,
+      "calibration_error": 0.02085580555124567,
+      "prediction_std": 0.15747396647930145,
+      "target_std": 0.331124484539032,
+      "mean_bias": -0.011610184796154499,
+      "spearman": 0.3811614866037314
+    },
+    "strong": {
+      "n": 5113,
+      "mae": 0.21367493271827698,
+      "rmse": 0.2738424708244992,
+      "mse": 0.0749896988272667,
+      "calibration_error": 0.0077105484860600405,
+      "prediction_std": 0.17227619886398315,
+      "target_std": 0.31920677423477173,
+      "mean_bias": -0.0033360105007886887,
+      "spearman": 0.5242273082042038
+    },
+    "macro_mse": 0.08693477511405945,
+    "by_dataset": {
+      "additional-evals": {
+        "weak": {
+          "n": 256,
+          "mae": 0.11531372368335724,
+          "rmse": 0.15414604226795212,
+          "mse": 0.023761002346873283,
+          "calibration_error": 0.03475140530645149
+        },
+        "intermediate": {
+          "n": 256,
+          "mae": 0.14681661128997803,
+          "rmse": 0.1917894381384613,
+          "mse": 0.036783188581466675,
+          "calibration_error": 0.026759890497487504
+        },
+        "strong": {
+          "n": 256,
+          "mae": 0.20824480056762695,
+          "rmse": 0.2730556273797157,
+          "mse": 0.07455937564373016,
+          "calibration_error": 0.049945164675591514
+        },
+        "macro_mse": 0.04503452219069004
+      },
+      "arc-challenge": {
+        "weak": {
+          "n": 209,
+          "mae": 0.25392869114875793,
+          "rmse": 0.3189894753673629,
+          "mse": 0.10175428539514542,
+          "calibration_error": 0.09397531881857146
+        },
+        "intermediate": {
+          "n": 209,
+          "mae": 0.24650686979293823,
+          "rmse": 0.30602277481027995,
+          "mse": 0.09364993870258331,
+          "calibration_error": 0.09460291701355619
+        },
+        "strong": {
+          "n": 209,
+          "mae": 0.2250910997390747,
+          "rmse": 0.283314636901532,
+          "mse": 0.08026718348264694,
+          "calibration_error": 0.06478674046730881
+        },
+        "macro_mse": 0.09189046919345856
+      },
+      "grade-school-math": {
+        "weak": {
+          "n": 683,
+          "mae": 0.26181963086128235,
+          "rmse": 0.3142127308774067,
+          "mse": 0.09872964024543762,
+          "calibration_error": 0.032717922552438286
+        },
+        "intermediate": {
+          "n": 717,
+          "mae": 0.2326817661523819,
+          "rmse": 0.28526900949166517,
+          "mse": 0.08137840777635574,
+          "calibration_error": 0.020818332997326074
+        },
+        "strong": {
+          "n": 827,
+          "mae": 0.14468833804130554,
+          "rmse": 0.1998913853730084,
+          "mse": 0.03995656594634056,
+          "calibration_error": 0.019852367915582484
+        },
+        "macro_mse": 0.0733548713227113
+      },
+      "hellaswag": {
+        "weak": {
+          "n": 1459,
+          "mae": 0.23811152577400208,
+          "rmse": 0.28879171008280935,
+          "mse": 0.0834006518125534,
+          "calibration_error": 0.025144402027089268
+        },
+        "intermediate": {
+          "n": 1459,
+          "mae": 0.25641512870788574,
+          "rmse": 0.31017644850063,
+          "mse": 0.09620942920446396,
+          "calibration_error": 0.028238039359072452
+        },
+        "strong": {
+          "n": 1459,
+          "mae": 0.19852468371391296,
+          "rmse": 0.2528115073751571,
+          "mse": 0.06391365826129913,
+          "calibration_error": 0.01731835685624416
+        },
+        "macro_mse": 0.08117457975943883
+      },
+      "mbpp": {
+        "weak": {
+          "n": 61,
+          "mae": 0.30850768089294434,
+          "rmse": 0.3846988910565855,
+          "mse": 0.14799323678016663,
+          "calibration_error": 0.11608286910369746
+        },
+        "intermediate": {
+          "n": 61,
+          "mae": 0.29217514395713806,
+          "rmse": 0.34727722037044045,
+          "mse": 0.12060146778821945,
+          "calibration_error": 0.09893986607184176
+        },
+        "strong": {
+          "n": 61,
+          "mae": 0.36747103929519653,
+          "rmse": 0.42830238774440316,
+          "mse": 0.18344293534755707,
+          "calibration_error": 0.13085974997184313
+        },
+        "macro_mse": 0.1506792133053144
+      },
+      "mmlu": {
+        "weak": {
+          "n": 2100,
+          "mae": 0.2772894501686096,
+          "rmse": 0.3319114581160017,
+          "mse": 0.11016521602869034,
+          "calibration_error": 0.03209449354381788
+        },
+        "intermediate": {
+          "n": 2100,
+          "mae": 0.26096755266189575,
+          "rmse": 0.3164169168440324,
+          "mse": 0.10011966526508331,
+          "calibration_error": 0.048035831689125015
+        },
+        "strong": {
+          "n": 2100,
+          "mae": 0.24325045943260193,
+          "rmse": 0.30118969024729414,
+          "mse": 0.09071522951126099,
+          "calibration_error": 0.020145616950023745
+        },
+        "macro_mse": 0.10033337026834488
+      },
+      "mtbench": {
+        "weak": {
+          "n": 9,
+          "mae": 0.26996904611587524,
+          "rmse": 0.33442624180764174,
+          "mse": 0.11184091120958328,
+          "calibration_error": 0.1549234456486172
+        },
+        "intermediate": {
+          "n": 9,
+          "mae": 0.29875898361206055,
+          "rmse": 0.35519167822817443,
+          "mse": 0.126161128282547,
+          "calibration_error": 0.09413851632012261
+        },
+        "strong": {
+          "n": 9,
+          "mae": 0.282685250043869,
+          "rmse": 0.36113032520153526,
+          "mse": 0.13041511178016663,
+          "calibration_error": 0.2826852450768153
+        },
+        "macro_mse": 0.12280571709076564
+      },
+      "winogrande": {
+        "weak": {
+          "n": 192,
+          "mae": 0.1989908665418625,
+          "rmse": 0.24948882205067568,
+          "mse": 0.06224467232823372,
+          "calibration_error": 0.027043421907971304
+        },
+        "intermediate": {
+          "n": 192,
+          "mae": 0.19686321914196014,
+          "rmse": 0.23014921731815768,
+          "mse": 0.05296866223216057,
+          "calibration_error": 0.060242959298193455
+        },
+        "strong": {
+          "n": 192,
+          "mae": 0.2451796531677246,
+          "rmse": 0.30956487319933096,
+          "mse": 0.09583041071891785,
+          "calibration_error": 0.045671033052106694
+        },
+        "macro_mse": 0.07034791509310405
+      }
+    },
+    "dataset_macro_mse": 0.09195258227797846
+  },
+  "strong_vs_weak_gain": {
+    "threshold": 0.1,
+    "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+    "all": {
+      "n": 4914,
+      "positive_rate": 0.42857142857142855,
+      "gain_mae": 0.22118350863456726,
+      "auc": 0.64425689523624,
+      "spearman": 0.33895768981023494
+    },
+    "additional-evals": {
+      "n": 256,
+      "positive_rate": 0.375,
+      "gain_mae": 0.1863817572593689,
+      "auc": 0.81123046875,
+      "spearman": 0.5596548495769713
+    },
+    "arc-challenge": {
+      "n": 209,
+      "positive_rate": 0.3444976076555024,
+      "gain_mae": 0.1983298361301422,
+      "auc": 0.5840429845904299,
+      "spearman": 0.17673361381337097
+    },
+    "grade-school-math": {
+      "n": 628,
+      "positive_rate": 0.7197452229299363,
+      "gain_mae": 0.22946156561374664,
+      "auc": 0.5899663113435237,
+      "spearman": 0.22485579068875652
+    },
+    "hellaswag": {
+      "n": 1459,
+      "positive_rate": 0.3461274845784784,
+      "gain_mae": 0.2239631712436676,
+      "auc": 0.6007015795919215,
+      "spearman": 0.23320698352834418
+    },
+    "mbpp": {
+      "n": 61,
+      "positive_rate": 0.4918032786885246,
+      "gain_mae": 0.2631976008415222,
+      "auc": 0.6258064516129032,
+      "spearman": 0.2638885538181359
+    },
+    "mmlu": {
+      "n": 2100,
+      "positive_rate": 0.3995238095238095,
+      "gain_mae": 0.2180037796497345,
+      "auc": 0.551103566327876,
+      "spearman": 0.08222066653986414
+    },
+    "mtbench": {
+      "n": 9,
+      "positive_rate": 0.4444444444444444,
+      "gain_mae": 0.15245074033737183,
+      "auc": 0.5,
+      "spearman": 0.15126584522688324
+    },
+    "winogrande": {
+      "n": 192,
+      "positive_rate": 0.5625,
+      "gain_mae": 0.26891592144966125,
+      "auc": 0.4861111111111111,
+      "spearman": -0.045356231275354535
+    }
+  },
+  "illustrative_tier_utility": {
+    "interpretation": "Illustrative offline pool-mean utility with arbitrary tier costs; NOT measured dollars, token use or MAS outcomes.",
+    "tier_costs": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "points": [
+      {
+        "cost_weight": 0.0,
+        "mean_recorded_quality": 0.7063124775886536,
+        "mean_proxy_cost": 2.616041666666667,
+        "mean_utility": 0.706312490987281,
+        "oracle_regret": 0.09107812874019146,
+        "selection_counts": {
+          "weak": 428,
+          "intermediate": 987,
+          "strong": 3385
+        }
+      },
+      {
+        "cost_weight": 0.025,
+        "mean_recorded_quality": 0.6954704523086548,
+        "mean_proxy_cost": 2.2570833333333336,
+        "mean_utility": 0.6390433960954347,
+        "oracle_regret": 0.11194878612458704,
+        "selection_counts": {
+          "weak": 1346,
+          "intermediate": 874,
+          "strong": 2580
+        }
+      },
+      {
+        "cost_weight": 0.05,
+        "mean_recorded_quality": 0.6752985715866089,
+        "mean_proxy_cost": 1.8160416666666668,
+        "mean_utility": 0.5844965237304568,
+        "oracle_regret": 0.12059374931951362,
+        "selection_counts": {
+          "weak": 2530,
+          "intermediate": 623,
+          "strong": 1647
+        }
+      },
+      {
+        "cost_weight": 0.1,
+        "mean_recorded_quality": 0.6477864384651184,
+        "mean_proxy_cost": 1.3275,
+        "mean_utility": 0.51503645709157,
+        "oracle_regret": 0.10184114425132672,
+        "selection_counts": {
+          "weak": 3937,
+          "intermediate": 154,
+          "strong": 709
+        }
+      },
+      {
+        "cost_weight": 0.2,
+        "mean_recorded_quality": 0.6133185625076294,
+        "mean_proxy_cost": 1.0570833333333334,
+        "mean_utility": 0.4019019095251957,
+        "oracle_regret": 0.05829687370856602,
+        "selection_counts": {
+          "weak": 4652,
+          "intermediate": 22,
+          "strong": 126
+        }
+      }
+    ]
+  }
+}

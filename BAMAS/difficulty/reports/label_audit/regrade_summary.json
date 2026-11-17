@@ -1,0 +1,27 @@
+{
+  "grader_version": "gsm-final-numeric-v2",
+  "observations": 81950,
+  "parsed": 70061,
+  "methods": {
+    "final_line": 60075,
+    "final_equation_rhs": 9647,
+    "no_unique_final_number": 11710,
+    "explicit_marker": 339,
+    "unfinished_or_introductory_line": 179
+  },
+  "questions_complete": 3608,
+  "questions_quarantined": 3842,
+  "complete_by_split": {
+    "train": 2546,
+    "validation": 548,
+    "test": 514
+  },
+  "quarantined_by_split": {
+    "train": 2711,
+    "validation": 550,
+    "test": 581
+  },
+  "review_sample_records": 60,
+  "review_sample_status": "Reviewed 40 accepted numeric conclusions (no extraction errors found) and 20 abstentions; supplemental extreme-score review also checked.",
+  "limitations": "Numeric extraction proxies answer correctness, not formal reasoning correctness; complete-case selection may bias results."
+}

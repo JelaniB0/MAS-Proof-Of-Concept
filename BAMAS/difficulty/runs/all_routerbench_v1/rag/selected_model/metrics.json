@@ -1,0 +1,184 @@
+{
+  "prediction": {
+    "weak": {
+      "n": 131,
+      "mae": 0.3543812930583954,
+      "rmse": 0.3960471349670108,
+      "mse": 0.1568533331155777,
+      "calibration_error": 0.057357414646913074,
+      "prediction_std": 0.15734705328941345,
+      "target_std": 0.43077388405799866,
+      "mean_bias": 0.0002821310772560537,
+      "spearman": 0.39000123136665416
+    },
+    "intermediate": {
+      "n": 131,
+      "mae": 0.33708056807518005,
+      "rmse": 0.39096558028625344,
+      "mse": 0.1528540849685669,
+      "calibration_error": 0.053736896232794255,
+      "prediction_std": 0.09179878979921341,
+      "target_std": 0.40342625975608826,
+      "mean_bias": -0.028382359072566032,
+      "spearman": 0.2274811927713149
+    },
+    "strong": {
+      "n": 131,
+      "mae": 0.47333329916000366,
+      "rmse": 0.49942795991862093,
+      "mse": 0.24942828714847565,
+      "calibration_error": 0.08240270523624565,
+      "prediction_std": 0.08118865638971329,
+      "target_std": 0.496711403131485,
+      "mean_bias": -0.08240271359682083,
+      "spearman": 0.12557842557818905
+    },
+    "macro_mse": 0.1863785684108734,
+    "by_dataset": {
+      "rag_news": {
+        "weak": {
+          "n": 61,
+          "mae": 0.365752249956131,
+          "rmse": 0.40986897535279365,
+          "mse": 0.16799257695674896,
+          "calibration_error": 0.08617010614911064
+        },
+        "intermediate": {
+          "n": 61,
+          "mae": 0.35774314403533936,
+          "rmse": 0.4151190826467522,
+          "mse": 0.17232385277748108,
+          "calibration_error": 0.09302054272323357
+        },
+        "strong": {
+          "n": 61,
+          "mae": 0.4837568700313568,
+          "rmse": 0.5045076669879776,
+          "mse": 0.2545279860496521,
+          "calibration_error": 0.08612932875508168
+        },
+        "macro_mse": 0.19828147192796072
+      },
+      "rag_wiki": {
+        "weak": {
+          "n": 70,
+          "mae": 0.34447234869003296,
+          "rmse": 0.3835964933091406,
+          "mse": 0.14714626967906952,
+          "calibration_error": 0.09445346125534601
+        },
+        "intermediate": {
+          "n": 70,
+          "mae": 0.3190746009349823,
+          "rmse": 0.3686293032690255,
+          "mse": 0.13588756322860718,
+          "calibration_error": 0.02430443125111716
+        },
+        "strong": {
+          "n": 70,
+          "mae": 0.464249849319458,
+          "rmse": 0.49495882590355783,
+          "mse": 0.2449842393398285,
+          "calibration_error": 0.07971676460334233
+        },
+        "macro_mse": 0.17600602408250174
+      }
+    },
+    "dataset_macro_mse": 0.18714374800523123
+  },
+  "strong_vs_weak_gain": {
+    "threshold": 0.1,
+    "interpretation": "Recorded strong-minus-weak pool mean quality, not agent or token-cap utility.",
+    "all": {
+      "n": 131,
+      "positive_rate": 0.29770992366412213,
+      "gain_mae": 0.39970922470092773,
+      "auc": 0.6259754738015607,
+      "spearman": 0.20563680418401717
+    },
+    "rag_news": {
+      "n": 61,
+      "positive_rate": 0.39344262295081966,
+      "gain_mae": 0.4694400727748871,
+      "auc": 0.6418918918918919,
+      "spearman": 0.19233553994895786
+    },
+    "rag_wiki": {
+      "n": 70,
+      "positive_rate": 0.21428571428571427,
+      "gain_mae": 0.33894380927085876,
+      "auc": 0.4884848484848485,
+      "spearman": 0.06813822690107672
+    }
+  },
+  "illustrative_tier_utility": {
+    "interpretation": "Illustrative offline pool-mean utility with arbitrary tier costs; NOT measured dollars, token use or MAS outcomes.",
+    "tier_costs": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "points": [
+      {
+        "cost_weight": 0.0,
+        "mean_recorded_quality": 0.5610687136650085,
+        "mean_proxy_cost": 2.854961832061069,
+        "mean_utility": 0.5610687022900763,
+        "oracle_regret": 0.17557251908396945,
+        "selection_counts": {
+          "weak": 8,
+          "intermediate": 3,
+          "strong": 120
+        }
+      },
+      {
+        "cost_weight": 0.025,
+        "mean_recorded_quality": 0.5458015203475952,
+        "mean_proxy_cost": 2.5801526717557253,
+        "mean_utility": 0.481297709923664,
+        "oracle_regret": 0.216793893129771,
+        "selection_counts": {
+          "weak": 21,
+          "intermediate": 13,
+          "strong": 97
+        }
+      },
+      {
+        "cost_weight": 0.05,
+        "mean_recorded_quality": 0.5610687136650085,
+        "mean_proxy_cost": 2.2213740458015265,
+        "mean_utility": 0.45000000000000007,
+        "oracle_regret": 0.20954198473282445,
+        "selection_counts": {
+          "weak": 35,
+          "intermediate": 32,
+          "strong": 64
+        }
+      },
+      {
+        "cost_weight": 0.1,
+        "mean_recorded_quality": 0.5458015203475952,
+        "mean_proxy_cost": 1.7099236641221374,
+        "mean_utility": 0.37480916030534345,
+        "oracle_regret": 0.20763358778625957,
+        "selection_counts": {
+          "weak": 50,
+          "intermediate": 69,
+          "strong": 12
+        }
+      },
+      {
+        "cost_weight": 0.2,
+        "mean_recorded_quality": 0.5152671933174133,
+        "mean_proxy_cost": 1.1908396946564885,
+        "mean_utility": 0.2770992366412214,
+        "oracle_regret": 0.15114503816793892,
+        "selection_counts": {
+          "weak": 106,
+          "intermediate": 25,
+          "strong": 0
+        }
+      }
+    ]
+  }
+}

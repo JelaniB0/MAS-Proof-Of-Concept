@@ -1,0 +1,7 @@
+__pycache__/
+data/
+_archive/
+.pytest_cache/
+runs/**/candidates/
+runs/**/frozen_embedding_cache/
+runs/**/*.log

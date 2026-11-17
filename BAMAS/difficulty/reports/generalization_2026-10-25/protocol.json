@@ -1,0 +1,166 @@
+{
+  "started_utc": "2026-10-25T04:03:45.625994+00:00",
+  "model": "C:\\Users\\jelan\\OneDrive\\Desktop\\MAS-Proof-Of-Concept\\BAMAS\\difficulty\\runs\\all_routerbench_v1\\main\\selected_model",
+  "predictor_id": "2dadbec6e82044fcc210b2837cae2e03024234f3d9c7ca8fe3f80fcaf9d4aab3",
+  "pool_contract_id": "6b1f8b33dae4aac3a42c39b6bc3ffb22f40a1784d50dd6493ef0ddf71a885221",
+  "model_metadata_sha256": "bc5168f06348204b52bce9d7b03aa0bc1544749f96363e7e4a30a0b87889afc9",
+  "source_manifest": {
+    "math": {
+      "repository": "EleutherAI/hendrycks_math",
+      "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+      "files": [
+        {
+          "path": "math\\algebra\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/test-00000-of-00001.parquet",
+          "sha256": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5",
+          "bytes": 353114,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\counting_and_probability\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/test-00000-of-00001.parquet",
+          "sha256": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966",
+          "bytes": 175032,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\geometry\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/test-00000-of-00001.parquet",
+          "sha256": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a",
+          "bytes": 263835,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\intermediate_algebra\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/test-00000-of-00001.parquet",
+          "sha256": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb",
+          "bytes": 394797,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\number_theory\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/test-00000-of-00001.parquet",
+          "sha256": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9",
+          "bytes": 182003,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\prealgebra\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/test-00000-of-00001.parquet",
+          "sha256": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc",
+          "bytes": 267729,
+          "platform_sha256_verified": true
+        },
+        {
+          "path": "math\\precalculus\\test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/test-00000-of-00001.parquet",
+          "sha256": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c",
+          "bytes": 242241,
+          "platform_sha256_verified": true
+        }
+      ]
+    },
+    "humaneval": {
+      "repository": "openai/human-eval",
+      "revision": "b9453e8f1865df0a0057a1383767caa400acfbcf",
+      "path": "HumanEval.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/openai/human-eval/b9453e8f1865df0a0057a1383767caa400acfbcf/data/HumanEval.jsonl.gz",
+      "sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+      "bytes": 44877,
+      "git_blob_sha1": "998d25196e17af24daf9b6cb3a975fe752528e46",
+      "git_blob_verified": true
+    }
+  },
+  "prepared_sha256": {
+    "train": "5fa81ea4949ffc37435febd928792aa89eb6333eccdbfac99111c210b8aefe7d",
+    "validation": "c74f9341cf1bfb348baf44bfec331617ca571b046cf00e8ef2fe8840888664a7",
+    "test": "a77738dc3f41747cdf0de5a20779b2b39ac6f0edf719bf19ca22d5e5a6e54f44"
+  },
+  "gsm_official_test_sha256": "ca6e7c5108b7ab7bc920c707e021b21bd9bdaf725e48a179b781ce4be1e9ad13",
+  "new_questions": [
+    [
+      "addition",
+      "what's 1 + 1"
+    ],
+    [
+      "addition",
+      "What is 1 + 1?"
+    ],
+    [
+      "addition",
+      "Add one and one."
+    ],
+    [
+      "addition",
+      "Maya has one pear and receives another pear. How many pears does Maya have?"
+    ],
+    [
+      "addition",
+      "Compute 1 + 1. Return only the number."
+    ],
+    [
+      "addition",
+      "Compute 1 + 1 and briefly explain your answer."
+    ],
+    [
+      "arithmetic",
+      "What is 17 + 26?"
+    ],
+    [
+      "arithmetic",
+      "Calculate 89 minus 34."
+    ],
+    [
+      "arithmetic",
+      "What is three quarters plus two thirds?"
+    ],
+    [
+      "algebra",
+      "Solve 7x - 5 = 44 for x."
+    ],
+    [
+      "algebra",
+      "Find all real roots of x^4 - 5x^2 + 4 = 0."
+    ],
+    [
+      "proof",
+      "Prove that there are infinitely many primes congruent to 3 modulo 4."
+    ],
+    [
+      "code",
+      "Write a Python function that returns the square of an integer."
+    ],
+    [
+      "code",
+      "Write a Python function that checks whether parentheses, brackets, and braces are balanced."
+    ],
+    [
+      "code",
+      "Implement edit distance in Python using dynamic programming and explain its complexity."
+    ],
+    [
+      "code",
+      "Implement red-black tree insertion in Python, including rotations and rebalancing."
+    ],
+    [
+      "knowledge",
+      "What is the capital of France?"
+    ],
+    [
+      "comparison",
+      "Which integer is larger, 9 or 4?"
+    ],
+    [
+      "explanation",
+      "Explain why a photon can carry momentum despite having zero rest mass."
+    ],
+    [
+      "writing",
+      "Write a warm two-sentence thank-you note to a helpful neighbor."
+    ]
+  ],
+  "selection": "Checkpoint fixed before evaluation. No training, selection, threshold fitting or pool reranking.",
+  "test_status": "Repeated evaluation of an already inspected held-out split; not new independent validation.",
+  "external_scope": "Generalization in the supervised predictor only; encoder pretraining overlap cannot be ruled out.",
+  "unlabeled_interpretation": "MATH, HumanEval, official GSM8K test and authored prompts lack fixed-pool outcome labels. Predictions alone cannot establish difficulty accuracy."
+}

@@ -1,0 +1,58 @@
+{
+  "version": "all-routerbench-v1",
+  "zero_sha256": "e530a9ea71c9c12ea55269f094e41221bbbcfb30a16ca63b1e96db2f315910fc",
+  "five_sha256": "fbd7d3d16fba2759a18fa0ad44409d3e0e92ba80d03d90827eed1a6d084c9ffe",
+  "rag_sha256": "334450c9d4a70c8aaf845387856e3a3a1f0afea963cf61edcec17f5d44eb6f2c",
+  "gsm_observations_sha256": "43561c00ab481d4d826eb22164f523dd31bb34cd6df9aaf911dc2049f7509351",
+  "gsm_regrade_protocol": {
+    "grader_version": "gsm-final-numeric-v2",
+    "response_source_sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d",
+    "reference_sha256": "2437d36d59167432067063aedc7b0cd2a203731556bd0aa7042d6e5d9e54e3d7",
+    "original_split_sha256": {
+      "train": "fdc6dd79d2c24505f2de337cfe9427291d3e0785cce90974f322ebd19ded1c57",
+      "validation": "20382a3e244584c0546d4ddc035f70911d7360b67c1d3f338cbea878ccfadbf8",
+      "test": "b70431303d0d24e1bf3902d61f85aba1ece9e3bca45771bff8a35a1dd8bf0e1f"
+    },
+    "groups": {
+      "weak": [
+        "mistralai/mistral-7b-chat",
+        "meta/llama-2-70b-chat",
+        "WizardLM/WizardLM-13B-V1.2",
+        "zero-one-ai/Yi-34B-Chat"
+      ],
+      "intermediate": [
+        "meta/code-llama-instruct-34b-chat",
+        "mistralai/mixtral-8x7b-chat",
+        "claude-instant-v1",
+        "claude-v1"
+      ],
+      "strong": [
+        "gpt-3.5-turbo-1106",
+        "claude-v2",
+        "gpt-4-1106-preview"
+      ]
+    }
+  },
+  "main_groups": {
+    "weak": [
+      "mistralai/mistral-7b-chat",
+      "meta/llama-2-70b-chat",
+      "WizardLM/WizardLM-13B-V1.2",
+      "zero-one-ai/Yi-34B-Chat"
+    ],
+    "intermediate": [
+      "meta/code-llama-instruct-34b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "claude-instant-v1",
+      "claude-v1"
+    ],
+    "strong": [
+      "gpt-3.5-turbo-1106",
+      "claude-v2",
+      "gpt-4-1106-preview"
+    ]
+  },
+  "condition_policy": "5shot-export scores/prompts for MMLU, ARC, HellaSwag, Winogrande; 0shot-export otherwise. GSM0 already contains worked examples.",
+  "input_policy": "routerbench-task-v1; remove recognized worked examples and answer-format footers, retain options.",
+  "missing_policy": "Unknown GSM responses omitted; pool target absent unless every fixed-pool member is observed."
+}

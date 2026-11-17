@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "scope": "Standalone difficulty predictor release",
+  "offline_tests": {
+    "passed": 49,
+    "failed": 0,
+    "test_runtime_seconds": 14.083
+  },
+  "real_checkpoint_smoke": {
+    "main": "passed local CPU load and three finite [0,1] scores",
+    "rag": "passed local CPU load and three finite [0,1] scores",
+    "imports_from_isolated_release": true,
+    "cloud_api_calls": 0
+  },
+  "prepared_rows": {
+    "main": {
+      "train": 25710,
+      "validation": 5406,
+      "test": 5381
+    },
+    "rag": {
+      "train": 445,
+      "validation": 81,
+      "test": 131
+    }
+  },
+  "release_checks": [
+    "explicit predictor/data/checkpoint allowlist",
+    "credential-pattern scan",
+    "local Markdown links",
+    "Python syntax",
+    "byte-preserving Git attributes",
+    "prepared split counts"
+  ]
+}

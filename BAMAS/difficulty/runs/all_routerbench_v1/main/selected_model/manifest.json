@@ -1,0 +1,370 @@
+{
+  "source": "BAMAS\\difficulty\\data",
+  "source_sha256": "5367e1db891f4ce5770762293ee9c61de70dbce242d366b6a44db90412e3dc4e",
+  "seed": 42,
+  "group_order": [
+    "weak",
+    "intermediate",
+    "strong"
+  ],
+  "groups": {
+    "weak": [
+      "mistralai/mistral-7b-chat",
+      "meta/llama-2-70b-chat",
+      "WizardLM/WizardLM-13B-V1.2",
+      "zero-one-ai/Yi-34B-Chat"
+    ],
+    "intermediate": [
+      "meta/code-llama-instruct-34b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "claude-instant-v1",
+      "claude-v1"
+    ],
+    "strong": [
+      "gpt-3.5-turbo-1106",
+      "claude-v2",
+      "gpt-4-1106-preview"
+    ]
+  },
+  "training_macro_quality": null,
+  "min_coverage": 1.0,
+  "split_counts": {
+    "validation": 5406,
+    "train": 25710,
+    "test": 5381
+  },
+  "datasets": [
+    "additional-evals",
+    "arc-challenge",
+    "grade-school-math",
+    "hellaswag",
+    "mbpp",
+    "mmlu",
+    "mtbench",
+    "winogrande"
+  ],
+  "split_method": "Connected canonical task texts/sample IDs; 70/15/15 hash folds anchored to original 0shot-export prompts where available.",
+  "target_definition": "one minus mean task-specific normalized outcome per fixed pool; GSM8K uses reference numeric correctness, other tasks use published binary/graded metrics",
+  "label_provenance": {
+    "version": "all-routerbench-v1",
+    "zero_sha256": "e530a9ea71c9c12ea55269f094e41221bbbcfb30a16ca63b1e96db2f315910fc",
+    "five_sha256": "fbd7d3d16fba2759a18fa0ad44409d3e0e92ba80d03d90827eed1a6d084c9ffe",
+    "rag_sha256": "334450c9d4a70c8aaf845387856e3a3a1f0afea963cf61edcec17f5d44eb6f2c",
+    "gsm_observations_sha256": "43561c00ab481d4d826eb22164f523dd31bb34cd6df9aaf911dc2049f7509351",
+    "gsm_regrade_protocol": {
+      "grader_version": "gsm-final-numeric-v2",
+      "response_source_sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d",
+      "reference_sha256": "2437d36d59167432067063aedc7b0cd2a203731556bd0aa7042d6e5d9e54e3d7",
+      "original_split_sha256": {
+        "train": "fdc6dd79d2c24505f2de337cfe9427291d3e0785cce90974f322ebd19ded1c57",
+        "validation": "20382a3e244584c0546d4ddc035f70911d7360b67c1d3f338cbea878ccfadbf8",
+        "test": "b70431303d0d24e1bf3902d61f85aba1ece9e3bca45771bff8a35a1dd8bf0e1f"
+      },
+      "groups": {
+        "weak": [
+          "mistralai/mistral-7b-chat",
+          "meta/llama-2-70b-chat",
+          "WizardLM/WizardLM-13B-V1.2",
+          "zero-one-ai/Yi-34B-Chat"
+        ],
+        "intermediate": [
+          "meta/code-llama-instruct-34b-chat",
+          "mistralai/mixtral-8x7b-chat",
+          "claude-instant-v1",
+          "claude-v1"
+        ],
+        "strong": [
+          "gpt-3.5-turbo-1106",
+          "claude-v2",
+          "gpt-4-1106-preview"
+        ]
+      }
+    },
+    "main_groups": {
+      "weak": [
+        "mistralai/mistral-7b-chat",
+        "meta/llama-2-70b-chat",
+        "WizardLM/WizardLM-13B-V1.2",
+        "zero-one-ai/Yi-34B-Chat"
+      ],
+      "intermediate": [
+        "meta/code-llama-instruct-34b-chat",
+        "mistralai/mixtral-8x7b-chat",
+        "claude-instant-v1",
+        "claude-v1"
+      ],
+      "strong": [
+        "gpt-3.5-turbo-1106",
+        "claude-v2",
+        "gpt-4-1106-preview"
+      ]
+    },
+    "condition_policy": "5shot-export scores/prompts for MMLU, ARC, HellaSwag, Winogrande; 0shot-export otherwise. GSM0 already contains worked examples.",
+    "input_policy": "routerbench-task-v1; remove recognized worked examples and answer-format footers, retain options.",
+    "missing_policy": "Unknown GSM responses omitted; pool target absent unless every fixed-pool member is observed."
+  },
+  "source_metrics": {
+    "Chinese_character_riddles": [
+      "published_binary_outcome"
+    ],
+    "abstract2title": [
+      "published_binary_outcome"
+    ],
+    "accounting_audit": [
+      "published_binary_outcome"
+    ],
+    "arc-challenge": [
+      "published_binary_outcome"
+    ],
+    "bias_detection": [
+      "published_binary_outcome"
+    ],
+    "chinese-lantern-riddles": [
+      "published_binary_outcome"
+    ],
+    "chinese-remainder-theorem": [
+      "published_binary_outcome"
+    ],
+    "chinese_ancient_masterpieces_dynasty": [
+      "published_binary_outcome"
+    ],
+    "chinese_ancient_poetry": [
+      "published_binary_outcome"
+    ],
+    "chinese_chu_ci": [
+      "published_binary_outcome"
+    ],
+    "chinese_famous_novel": [
+      "published_binary_outcome"
+    ],
+    "chinese_hard_translations": [
+      "published_binary_outcome"
+    ],
+    "chinese_homonym": [
+      "published_binary_outcome"
+    ],
+    "chinese_idioms": [
+      "published_normalized_grade"
+    ],
+    "chinese_modern_poem_identification": [
+      "published_binary_outcome"
+    ],
+    "chinese_poem": [
+      "published_binary_outcome"
+    ],
+    "chinese_shi_jing": [
+      "published_binary_outcome"
+    ],
+    "chinese_song_ci": [
+      "published_binary_outcome"
+    ],
+    "chinese_tang_poetries": [
+      "published_binary_outcome"
+    ],
+    "chinese_zodiac": [
+      "published_binary_outcome"
+    ],
+    "consensus_summary": [
+      "published_normalized_grade"
+    ],
+    "grade-school-math": [
+      "reference_checked_numeric_correctness"
+    ],
+    "hellaswag": [
+      "published_binary_outcome"
+    ],
+    "mbpp": [
+      "published_binary_outcome"
+    ],
+    "mmlu-abstract-algebra": [
+      "published_binary_outcome"
+    ],
+    "mmlu-anatomy": [
+      "published_binary_outcome"
+    ],
+    "mmlu-astronomy": [
+      "published_binary_outcome"
+    ],
+    "mmlu-business-ethics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-clinical-knowledge": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-biology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-chemistry": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-computer-science": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-mathematics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-medicine": [
+      "published_binary_outcome"
+    ],
+    "mmlu-college-physics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-computer-security": [
+      "published_binary_outcome"
+    ],
+    "mmlu-conceptual-physics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-econometrics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-electrical-engineering": [
+      "published_binary_outcome"
+    ],
+    "mmlu-elementary-mathematics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-formal-logic": [
+      "published_binary_outcome"
+    ],
+    "mmlu-global-facts": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-biology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-chemistry": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-computer-science": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-european-history": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-geography": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-government-and-politics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-macroeconomics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-mathematics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-microeconomics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-physics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-psychology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-statistics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-us-history": [
+      "published_binary_outcome"
+    ],
+    "mmlu-high-school-world-history": [
+      "published_binary_outcome"
+    ],
+    "mmlu-human-aging": [
+      "published_binary_outcome"
+    ],
+    "mmlu-human-sexuality": [
+      "published_binary_outcome"
+    ],
+    "mmlu-international-law": [
+      "published_binary_outcome"
+    ],
+    "mmlu-jurisprudence": [
+      "published_binary_outcome"
+    ],
+    "mmlu-logical-fallacies": [
+      "published_binary_outcome"
+    ],
+    "mmlu-machine-learning": [
+      "published_binary_outcome"
+    ],
+    "mmlu-management": [
+      "published_binary_outcome"
+    ],
+    "mmlu-marketing": [
+      "published_binary_outcome"
+    ],
+    "mmlu-medical-genetics": [
+      "published_binary_outcome"
+    ],
+    "mmlu-miscellaneous": [
+      "published_binary_outcome"
+    ],
+    "mmlu-moral-disputes": [
+      "published_binary_outcome"
+    ],
+    "mmlu-moral-scenarios": [
+      "published_binary_outcome"
+    ],
+    "mmlu-nutrition": [
+      "published_binary_outcome"
+    ],
+    "mmlu-philosophy": [
+      "published_binary_outcome"
+    ],
+    "mmlu-prehistory": [
+      "published_binary_outcome"
+    ],
+    "mmlu-professional-accounting": [
+      "published_binary_outcome"
+    ],
+    "mmlu-professional-law": [
+      "published_binary_outcome"
+    ],
+    "mmlu-professional-medicine": [
+      "published_binary_outcome"
+    ],
+    "mmlu-professional-psychology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-public-relations": [
+      "published_binary_outcome"
+    ],
+    "mmlu-security-studies": [
+      "published_binary_outcome"
+    ],
+    "mmlu-sociology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-us-foreign-policy": [
+      "published_binary_outcome"
+    ],
+    "mmlu-virology": [
+      "published_binary_outcome"
+    ],
+    "mmlu-world-religions": [
+      "published_binary_outcome"
+    ],
+    "mtbench-math": [
+      "published_normalized_grade"
+    ],
+    "mtbench-reference": [
+      "published_normalized_grade"
+    ],
+    "mtbench": [
+      "published_normalized_grade"
+    ],
+    "test-match": [
+      "published_binary_outcome"
+    ],
+    "winogrande": [
+      "published_binary_outcome"
+    ]
+  },
+  "cohort": "main-11-models",
+  "generation_condition_policy": "5shot-export scores/prompts for MMLU, ARC, HellaSwag, Winogrande; 0shot-export otherwise. GSM0 already contains worked examples.",
+  "pool_definition": "Original eleven-model pools, fixed before this study.",
+  "evaluation_status": "Exploratory all-family study; historical benchmark and development probes previously inspected."
+}

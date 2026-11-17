@@ -1,0 +1,55 @@
+{
+  "input_mode": "task",
+  "input_dim": 768,
+  "hidden_dim": 128,
+  "dropout": 0.2,
+  "max_length": 384,
+  "encoder_weights_sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658",
+  "pool_contract_id": "6b1f8b33dae4aac3a42c39b6bc3ffb22f40a1784d50dd6493ef0ddf71a885221",
+  "encoder_configuration_sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0",
+  "tokenizer_sha256": "e9be3c068e54b7c71ebd9ba7bfc48632e741ccd0cfaa4e58f3fabf9bee3db7e9",
+  "selection": "Lowest ensemble validation MSE, averaging datasets equally; test does not select configuration.",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "quality_definition": "one minus mean task-specific normalized outcome per fixed pool; GSM8K uses reference numeric correctness, other tasks use published binary/graded metrics",
+  "prediction_level": "model",
+  "model_order": [
+    "mistralai/mistral-7b-chat",
+    "meta/llama-2-70b-chat",
+    "WizardLM/WizardLM-13B-V1.2",
+    "zero-one-ai/Yi-34B-Chat",
+    "meta/code-llama-instruct-34b-chat",
+    "mistralai/mixtral-8x7b-chat",
+    "claude-instant-v1",
+    "claude-v1",
+    "gpt-3.5-turbo-1106",
+    "claude-v2",
+    "gpt-4-1106-preview"
+  ],
+  "backend": "frozen-mpnet-ensemble",
+  "group_order": [
+    "weak",
+    "intermediate",
+    "strong"
+  ],
+  "heads": [
+    "head_0.pt",
+    "head_1.pt",
+    "head_2.pt"
+  ],
+  "input_version": "routerbench-task-v1",
+  "predictor_id": "2dadbec6e82044fcc210b2837cae2e03024234f3d9c7ca8fe3f80fcaf9d4aab3",
+  "input_support": {
+    "version": "nearest-cosine-v1",
+    "file": "input_support.npz",
+    "sha256": "f2be5eb40abfc99200e524904fb1e0ae8eb00c5dca0a871eea5bab4ddc93990e",
+    "threshold": 0.4764174818992615,
+    "validation_quantile": 0.95,
+    "training_questions": 25710,
+    "validation_questions": 5406,
+    "fit_uses": "Training/validation text only; no test/probe thresholds or labels."
+  }
+}

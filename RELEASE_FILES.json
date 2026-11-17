@@ -1,0 +1,740 @@
+{
+  "scope": "Standalone difficulty predictor source, main/RAG prepared splits, GSM8K references, selected trained checkpoints, training reports and tests. Other BAMAS applications and credentials excluded.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 243,
+      "sha256": "28f92ffac4c2114d599fddad57fab662bd67fc075296008ee0adfaedd6025e13"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 86,
+      "sha256": "0e05c71acc471aa0152e58f6400d4293a7bf49befbd75dc19c3d0cdaead8da61"
+    },
+    {
+      "path": "BAMAS/data/gsm8k/test.jsonl",
+      "bytes": 750252,
+      "sha256": "ca6e7c5108b7ab7bc920c707e021b21bd9bdaf725e48a179b781ce4be1e9ad13"
+    },
+    {
+      "path": "BAMAS/data/gsm8k/train.jsonl",
+      "bytes": 4169410,
+      "sha256": "2437d36d59167432067063aedc7b0cd2a203731556bd0aa7042d6e5d9e54e3d7"
+    },
+    {
+      "path": "BAMAS/difficulty/.gitignore",
+      "bytes": 117,
+      "sha256": "6619a24dbe0f77959269e13d813fe4331fae890329f20e46403157fe85176d2b"
+    },
+    {
+      "path": "BAMAS/difficulty/__init__.py",
+      "bytes": 67,
+      "sha256": "5f0e070d0aa2fa55949ef0cb03078ac5af2e3c99c9ce1908b4e0b8c4a161e134"
+    },
+    {
+      "path": "BAMAS/difficulty/__main__.py",
+      "bytes": 14358,
+      "sha256": "46fb634e74720d9db907799b68dedc10c927b1d63b0be90eeebff4fe3d4af37e"
+    },
+    {
+      "path": "BAMAS/difficulty/all_routerbench.py",
+      "bytes": 23566,
+      "sha256": "83eafe8d7dfdd0a7a4ac81dca7abaced5e5a1def7b4365fe6b06ac8cb0e01925"
+    },
+    {
+      "path": "BAMAS/difficulty/assets.py",
+      "bytes": 1138,
+      "sha256": "4a0f4b578d381229533889ebeb8010341e8a817af0829477bd5666a2e27d9074"
+    },
+    {
+      "path": "BAMAS/difficulty/audit.py",
+      "bytes": 5721,
+      "sha256": "b3566f643110090bad62a5e3ca55950efd66aa31c9f119d210fc23e4caf4a4de"
+    },
+    {
+      "path": "BAMAS/difficulty/benchmark.py",
+      "bytes": 19270,
+      "sha256": "066a867bc6ee23117bd66f91ba05cf1dbb75267d12a7f9552d95101a1ecad44f"
+    },
+    {
+      "path": "BAMAS/difficulty/CODE_REVIEW.md",
+      "bytes": 5207,
+      "sha256": "4cfab61a67d6fa27778df6ebb26ef959e78f92245aef4e0ed148fe6c67023428"
+    },
+    {
+      "path": "BAMAS/difficulty/CONTROLLER_INTEGRATION.md",
+      "bytes": 5570,
+      "sha256": "574162419a95d56f8f1b8c63e5aef5a4aba062d6160fc8287c3c4fd766cf7f37"
+    },
+    {
+      "path": "BAMAS/difficulty/data.py",
+      "bytes": 10610,
+      "sha256": "892619d2b71184064f5bf2c28a844ed9aa32608030204bf14243e89d8b7cfc59"
+    },
+    {
+      "path": "BAMAS/difficulty/DIFFICULTY_AND_LINUCB_README.md",
+      "bytes": 32768,
+      "sha256": "db1f53e19befe3c2e5b3acd5580c4386b82367b20eb41f5ca761a8bd0bfd1bc8"
+    },
+    {
+      "path": "BAMAS/difficulty/evaluation.py",
+      "bytes": 8314,
+      "sha256": "d8f4c9f7df91ac49ba0be57cf9cbe140d81f3638d9ea7ae5bec425b318d7b3c3"
+    },
+    {
+      "path": "BAMAS/difficulty/evaluation_assets.py",
+      "bytes": 1938,
+      "sha256": "b39a6e0e81dd47189b9410a7dcdf6c82c9be1bd0f6d3062120fbd502e742099c"
+    },
+    {
+      "path": "BAMAS/difficulty/evaluation_sources.json",
+      "bytes": 3515,
+      "sha256": "416c0c71ba79c504a2e7a471f6f294253860c999c3a8f30a934e9ab366767b26"
+    },
+    {
+      "path": "BAMAS/difficulty/frozen.py",
+      "bytes": 12462,
+      "sha256": "d456ecd0c344f8b93640bb1b215058a128dbb1c2f9caa42e77dbe564c3c806e2"
+    },
+    {
+      "path": "BAMAS/difficulty/gsm_correctness.py",
+      "bytes": 11797,
+      "sha256": "9cff5b93d506e1c51ca40ca48af221bf1908f671a7b66fe62dd9761e1fe10b13"
+    },
+    {
+      "path": "BAMAS/difficulty/inputs.py",
+      "bytes": 5508,
+      "sha256": "c47c386652b4427bbae4b8e34ce366f82a776d79d2475875946f82d442ab8aae"
+    },
+    {
+      "path": "BAMAS/difficulty/model.py",
+      "bytes": 11539,
+      "sha256": "52afc3a1c5e2175fb0dbd89e16e623cbb7caf814254a7ffd7c432685e082f2ba"
+    },
+    {
+      "path": "BAMAS/difficulty/probes.py",
+      "bytes": 476,
+      "sha256": "dd05c486281f59e32d851ea75d73084836be847a35a4449df2173f1c634bc0ea"
+    },
+    {
+      "path": "BAMAS/difficulty/README.md",
+      "bytes": 12872,
+      "sha256": "99786ee95012273a9fd181f23effe9f34137edbd7f6917bf4cfd7611bb5a01fa"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/coverage.json",
+      "bytes": 4626,
+      "sha256": "60036b32851ec7c54e699e7aaca7e3fbe856efd5ab5a54c08623ea392c36f17e"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/environment.json",
+      "bytes": 405,
+      "sha256": "5ca28e65411565c3b4a73c8335350108415cc580562546f578f8315ec1fa5de0"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_comparison.json",
+      "bytes": 50426,
+      "sha256": "ba61431950c1f3682eb27367b1fe8107a2f9e2750f63efa1ee78cb578c3f1e02"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_protocol.json",
+      "bytes": 2701,
+      "sha256": "ed7e02e291739ea42e5e7390fcc3e61eae9536495a087981137ccfeeac87d128"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_release_evaluation.json",
+      "bytes": 67665,
+      "sha256": "d5f797b304314af795c7ff38703eed7e58478e91805e28d663038ee26fc1368f"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_selection.json",
+      "bytes": 8451,
+      "sha256": "b44afd19705cd4275916467655b64ce3d4bf82d2141e1e5a18b2bb518b506048"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_validation_results.json",
+      "bytes": 26851,
+      "sha256": "c120dfaf45bf5b641ad23cb7577805fee4ab812c60db012c67275a278edb3e03"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/preparation_protocol.json",
+      "bytes": 2286,
+      "sha256": "af231a09f03a19e6a45d68202d6a0f66da793a863b615da6fedab40046f4377f"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/probe_overlap.json",
+      "bytes": 786,
+      "sha256": "b1ac3089b0c11ed773a3904036d707c85248017408f0a7af24e15def77948f7a"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_comparison.json",
+      "bytes": 24734,
+      "sha256": "b8e3ef4e9ced628e2a106ec0dedc55d1346983dd11f63d0de7ee785a31655c8d"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_protocol.json",
+      "bytes": 1587,
+      "sha256": "f29d20f6c0ed1aa93be0c86a876a0eb45b6c46daba2fec0bf227df52c4dcd762"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_release_evaluation.json",
+      "bytes": 20394,
+      "sha256": "bd6bc40d7813f520f5a00107bda00c39e6a7bf282461cdab0b1004b1a91b1101"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_selection.json",
+      "bytes": 3038,
+      "sha256": "78bddab95978616c97d3bc4f4729059868632accd2c2e4624b88af1d43988710"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/rag_validation_results.json",
+      "bytes": 7642,
+      "sha256": "42a8e6cc90070e4bda7857fb498d8039dfadaf6cd83b837d633a74b7eb962a40"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/release_evaluation.json",
+      "bytes": 93195,
+      "sha256": "f81de260016fcdd6ca75cd028e27a7f385a8d20f346db4fdc0979f7d503c5d09"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md",
+      "bytes": 21864,
+      "sha256": "c4b5baebebd242be822fe7952fe1689f9586c858d18130f16ca05480d3218bb6"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/source_audit.json",
+      "bytes": 800,
+      "sha256": "3c365981e1bf77fa743b0c735f1964e8f8ad6738eecd0b29ae22fcf40e0457fe"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/training_label_audit.json",
+      "bytes": 2377,
+      "sha256": "0eb4eff5d316b582b324fa282e25718276a93222a43648374cf1fc1183abb816"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/all_routerbench_2026-10-24/validation_baselines.json",
+      "bytes": 1361,
+      "sha256": "88a7dd0a1ba4ae9d7df4eb9d451cadb8b13b8751e1808bd45f3a33adf02d3338"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/checkpoint_checks.json",
+      "bytes": 594,
+      "sha256": "2b0fd00f682d3f16d02e099fcb93de7dcb4c976c258b1c654ca6a687cedae14d"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/README.md",
+      "bytes": 2051,
+      "sha256": "35e363c917c499bb2af310e0cfb49472bc94ebf147fe348ba0b642dcb23bcd35"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/source_checks.json",
+      "bytes": 887,
+      "sha256": "3f36b9f5c8840cadca0bb5610aaeef750ec06a79d8a8c61d7083ac2b6a34c4ff"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/cleanup_2026-10-25/verification.json",
+      "bytes": 2323,
+      "sha256": "34df6a13d2e68d7092e85e124a3d6f01c30a0f76365ea77ce178f96176a2ab9e"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/DETAILS.md",
+      "bytes": 8786,
+      "sha256": "3bd194a589e351818542d14576cd4cecd547d642757024ca02f70aa9875ae7a8"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/labeled_results.json",
+      "bytes": 27835,
+      "sha256": "d1f0bb4f45278fed5ad5a37748d2b3abdae950ea9b09399775229505abe54aca"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/math_subject_proxy.json",
+      "bytes": 1780,
+      "sha256": "48596f480e8e850450f5e763a76352eebac43b9d625a74d0018776e6237d200e"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/protocol.json",
+      "bytes": 6891,
+      "sha256": "218fa13eea925f1c160074761d35c3fc01c5a39546ccd3fefc4417e174eedccf"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/REPORT.md",
+      "bytes": 11077,
+      "sha256": "97e776680a757eaa0f66decf04efddd22dcc2f583fea8646436e3a163e2b62d9"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/results.json",
+      "bytes": 71039,
+      "sha256": "86b5f31ee1a063d00479b8dbdd0689ced26f0a7fc247cb7e3211ddf8faaee995"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/source_manifest.json",
+      "bytes": 3515,
+      "sha256": "416c0c71ba79c504a2e7a471f6f294253860c999c3a8f30a934e9ab366767b26"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/generalization_2026-10-25/verification.json",
+      "bytes": 216,
+      "sha256": "ed21593d6f91477d73f23298f99567a87afe85ca35980e9097baf7819e9e62f1"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/edge_review.json",
+      "bytes": 3790,
+      "sha256": "4bb0db478f206951758be072b99495db757dd809c4d1f231eb37d386f8201a50"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/edge_review_sample.jsonl",
+      "bytes": 14088,
+      "sha256": "caf46eb1fa136e3e82d51ff3f079a3c80139e1162b17183ec50e5965fad9a02b"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/label_diagnostics.json",
+      "bytes": 2236,
+      "sha256": "c8120186a40505714cc62944f46a85b0294fee1a4eb34cceaed22d8c58d7827a"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/manual_review.json",
+      "bytes": 11486,
+      "sha256": "1b4b16be70a168aa14e62ee4f9998178e91e7785cd0f154298dbda42fb948479"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/README.md",
+      "bytes": 1567,
+      "sha256": "c36a2f059177a110bd9bd971297a00ccf42d97b8eddf8f2e7944187b38e26ff7"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/regrade_protocol.json",
+      "bytes": 966,
+      "sha256": "b5a4474e0715e1250b874fc7bc72e0b26582d7bf2687608dad21e4780c1650c2"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/regrade_summary.json",
+      "bytes": 886,
+      "sha256": "712b252461debe3eca8e7997e318cf153ca447484c15e92b1d882bc2e7fd254c"
+    },
+    {
+      "path": "BAMAS/difficulty/reports/label_audit/review_sample.jsonl",
+      "bytes": 67005,
+      "sha256": "876534812f94d79c0194f23e966574a5cb90353df4f771377287d7cd8e744e16"
+    },
+    {
+      "path": "BAMAS/difficulty/requirements.txt",
+      "bytes": 342,
+      "sha256": "916457ce175f3840604f7915a0616823c6160b958ce812818c10d3e1903ff5b7"
+    },
+    {
+      "path": "BAMAS/difficulty/research.py",
+      "bytes": 16063,
+      "sha256": "b24cd0e47e1fc0504838564e55ea6ddc02bbe4eeef205abea79bd135826bd3b5"
+    },
+    {
+      "path": "BAMAS/difficulty/routerbench_assets.py",
+      "bytes": 2245,
+      "sha256": "020b763f82d73352ae3be3480e8e10b9f10f60c2ecbfed37283806b013aa15f2"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/coverage.json",
+      "bytes": 4626,
+      "sha256": "60036b32851ec7c54e699e7aaca7e3fbe856efd5ab5a54c08623ea392c36f17e"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/environment.json",
+      "bytes": 405,
+      "sha256": "5ca28e65411565c3b4a73c8335350108415cc580562546f578f8315ec1fa5de0"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/comparison.json",
+      "bytes": 50426,
+      "sha256": "ba61431950c1f3682eb27367b1fe8107a2f9e2750f63efa1ee78cb578c3f1e02"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/data_audit.json",
+      "bytes": 7239,
+      "sha256": "5526dc37106e2d8aba40b1ed25b6846adda247f0060ec928de778053a673d41f"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/protocol.json",
+      "bytes": 2701,
+      "sha256": "ed7e02e291739ea42e5e7390fcc3e61eae9536495a087981137ccfeeac87d128"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/release_evaluation.json",
+      "bytes": 67665,
+      "sha256": "d5f797b304314af795c7ff38703eed7e58478e91805e28d663038ee26fc1368f"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/RESULTS.md",
+      "bytes": 2001,
+      "sha256": "cc4968447b68ca71c526b92882c84605b40768f927b169ac40d33b22d830e1ab"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/config.json",
+      "bytes": 571,
+      "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/encoder_source.json",
+      "bytes": 122,
+      "sha256": "369195310ae03ea0f644593ed0ee19b7766f77b2c0ae1f2cd39f77cdf6ac6e78"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/model.safetensors",
+      "bytes": 437971872,
+      "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/special_tokens_map.json",
+      "bytes": 239,
+      "sha256": "9ef40e9c160511bf3f46ceb71f1471dafa1e9473d5120bb816c36b2efa75f8ba"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/tokenizer.json",
+      "bytes": 466021,
+      "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/tokenizer_config.json",
+      "bytes": 363,
+      "sha256": "67f2ff7e223518e729869bb3a70f0caf8368fe549383fc11cfe2dfb42fffc268"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/encoder/vocab.txt",
+      "bytes": 231536,
+      "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/head_0.pt",
+      "bytes": 401727,
+      "sha256": "a8fac91bb74aa4193db6ab6e2831983a50fd2f062f506317a8142d2de258428e"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/head_1.pt",
+      "bytes": 401727,
+      "sha256": "812caff0a95fab57578354aeee2eaf05c52abaa11ff524aa7b54771f53b19f2f"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/head_2.pt",
+      "bytes": 401727,
+      "sha256": "ffc7cb03d7f6a50ddb6822bae7d59235598c975e2abc72e1a2b218f807c25926"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/input_support.npz",
+      "bytes": 73422770,
+      "sha256": "f2be5eb40abfc99200e524904fb1e0ae8eb00c5dca0a871eea5bab4ddc93990e"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/manifest.json",
+      "bytes": 10503,
+      "sha256": "1135d794a473aedc29fd558feefae9dfb4442b44ffae72bc9dbc2e89cd5910db"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/metrics.json",
+      "bytes": 11247,
+      "sha256": "899f689cf9a5a5ac5129800d6bfb5cf92bf1cf3480673bd8ef902646e50d6149"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/model.json",
+      "bytes": 1946,
+      "sha256": "bc5168f06348204b52bce9d7b03aa0bc1544749f96363e7e4a30a0b87889afc9"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/test_predictions.jsonl",
+      "bytes": 4125753,
+      "sha256": "4880634e9bb5c9d62a1dba2c32c0e2d404806eb9ad3f2e909fca8defd104a3c1"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model/test_predictions_with_questions.jsonl",
+      "bytes": 7899365,
+      "sha256": "35853c0de06ae05c48f855266579227d046045a9426156b74ba6521fc3b02394"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/selection.json",
+      "bytes": 8451,
+      "sha256": "b44afd19705cd4275916467655b64ce3d4bf82d2141e1e5a18b2bb518b506048"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/main/validation_results.json",
+      "bytes": 26851,
+      "sha256": "c120dfaf45bf5b641ad23cb7577805fee4ab812c60db012c67275a278edb3e03"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/coverage.json",
+      "bytes": 3748,
+      "sha256": "82e7997b72ae97dd7ab98fd54bfc001dfeab0eeffbb4ab68628eded63456906a"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/manifest.json",
+      "bytes": 10503,
+      "sha256": "1135d794a473aedc29fd558feefae9dfb4442b44ffae72bc9dbc2e89cd5910db"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/test.jsonl",
+      "bytes": 10074578,
+      "sha256": "a77738dc3f41747cdf0de5a20779b2b39ac6f0edf719bf19ca22d5e5a6e54f44"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/train.jsonl",
+      "bytes": 48226433,
+      "sha256": "5fa81ea4949ffc37435febd928792aa89eb6333eccdbfac99111c210b8aefe7d"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/validation.jsonl",
+      "bytes": 10135222,
+      "sha256": "c74f9341cf1bfb348baf44bfec331617ca571b046cf00e8ef2fe8840888664a7"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/coverage.json",
+      "bytes": 554,
+      "sha256": "a580315ba9d35b46b2d8bf801570ddd85b30220ed3abab948df1c67c3053f977"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/manifest.json",
+      "bytes": 1639,
+      "sha256": "fa87e96bf10d4ecf25ac1c364382ce4a2a7d166dfdf5fad9b2ea18aec40fefff"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/test.jsonl",
+      "bytes": 132907,
+      "sha256": "0a1928d2a63af219d5ab9b5d8d8da92cefbd0b43b19d3b91eaf5d3fcf9df7773"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/train.jsonl",
+      "bytes": 452638,
+      "sha256": "6f5bf45e9e19ac0dc282d9a2bd0e29d9e4918706b2b25835c32289060cd25e44"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/validation.jsonl",
+      "bytes": 82478,
+      "sha256": "f02880127047d5ef3c9c3b79d5a32e3981cf206a94039ac512652c2ec4089b82"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/probe_overlap.json",
+      "bytes": 786,
+      "sha256": "b1ac3089b0c11ed773a3904036d707c85248017408f0a7af24e15def77948f7a"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/comparison.json",
+      "bytes": 24734,
+      "sha256": "b8e3ef4e9ced628e2a106ec0dedc55d1346983dd11f63d0de7ee785a31655c8d"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/data_audit.json",
+      "bytes": 1848,
+      "sha256": "449d9c94a64ceec4a0f91cd6f9f68a9b1d14b76915e9b1e428595546fa617c54"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/protocol.json",
+      "bytes": 1587,
+      "sha256": "f29d20f6c0ed1aa93be0c86a876a0eb45b6c46daba2fec0bf227df52c4dcd762"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/release_evaluation.json",
+      "bytes": 20394,
+      "sha256": "bd6bc40d7813f520f5a00107bda00c39e6a7bf282461cdab0b1004b1a91b1101"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/RESULTS.md",
+      "bytes": 1614,
+      "sha256": "aa67c1160eb360f1574a4f1049eff1411808b652b21b6078924f5b71915baf89"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/config.json",
+      "bytes": 571,
+      "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/encoder_source.json",
+      "bytes": 122,
+      "sha256": "369195310ae03ea0f644593ed0ee19b7766f77b2c0ae1f2cd39f77cdf6ac6e78"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/model.safetensors",
+      "bytes": 437971872,
+      "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/special_tokens_map.json",
+      "bytes": 239,
+      "sha256": "9ef40e9c160511bf3f46ceb71f1471dafa1e9473d5120bb816c36b2efa75f8ba"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/tokenizer.json",
+      "bytes": 466021,
+      "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/tokenizer_config.json",
+      "bytes": 363,
+      "sha256": "67f2ff7e223518e729869bb3a70f0caf8368fe549383fc11cfe2dfb42fffc268"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/encoder/vocab.txt",
+      "bytes": 231536,
+      "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/head_0.pt",
+      "bytes": 397631,
+      "sha256": "893f6532f23ebdf762e6644ff6327ea021a3ff02175495a02fdbe0e467ed5e5b"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/head_1.pt",
+      "bytes": 397631,
+      "sha256": "67b901dc928d33c09080aed1d11cd1934f4cd80acb0f0eecaa90a49124d6313e"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/head_2.pt",
+      "bytes": 397631,
+      "sha256": "b9368fc5dfaa97bb4d6a10a9a0ea3c71eb1c4bd6f3cba37288018bbc919bf4d6"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/input_support.npz",
+      "bytes": 1271479,
+      "sha256": "127a1dc112ba19d5ccac49c4b01453f968bb8d827e8232cfdda3edd24267adfd"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/manifest.json",
+      "bytes": 1639,
+      "sha256": "fa87e96bf10d4ecf25ac1c364382ce4a2a7d166dfdf5fad9b2ea18aec40fefff"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/metrics.json",
+      "bytes": 5557,
+      "sha256": "b4c59b0f1acb843e42c52ae6e31bd2ab40aa367157782b43c7935c8f5498fd52"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/model.json",
+      "bytes": 1474,
+      "sha256": "91fadae04091404a5eff4b0d96e05eab01d9c16f1888bee95e1478edb6fcfc0e"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selected_model/test_predictions.jsonl",
+      "bytes": 32984,
+      "sha256": "ab26e056ae49ba9a19b3fb7b949d59643be136a47c0f84f98d86715fe2df4ed7"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/selection.json",
+      "bytes": 3038,
+      "sha256": "78bddab95978616c97d3bc4f4729059868632accd2c2e4624b88af1d43988710"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag/validation_results.json",
+      "bytes": 7642,
+      "sha256": "42a8e6cc90070e4bda7857fb498d8039dfadaf6cd83b837d633a74b7eb962a40"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/rag_recommendation.json",
+      "bytes": 3930,
+      "sha256": "4b388faef1e89e975451554b87ce283a7abc9da7da3ca7e3bf5be448993809c0"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/recommendation.json",
+      "bytes": 8702,
+      "sha256": "691466df6253b6a883d13368163d07893d17768cbfd90bb11d97eddd9f8232ef"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/release_evaluation.json",
+      "bytes": 93195,
+      "sha256": "f81de260016fcdd6ca75cd028e27a7f385a8d20f346db4fdc0979f7d503c5d09"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/source_audit.json",
+      "bytes": 800,
+      "sha256": "3c365981e1bf77fa743b0c735f1964e8f8ad6738eecd0b29ae22fcf40e0457fe"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/training_label_audit.json",
+      "bytes": 2377,
+      "sha256": "0eb4eff5d316b582b324fa282e25718276a93222a43648374cf1fc1183abb816"
+    },
+    {
+      "path": "BAMAS/difficulty/runs/all_routerbench_v1/validation_baselines.json",
+      "bytes": 1361,
+      "sha256": "88a7dd0a1ba4ae9d7df4eb9d451cadb8b13b8751e1808bd45f3a33adf02d3338"
+    },
+    {
+      "path": "BAMAS/difficulty/safe_pickle.py",
+      "bytes": 9125,
+      "sha256": "ed894d78d67b63e980e262797b2b6b27d523078621549f4258e0d1b76e17faa9"
+    },
+    {
+      "path": "BAMAS/difficulty/support.py",
+      "bytes": 4105,
+      "sha256": "ec135cc4a9539c7f3f32905b42ac096cfeff55cf0a245cb2562b903cbc7d8aa5"
+    },
+    {
+      "path": "BAMAS/difficulty/test_all_routerbench.py",
+      "bytes": 7992,
+      "sha256": "15416d6b6435d78b4dc8628095521bebc0a853d06085cff698d4b8e11ec922e2"
+    },
+    {
+      "path": "BAMAS/difficulty/test_benchmark.py",
+      "bytes": 4267,
+      "sha256": "e3352663d7e9e9028a859a5b7691a294006ebb0d0a20eba8d7bce5dbc2c4cb65"
+    },
+    {
+      "path": "BAMAS/difficulty/test_cli.py",
+      "bytes": 1831,
+      "sha256": "727e123b2dae3a8dd1f9ec0e70544bda292c2ac87784f63ce15f4101ee5be5bd"
+    },
+    {
+      "path": "BAMAS/difficulty/test_difficulty.py",
+      "bytes": 7701,
+      "sha256": "3ea5d9fc8cc118d6385737c486f5a2d1e0a44f21f5bae4b5a87bcdf6a7ea4c61"
+    },
+    {
+      "path": "BAMAS/difficulty/test_gsm_correctness.py",
+      "bytes": 5716,
+      "sha256": "68dc27aba750af8ef00533daa4dbc2cb02dde07f9fc07e60b477576462622088"
+    },
+    {
+      "path": "BAMAS/difficulty/test_research.py",
+      "bytes": 9096,
+      "sha256": "1996a7026e778647f6a29ef5c469530c13f7c57ed52c60d42089fa3dfd731ac5"
+    },
+    {
+      "path": "BAMAS/difficulty/test_support.py",
+      "bytes": 3229,
+      "sha256": "e620f1cc41c6365ce0b31fdd31c23be8e9cfda456fbff35be2241034c7f5dad3"
+    },
+    {
+      "path": "BAMAS/difficulty/test_transformer.py",
+      "bytes": 9856,
+      "sha256": "9a9c15d4955a19f896324a961493bc123ba33b43627d05f5a9ac22d0a73c0ff1"
+    },
+    {
+      "path": "BAMAS/difficulty/transformer.py",
+      "bytes": 21964,
+      "sha256": "fc7f59acba9b988d2b167a02c0061c614ca6a6af474ba969fc5e58299514cdc6"
+    },
+    {
+      "path": "BAMAS/LICENSE",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "BAMAS/scripts/try_difficulty.py",
+      "bytes": 4081,
+      "sha256": "2fd35875a3c4a18ab2841d8c2220cdb41a5eb3e0db0533f552e153568d695465"
+    },
+    {
+      "path": "DATASETS.md",
+      "bytes": 3922,
+      "sha256": "1b378268286abfc5bff6dd8d1e88b36a6b828534f386a249d9d01c2c6f128f53"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4878,
+      "sha256": "471b5c575bb70dc1a438aa8476558d730c9752c50fa5d37c7cee12b0f00da3b5"
+    },
+    {
+      "path": "RELEASE_VERIFICATION.json",
+      "bytes": 867,
+      "sha256": "ccb05abfa9951e23d9029a88c627a583415dd77383bde7db6efba0f51053422f"
+    }
+  ]
+}

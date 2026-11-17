@@ -1,0 +1,152 @@
+{
+  "purpose": "Supplemental training-only review at supplied scores 0 and 1, after v2 truncation fix.",
+  "accepted_reviewed": 14,
+  "accepted_numeric_extraction_errors_found": 0,
+  "previous_truncated_answers_now_quarantined": 2,
+  "records": [
+    {
+      "sample_id": "grade-school-math.dev.4037",
+      "model": "claude-instant-v1",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "14"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.1213",
+      "model": "claude-v2",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "3"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.5083",
+      "model": "meta/llama-2-70b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "7"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.442",
+      "model": "meta/llama-2-70b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "1267/100"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.395",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "v2": {
+        "status": "unknown",
+        "method": "unfinished_or_introductory_line",
+        "value": null
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.1104",
+      "model": "gpt-3.5-turbo-1106",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "20"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.5379",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "39/10"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.2366",
+      "model": "mistralai/mistral-7b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "3"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.3980",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "12"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.1028",
+      "model": "mistralai/mixtral-8x7b-chat",
+      "v2": {
+        "status": "unknown",
+        "method": "unfinished_or_introductory_line",
+        "value": null
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.6886",
+      "model": "meta/code-llama-instruct-34b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "360"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.4898",
+      "model": "zero-one-ai/Yi-34B-Chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "240"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.3453",
+      "model": "gpt-3.5-turbo-1106",
+      "v2": {
+        "status": "parsed",
+        "method": "final_equation_rhs",
+        "value": "170"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.2887",
+      "model": "WizardLM/WizardLM-13B-V1.2",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "40"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.3453",
+      "model": "mistralai/mistral-7b-chat",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "170"
+      }
+    },
+    {
+      "sample_id": "grade-school-math.dev.2235",
+      "model": "claude-v1",
+      "v2": {
+        "status": "parsed",
+        "method": "final_line",
+        "value": "100"
+      }
+    }
+  ]
+}

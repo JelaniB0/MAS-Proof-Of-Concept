@@ -1,0 +1,33 @@
+{
+  "syntax_checked_modules": 27,
+  "missing_relative_imports": [],
+  "markdown_documents": 9,
+  "checked_local_links": 20,
+  "missing_local_links": [],
+  "untracked_source_files": 74,
+  "untracked_source_bytes": 839707,
+  "forbidden_generated_files_in_git_preview": [],
+  "credential_pattern_matches": [],
+  "largest_files": [
+    [
+      "BAMAS/difficulty/reports/all_routerbench_2026-10-24/release_evaluation.json",
+      93195
+    ],
+    [
+      "BAMAS/difficulty/reports/generalization_2026-10-25/results.json",
+      71039
+    ],
+    [
+      "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_release_evaluation.json",
+      67665
+    ],
+    [
+      "BAMAS/difficulty/reports/label_audit/review_sample.jsonl",
+      67005
+    ],
+    [
+      "BAMAS/difficulty/reports/all_routerbench_2026-10-24/main_comparison.json",
+      50426
+    ]
+  ]
+}

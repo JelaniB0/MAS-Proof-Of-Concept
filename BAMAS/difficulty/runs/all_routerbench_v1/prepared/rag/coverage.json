@@ -1,0 +1,29 @@
+{
+  "questions": 657,
+  "split_counts": {
+    "train": 445,
+    "validation": 81,
+    "test": 131
+  },
+  "families": {
+    "rag_news": 349,
+    "rag_wiki": 308
+  },
+  "source_evals": {
+    "rag_news": 349,
+    "rag_wiki": 308
+  },
+  "source_conditions": {
+    "archived-RAG": 657
+  },
+  "questions_without_observed_pool_target": 0,
+  "observed_pool_targets": {
+    "weak": 657,
+    "intermediate": 657,
+    "strong": 657
+  },
+  "task_cross_split_overlaps": 0,
+  "label_kinds": {
+    "published_RAG_judged_outcome": 657
+  }
+}

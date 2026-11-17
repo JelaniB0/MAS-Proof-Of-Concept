@@ -1,0 +1,15 @@
+# Standalone prediction, training, evaluation and offline tests (Python 3.11+).
+# The recorded training environment is in reports/all_routerbench_2026-10-24/environment.json.
+torch
+transformers
+safetensors
+huggingface-hub
+numpy
+pandas
+scipy
+scikit-learn
+pyarrow
+datasets
+pyyaml
+# Retained sentence-transformer baseline.
+sentence-transformers
