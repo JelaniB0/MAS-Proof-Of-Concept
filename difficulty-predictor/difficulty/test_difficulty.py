@@ -1,4 +1,4 @@
-"""Regression checks: python -m unittest BAMAS.difficulty.test_difficulty -v."""
+"""Regression checks: python -m unittest difficulty.test_difficulty -v."""
 
 import json
 from pathlib import Path

@@ -6,8 +6,8 @@ from pathlib import Path
 import sys
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-ALL_STUDY = PROJECT_ROOT / "BAMAS/difficulty/runs/all_routerbench_v1"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+ALL_STUDY = PROJECT_ROOT / "difficulty/runs/all_routerbench_v1"
 
 
 def default_model(cohort="main"):
@@ -43,10 +43,10 @@ def main():
     if not (args.model / "model.json").is_file():
         parser.error(f"No predictor checkpoint found at {args.model}")
 
-    # Support running this file directly without installing BAMAS as a package.
+    # Support running this file directly without installing the predictor package.
     sys.path.insert(0, str(PROJECT_ROOT))
-    from BAMAS.difficulty.model import DifficultyPredictor
-    from BAMAS.difficulty.inputs import controller_features
+    from difficulty.model import DifficultyPredictor
+    from difficulty.inputs import controller_features
 
     print(f"Loading predictor: {args.model}", flush=True)
     try:

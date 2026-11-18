@@ -121,7 +121,7 @@ two questions are semantically unrelated or absent from a model's pretraining.
 | Strong: three models | GPT-3.5 Turbo 1106, Claude v2, GPT-4 1106 Preview. |
 
 Exact IDs are preserved in the selected checkpoint's `manifest.json` and the
-[training report](../BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md#targets-and-model-groups).
+[training report](../difficulty/reports/all_routerbench_2026-10-24/REPORT.md#targets-and-model-groups).
 These groups are historical definitions, not a current model-quality ranking.
 
 Our cloud representatives are configured separately in
@@ -143,7 +143,7 @@ individual outcomes when some other models have missing labels.
 
 The main training split supplies **274,513 observed individual-model targets**.
 That number counts known outcomes, not additional independent questions.
-See the [label audit](../BAMAS/difficulty/reports/label_audit/README.md) for provenance.
+See the [label audit](../difficulty/reports/label_audit/README.md) for provenance.
 
 There is also a separate archived RAG corpus with 657 rows and a different
 five-model roster. It has its own predictor and pool contract. It is not silently
@@ -205,13 +205,13 @@ does not update these weights or add another training example automatically.
 The selected checkpoint is:
 
 ```text
-BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model
+difficulty/runs/all_routerbench_v1/main/selected_model
 ```
 
 Encoder, tokenizer, head, and pool fingerprints bind saved predictions to the
 correct model and label definition. Training/reproduction details are retained
 in the [technical README](../TECHNICAL_README.md#training-pipeline) and
-[saved protocol](../BAMAS/difficulty/runs/all_routerbench_v1/main/protocol.json).
+[saved protocol](../difficulty/runs/all_routerbench_v1/main/protocol.json).
 
 ## 5. Why do we also use Azure embeddings?
 
@@ -552,9 +552,23 @@ blend, and learned policy deserve to stay.
 
 ## 12. How do I run and inspect it?
 
-### Ask questions interactively
+### Ask the standalone neural predictor interactively
 
-From the repository root in PowerShell:
+From the `difficulty-predictor` folder, after the [quick-start installation](../README.md#install-dependencies):
+
+```powershell
+.\.venv\Scripts\python.exe scripts/try_difficulty.py
+```
+
+The predictor loads once, then accepts questions at `Question>`. Type `/quit` to
+finish. This standalone command prints the neural scores and support warnings;
+it does not use the Azure-neighbor index.
+
+### Broader-workspace retrieval preview (not shipped here)
+
+The commands and output records below describe the separate application. Run them
+from the original BAMAS workspace root on `bamas-code`, where `BAMAS/single_agent`
+and its Azure configuration exist. They do not run from this release folder.
 
 ```powershell
 .\.venv-research\Scripts\python.exe -m BAMAS.single_agent interactive --config configs/azure.local.json
@@ -598,12 +612,14 @@ Useful fields in the full JSONL:
 
 ### Use the neural predictor from Python
 
+Run this from the `difficulty-predictor` folder:
+
 ```python
-from BAMAS.difficulty.model import DifficultyPredictor
-from BAMAS.difficulty.inputs import controller_features
+from difficulty.model import DifficultyPredictor
+from difficulty.inputs import controller_features
 
 predictor = DifficultyPredictor.load(
-    "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model",
+    "difficulty/runs/all_routerbench_v1/main/selected_model",
     device="auto",
 )
 features = controller_features(predictor, ["Your question"])[0]
@@ -620,7 +636,7 @@ pipeline's combined record and preserve its predictor/index identity. See the
 | File or resource | Use |
 | --- | --- |
 | [Technical predictor README](../TECHNICAL_README.md) | Training provenance, reproduction commands, and evaluation links. |
-| [Training report](../BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md) | Full source coverage, audits, targets, and results. |
+| [Training report](../difficulty/reports/all_routerbench_2026-10-24/REPORT.md) | Full source coverage, audits, targets, and results. |
 | [Controller integration](CONTROLLER_INTEGRATION.md) | Versioned neural feature API and integration constraints. |
 | Single-agent pipeline (`../single_agent/pipeline.py`, broader-workspace reference) | Current blending and deterministic model-selection rule. |
 | Neighbor index (`../single_agent/index.py`, broader-workspace reference) | Training-only retrieval, support calibration, and neighbor weighting. |

@@ -63,9 +63,9 @@ class BenchmarkTests(unittest.TestCase):
             (root/"recommendation.json").write_text(json.dumps({"model_relative_path":"main/selected_model","predictor_id":"fixed"}),encoding="utf-8")
             wrong=SimpleNamespace(manifest={"groups":{**groups,"strong":["another-model"]}},predict_with_support=Mock())
             splits={name:[{"prompt":name}] for name in ("train","validation","test")}
-            with patch("BAMAS.difficulty.benchmark.load_splits",return_value=splits), \
-                 patch("BAMAS.difficulty.benchmark.external_rows",return_value=({},{})), \
-                 patch("BAMAS.difficulty.benchmark.DifficultyPredictor.load",return_value=wrong):
+            with patch("difficulty.benchmark.load_splits",return_value=splits), \
+                 patch("difficulty.benchmark.external_rows",return_value=({},{})), \
+                 patch("difficulty.benchmark.DifficultyPredictor.load",return_value=wrong):
                 with self.assertRaisesRegex(ValueError,"pool/target contract"):
                     run_benchmark(root,root,root,root/"evaluation",device="cpu")
             wrong.predict_with_support.assert_not_called()

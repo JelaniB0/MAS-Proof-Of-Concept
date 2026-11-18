@@ -1,10 +1,10 @@
 {
   "date": "2026-11-17",
-  "scope": "Standalone difficulty predictor cleanup and documentation organization",
+  "scope": "Self-contained difficulty-predictor component after folder relocation",
   "offline_tests": {
     "passed": 49,
     "failed": 0,
-    "test_runtime_seconds": 7.042
+    "test_runtime_seconds": 6.935
   },
   "real_checkpoint_smoke": {
     "main": "passed local CPU load and three finite [0,1] scores",
@@ -43,5 +43,28 @@
     "local_markdown_links_verified": 48,
     "runtime_source_changes": false,
     "retraining_or_reselection": false
+  },
+  "relocation": {
+    "folder": "difficulty-predictor",
+    "python_package": "difficulty",
+    "updated_imports_and_cli_paths": true,
+    "preserved_data_model_and_provenance_hashes_verified": 80,
+    "local_markdown_links_verified": 57,
+    "all_component_documentation_links_stay_in_component": true,
+    "main_interactive_smoke": {
+      "questions": 2,
+      "checkpoint_loads": 1,
+      "started_from_repository_root": true,
+      "status": "passed"
+    },
+    "rag_module_cli_smoke": "passed offline CPU inference",
+    "folder_import_dry_run": {
+      "receiving_tree": "bamas-code",
+      "existing_paths_preserved": 151,
+      "new_component_paths": 127,
+      "receiving_branch_modified": false
+    },
+    "retraining_or_reselection": false,
+    "cloud_api_calls": 0
   }
 }

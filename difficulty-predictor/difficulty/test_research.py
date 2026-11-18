@@ -147,7 +147,7 @@ class ResearchTests(unittest.TestCase):
             self.assertTrue((output / "selection.json").exists())
             self.assertTrue((output / "selected_model" / "test_predictions.jsonl").exists())
             self.assertIsNotNone(report["test"]["selected_frozen_ensemble"]["prediction"]["macro_mse"])
-            with patch("BAMAS.difficulty.research.fit_head", side_effect=AssertionError("Should reuse finished heads")), \
+            with patch("difficulty.research.fit_head", side_effect=AssertionError("Should reuse finished heads")), \
                  patch.object(FrozenMPNet, "encode", side_effect=AssertionError("Should reuse valid cached embeddings")):
                 resumed = run_suite(prepared, encoder, output, seeds=(42,), epochs=1, patience=1, device="cpu")
                 self.assertEqual(resumed["selected_configuration"], report["selected_configuration"])

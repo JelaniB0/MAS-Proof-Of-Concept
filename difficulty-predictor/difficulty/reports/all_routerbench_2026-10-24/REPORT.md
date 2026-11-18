@@ -346,19 +346,19 @@ should not be presented as a fresh, universal generalization result.
 
 ## Run and inspect
 
-From the repository root:
+From the `difficulty-predictor` folder:
 
 ```powershell
 # Train/resume the fixed all-family study.
-.\.venv-research\Scripts\python.exe -m BAMAS.difficulty all-routerbench --output BAMAS/difficulty/runs/all_routerbench_v1 --device cuda
+.\.venv-research\Scripts\python.exe -m difficulty all-routerbench --output difficulty/runs/all_routerbench_v1 --device cuda
 # Fit support checks; verify saved predictions; write default recommendations.
-.\.venv-research\Scripts\python.exe -m BAMAS.difficulty finalize-all-routerbench --output BAMAS/difficulty/runs/all_routerbench_v1 --device cuda
+.\.venv-research\Scripts\python.exe -m difficulty finalize-all-routerbench --output difficulty/runs/all_routerbench_v1 --device cuda
 # Main eleven-model pools, loading the checkpoint once.
-.\.venv-research\Scripts\python.exe .\BAMAS\scripts\try_difficulty.py
+.\.venv-research\Scripts\python.exe .\scripts\try_difficulty.py
 # Inspect unsupported raw scores explicitly.
-.\.venv-research\Scripts\python.exe .\BAMAS\scripts\try_difficulty.py --show-unsupported
+.\.venv-research\Scripts\python.exe .\scripts\try_difficulty.py --show-unsupported
 # Separate five-model RAG pools.
-.\.venv-research\Scripts\python.exe .\BAMAS\scripts\try_difficulty.py --cohort rag
+.\.venv-research\Scripts\python.exe .\scripts\try_difficulty.py --cohort rag
 ```
 
 Add `--prepare-only` to the first command to regenerate coverage without training.

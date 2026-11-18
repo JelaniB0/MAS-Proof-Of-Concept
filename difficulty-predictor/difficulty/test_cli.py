@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from BAMAS.scripts import try_difficulty
+from scripts import try_difficulty
 
 
 class DefaultCheckpointTests(unittest.TestCase):

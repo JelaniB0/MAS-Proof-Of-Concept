@@ -20,11 +20,11 @@ scores are averages over the fixed 4/4/3 roster. The verified default is
 five-model contract at `runs/all_routerbench_v1/rag/selected_model`.
 
 ```python
-from BAMAS.difficulty.model import DifficultyPredictor
-from BAMAS.difficulty.inputs import controller_features
+from difficulty.model import DifficultyPredictor
+from difficulty.inputs import controller_features
 
 predictor = DifficultyPredictor.load(
-    "BAMAS/difficulty/runs/all_routerbench_v1/main/selected_model",
+    "difficulty/runs/all_routerbench_v1/main/selected_model",
     device="auto",
 )
 scores = predictor.predict(["Your question"])[0]
@@ -96,5 +96,5 @@ end-to-end success versus cost, budget violations and predictor overhead at equa
 budgets. Single-model historical outcomes do not measure multi-agent interactions.
 
 For current training methods and results, see the [README](../TECHNICAL_README.md),
-[all-family report](../BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md) and
-[external evaluation](../BAMAS/difficulty/reports/generalization_2026-10-25/REPORT.md).
+[all-family report](../difficulty/reports/all_routerbench_2026-10-24/REPORT.md) and
+[external evaluation](../difficulty/reports/generalization_2026-10-25/REPORT.md).

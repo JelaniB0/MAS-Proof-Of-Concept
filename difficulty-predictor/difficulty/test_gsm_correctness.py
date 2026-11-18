@@ -75,7 +75,7 @@ class CorrectnessTests(unittest.TestCase):
             prepare(source,root / "prepared")
             references = root / "references.jsonl"
             references.write_text("".join(json.dumps({"question":f"Question {i}?", "answer":"Work\u2028more work\n#### 72"},ensure_ascii=False)+"\n" for i in range(120)),encoding="utf-8")
-            with patch("BAMAS.difficulty.safe_pickle.read_routerbench",return_value=frame):
+            with patch("difficulty.safe_pickle.read_routerbench",return_value=frame):
                 stats=prepare_correctness(source,references,root / "prepared",root / "audit")
             self.assertEqual(stats["questions_complete"],120)
             self.assertEqual(stats["questions_quarantined"],0)

@@ -6,7 +6,7 @@ and stored in Git LFS. `RELEASE_FILES.json` lists their SHA256 hashes and sizes.
 
 ## Prepared main corpus
 
-Location: `BAMAS/difficulty/runs/all_routerbench_v1/prepared/main/`.
+Location: `difficulty/runs/all_routerbench_v1/prepared/main/`.
 
 | Split | Rows |
 | --- | ---: |
@@ -26,7 +26,7 @@ missing outcomes. Test data is included for evaluation, not training.
 
 ## Separate archived RAG corpus
 
-Location: `BAMAS/difficulty/runs/all_routerbench_v1/prepared/rag/`.
+Location: `difficulty/runs/all_routerbench_v1/prepared/rag/`.
 
 | Split | Rows |
 | --- | ---: |
@@ -40,8 +40,8 @@ roster. Its checkpoint/pool contract is not interchangeable with the main model.
 
 ## GSM8K reference answers
 
-The source reference files are included as `BAMAS/data/gsm8k/train.jsonl` and
-`BAMAS/data/gsm8k/test.jsonl`. They support reviewed numeric-answer regrading and
+The source reference files are included as `data/gsm8k/train.jsonl` and
+`data/gsm8k/test.jsonl`. They support reviewed numeric-answer regrading and
 external GSM8K evaluation. They are reference assets, not additional independent
 questions added to the prepared training split above. Their hashes are also in
 the release inventory; the archived regrading protocol records the training
@@ -56,11 +56,11 @@ and the archived RAG export at
 The [RouterBench paper](https://arxiv.org/abs/2403.12031) describes the source benchmark.
 Exact export checksums, model rosters, conditions, and preparation decisions are
 recorded in each prepared `manifest.json`, the saved protocols, and
-`BAMAS/difficulty/reports/all_routerbench_2026-10-24/REPORT.md`.
+`difficulty/reports/all_routerbench_2026-10-24/REPORT.md`.
 
 GSM8K outcomes were regraded with the reviewed final-numeric-answer procedure;
 other tasks retain published binary/graded scores. The label-review evidence is
-under `BAMAS/difficulty/reports/label_audit/`. The raw long-form export is not a
+under `difficulty/reports/label_audit/`. The raw long-form export is not a
 second independent question corpus and is not included here.
 
 The pretrained encoder is

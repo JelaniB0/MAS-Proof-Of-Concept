@@ -165,30 +165,30 @@ reranking, support-threshold fitting, controller changes or paid LLM calls occur
 
 ## Run it yourself
 
-From the repository root, repeat the fixed-model test with:
+From the `difficulty-predictor` folder, repeat the fixed-model test with:
 
 ```powershell
-.\.venv-research\Scripts\python.exe -m BAMAS.difficulty benchmark --device cuda
+.\.venv-research\Scripts\python.exe -m difficulty benchmark --device cuda
 ```
 
 The data is already present. If it needs to be restored, the pinned public
 downloader is:
 
 ```powershell
-.\.venv-research\Scripts\python.exe -m BAMAS.difficulty download-evaluation-data
+.\.venv-research\Scripts\python.exe -m difficulty download-evaluation-data
 ```
 
 For your own terminal questions:
 
 ```powershell
-.\.venv-research\Scripts\python.exe .\BAMAS\scripts\try_difficulty.py --show-unsupported
+.\.venv-research\Scripts\python.exe .\scripts\try_difficulty.py --show-unsupported
 ```
 
 The benchmark writes detailed tables and sampled labeled questions (`../../runs/generalization_test/RESULTS.md`, broader-workspace reference)
 and per-question JSONL files under `runs/generalization_test`. The machine-readable
 results, protocol and source checksums are also copied alongside this report.
 Historical execution transcripts are omitted. Current software checks are
-recorded in [release verification](../../../../RELEASE_VERIFICATION.json).
+recorded in [release verification](../../../RELEASE_VERIFICATION.json).
 The production model remains in its study directory; rerunning this test does
 not train it.
 
